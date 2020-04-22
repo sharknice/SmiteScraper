@@ -70,9 +70,9 @@ def getAbilityJson(sourceJson):
             elif rankItem['description'] == 'Healing:':
                 toggleStats['hpFive'] = getStats(rankItem['value'])
             elif rankItem['description'] == 'Movement Speed:':
-                toggleStats['attackSpeed'] = getStats(rankItem['value'][:-1])
-            elif rankItem['description'] == 'Attack Speed:':
                 toggleStats['movementSpeed'] = getStats(rankItem['value'][:-1])
+            elif rankItem['description'] == 'Attack Speed:':
+                toggleStats['attackSpeed'] = getStats(rankItem['value'][:-1])
             elif rankItem['description'] == 'Damage Buff:':
                 toggleStats['basicAttackPercentIncrease'] = getStats(
                     rankItem['value'][:-1])
@@ -136,7 +136,7 @@ for sourceGod in sourceGods:
     god['manaPerLevel'] = godData['ManaPerLevel']
     god['speed'] = godData['Speed']
     god['attackSpeed'] = godData['AttackSpeed']
-    god['attackSpeedPerLevel'] = godData['AttackSpeedPerLevel']
+    god['attackSpeedPerLevel'] = godData['AttackSpeedPerLevel'] * 100.0
 
     damage = godData['PhysicalPower']
     damagePerLevel = godData['PhysicalPowerPerLevel']
