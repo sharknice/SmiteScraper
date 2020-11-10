@@ -40,10 +40,16 @@ for sourceItem in sourceItems:
                     item['magicalLifesteal'] = int(sourceStat['Value'][1:][:-1])
                     item['type'] = "Magical"
                 if sourceStat['Description'] == 'Physical Penetration':
-                    item['physicalPenetration'] = int(sourceStat['Value'][1:])
+                    if "%" in sourceStat['Value']:
+                        item['physicalPenetration'] = int(sourceStat['Value'][1:][:-1])
+                    else:
+                        item['physicalPenetration'] = int(sourceStat['Value'][1:])
                     item['type'] = "Physical"
                 if sourceStat['Description'] == 'Magical Penetration':
-                    item['magicalPenetration'] = int(sourceStat['Value'][1:][:-1])
+                    if "%" in sourceStat['Value']:
+                        item['magicalPenetration'] = int(sourceStat['Value'][1:][:-1])
+                    else:
+                        item['magicalPenetration'] = int(sourceStat['Value'][1:])
                     item['type'] = "Magical"
                 if sourceStat['Description'] == 'Penetration':
                     item['physicalPenetration'] = int(sourceStat['Value'][1:])
