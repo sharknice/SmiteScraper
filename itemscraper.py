@@ -5,7 +5,8 @@ with open('sources/item_source.json') as f: #https://cms.smitegame.com/wp-json/s
     data = json.load(f)
 
 items = []
-sourceItems = data['items']
+#sourceItems = data['items']
+sourceItems = data
 for sourceItem in sourceItems:
     if sourceItem['Type'] == "Item":
         print(sourceItem['DeviceName'])
@@ -18,7 +19,7 @@ for sourceItem in sourceItems:
 
         url = sourceItem['itemIcon_URL']
         imageName = url.rsplit('/', 1)[-1].replace('*','')
-        # urllib.request.urlretrieve(url, 'images/items/' + imageName)
+        urllib.request.urlretrieve(url, 'images/items/' + imageName)
         item['icon'] = 'images/smite/items/' + imageName
 
         if sourceItem['ItemDescription']['SecondaryDescription']:
@@ -40,8 +41,9 @@ for sourceItem in sourceItems:
                     item['magicalLifesteal'] = int(sourceStat['Value'][1:][:-1])
                     item['type'] = "Magical"
                 if sourceStat['Description'] == 'Physical Penetration':
-                    item['physicalPenetration'] = int(sourceStat['Value'][1:])
-                    item['type'] = "Physical"
+                    if "%" not in sourceStat['Value']:
+                        item['physicalPenetration'] = int(sourceStat['Value'][1:])
+                        item['type'] = "Physical"
                 if sourceStat['Description'] == 'Magical Penetration':
                     item['magicalPenetration'] = int(sourceStat['Value'][1:][:-1])
                     item['type'] = "Magical"
