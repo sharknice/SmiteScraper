@@ -19,7 +19,7 @@ for sourceItem in sourceItems:
 
         url = sourceItem['itemIcon_URL']
         imageName = url.rsplit('/', 1)[-1].replace('*','')
-        urllib.request.urlretrieve(url, 'images/items/' + imageName)
+        #urllib.request.urlretrieve(url, 'images/items/' + imageName)
         item['icon'] = 'images/smite/items/' + imageName
 
         if sourceItem['ItemDescription']['SecondaryDescription']:
@@ -41,11 +41,16 @@ for sourceItem in sourceItems:
                     item['magicalLifesteal'] = int(sourceStat['Value'][1:][:-1])
                     item['type'] = "Magical"
                 if sourceStat['Description'] == 'Physical Penetration':
-                    if "%" not in sourceStat['Value']:
+                    if "%" in sourceStat['Value']:
+                        item['physicalPenetrationPercent'] = int(sourceStat['Value'][1:][:-1])
+                    else:
                         item['physicalPenetration'] = int(sourceStat['Value'][1:])
-                        item['type'] = "Physical"
+                    item['type'] = "Physical"
                 if sourceStat['Description'] == 'Magical Penetration':
-                    item['magicalPenetration'] = int(sourceStat['Value'][1:][:-1])
+                    if "%" in sourceStat['Value']:
+                        item['magicalPenetrationPercent'] = int(sourceStat['Value'][1:][:-1])
+                    else:
+                        item['magicalPenetration'] = int(sourceStat['Value'][1:])
                     item['type'] = "Magical"
                 if sourceStat['Description'] == 'Penetration':
                     item['physicalPenetration'] = int(sourceStat['Value'][1:])
