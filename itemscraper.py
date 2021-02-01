@@ -53,6 +53,8 @@ for sourceItem in sourceItems:
 
         if sourceItem['ItemDescription']['SecondaryDescription']:
             item['passive'] = sourceItem['ItemDescription']['SecondaryDescription']
+            if 'AURA' in item['passive'] and 'Allied' not in item['passive'] and 'Ally' not in item['passive']:
+                item['enemyInAura'] = {"toggle": True}
         if sourceItem['ItemDescription']['Menuitems']:
             for sourceStat in sourceItem['ItemDescription']['Menuitems']:
                 if sourceStat['Description'] == 'Physical Power':
