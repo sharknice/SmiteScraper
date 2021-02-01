@@ -1,7 +1,6 @@
 import json
-import urllib.request
 import re
-
+from urllib.request import Request, urlopen, urlretrieve
 
 def num(s):
     try:
@@ -36,10 +35,10 @@ def getAbilityJson(sourceJson):
 
     url = sourceJson['URL']
     imageName = url.rsplit('/', 1)[-1].replace('*', '')
-    try:
-        urllib.request.urlretrieve(url, 'images/abilities/' + imageName)
-    except Exception:
-        print("could not download " + url)
+    # try:
+    #     urlretrieve(url, 'images/abilities/' + imageName)
+    # except Exception:
+    #     print("could not download " + url)
     ability['icon'] = 'images/smite/abilities/' + imageName
 
     itemDescription = sourceJson['Description']['itemDescription']
@@ -126,7 +125,8 @@ for sourceGod in sourceGods:
     # load the god specific json
     url = 'https://cms.smitegame.com/wp-json/wp/v2/gods?slug=' + \
         name.replace(' ', '-') + '&lang_id=1'
-    response = urllib.request.urlopen(url)
+    request = Request(url, headers={'User-Agent': 'Mozilla/5.0'})
+    response = urlopen(request)
     godData = json.loads(response.read())[0]['api_information']
     # set the specific data
     god['pros'] = godData['Pros'].strip()
@@ -157,7 +157,7 @@ for sourceGod in sourceGods:
 
     url = godData['godIcon_URL']
     imageName = url.rsplit('/', 1)[-1].replace('*', '')
-    urllib.request.urlretrieve(url, 'images/gods/' + imageName)
+    #urlretrieve(url, 'images/gods/' + imageName)
     god['icon'] = 'images/smite/gods/' + imageName
 
     god['passive'] = getAbilityJson(
@@ -174,4 +174,4 @@ for sourceGod in sourceGods:
     gods.append(god)
 
 with open('gods_result.json', 'w') as json_file:
-    json.dump(gods, json_file)
+    json.dump(gods, json_file, indent='\t', sort_keys=True)

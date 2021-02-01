@@ -5,8 +5,17 @@ with open('sources/item_source.json') as f: #https://cms.smitegame.com/wp-json/s
     data = json.load(f)
 
 items = []
-#sourceItems = data['items']
+
 sourceItems = data
+bootsId = 0
+shoesId = 0
+boots = next((x for x in sourceItems if x['DeviceName'] == 'Boots'), None)
+if boots != None:
+    bootsId = boots['ItemId']
+shoes = next((x for x in sourceItems if x['DeviceName'] == 'Shoes'), None)
+if shoes != None:
+    shoesId = shoes['ItemId']
+
 for sourceItem in sourceItems:
     if sourceItem['Type'] == "Item":
         print(sourceItem['DeviceName'])
@@ -16,10 +25,30 @@ for sourceItem in sourceItems:
         item['cost'] = sourceItem['Price']
         item['type'] = "Both"
         item['tier'] = sourceItem['ItemTier']
+        if item['tier'] > 1:
+            parent = next((x for x in sourceItems if x['ItemId'] == sourceItem['ChildItemId']), None)
+            if parent != None:
+                item['cost'] += parent['Price']
+                if item['tier'] == 3:
+                    parentParent = next((x for x in sourceItems if x['ItemId'] == sourceItem['RootItemId']), None)
+                    item['cost'] += parent['Price']
+
+        if sourceItem['StartingItem']:
+            item['starter'] = True
+        if sourceItem['RootItemId'] == bootsId:
+            item['shoes'] = True
+        if sourceItem['RootItemId'] == shoesId:
+            item['shoes'] = True
+
+        if sourceItem['RestrictedRoles'] != "no restrictions" and sourceItem['RestrictedRoles'] != "":
+            item['restrictedRoles'] = sourceItem['RestrictedRoles']
 
         url = sourceItem['itemIcon_URL']
         imageName = url.rsplit('/', 1)[-1].replace('*','')
-        #urllib.request.urlretrieve(url, 'images/items/' + imageName)
+        # try:
+        #     urllib.request.urlretrieve(url, 'images/items/' + imageName)
+        # except Exception:
+        #     print("could not download " + imageName)       
         item['icon'] = 'images/smite/items/' + imageName
 
         if sourceItem['ItemDescription']['SecondaryDescription']:
@@ -53,7 +82,12 @@ for sourceItem in sourceItems:
                         item['magicalPenetration'] = int(sourceStat['Value'][1:])
                     item['type'] = "Magical"
                 if sourceStat['Description'] == 'Penetration':
-                    item['physicalPenetration'] = int(sourceStat['Value'][1:])
+                    if "%" in sourceStat['Value']:
+                        item['physicalPenetrationPercent'] = int(sourceStat['Value'][1:][:-1])
+                        item['magicalPenetrationPercent'] = int(sourceStat['Value'][1:][:-1])
+                    else:
+                        item['physicalPenetration'] = int(sourceStat['Value'][1:])
+                        item['magicalPenetration'] = int(sourceStat['Value'][1:])
                 if sourceStat['Description'] == 'Critical Strike Chance':
                     item['criticalChance'] = int(sourceStat['Value'][1:][:-1])
                     item['type'] = "Physical"
@@ -75,8 +109,10 @@ for sourceItem in sourceItems:
                     item['mana'] = int(sourceStat['Value'][1:])
                 if sourceStat['Description'] == 'MP5':
                     item['mpFive'] = int(sourceStat['Value'][1:])
+            if "Acorn" in sourceItem['DeviceName']:
+                item['type'] = "Acorn"
                 
         items.append(item)
 
-with open('result.json', 'w') as json_file:
-    json.dump(items, json_file)
+with open('items_result.json', 'w') as json_file:
+    json.dump(items, json_file, indent='\t', sort_keys=True)
