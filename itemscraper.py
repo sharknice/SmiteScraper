@@ -43,6 +43,8 @@ for sourceItem in sourceItems:
         if sourceItem['RestrictedRoles'] != "no restrictions" and sourceItem['RestrictedRoles'] != "":
             item['restrictedRoles'] = sourceItem['RestrictedRoles']
 
+        # TODO: "toggleStats" and "stacks"
+
         url = sourceItem['itemIcon_URL']
         imageName = url.rsplit('/', 1)[-1].replace('*','')
         # try:
