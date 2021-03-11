@@ -1,5 +1,6 @@
 import json
 import urllib.request
+import re
 
 with open('sources/item_source.json') as f: #https://cms.smitegame.com/wp-json/smite-api/getItems/1
     data = json.load(f)
@@ -55,8 +56,33 @@ for sourceItem in sourceItems:
 
         if sourceItem['ItemDescription']['SecondaryDescription']:
             item['passive'] = sourceItem['ItemDescription']['SecondaryDescription']
+            if 'starter item' in item['passive'].lower():
+                item['starter'] = True
             if 'AURA' in item['passive'] and 'Allied' not in item['passive'] and 'Ally' not in item['passive']:
                 item['enemyInAura'] = {"toggle": True}
+            if '% of your Mana is converted to Physical Power' in item['passive']:
+                item['manaToPhysicalPower'] = 0.03
+            if 'stacks' in item['passive']:
+                item['stacks'] = { "current": 0, "max": 0, "stacks": [], "type": "permanent" }
+                manaStacks = re.search("\d+ Mana per Stack", item['passive'])
+                if manaStacks:
+                    amount = re.findall(r'\d+', manaStacks.group())
+                    item['stacks']['stacks'].append({ "mana" : amount[0]})
+                maxStacks = re.search("max. \d+ stacks", item['passive'])
+                if maxStacks:
+                    amount = re.findall(r'\d+', maxStacks.group())
+                    item['stacks']['max'] = amount[0]
+                    item['stacks']['current'] = amount[0]
+                if 'consume' in item['passive']:
+                    item['stacks']['type'] = "temporary"
+                    item['stacks']['current'] = 0
+                if 'Evolves' in item['passive']:
+                    item['stacks']['evolved'] = {}
+                    coolDown = re.search("gaining \d+% Cooldown Reduction", item['passive'])
+                    if coolDown:
+                        amount = re.findall(r'\d+', coolDown.group())
+                        item['stacks']['evolved']['cooldownReduction'] = amount[0]
+
         if sourceItem['ItemDescription']['Menuitems']:
             for sourceStat in sourceItem['ItemDescription']['Menuitems']:
                 if sourceStat['Description'] == 'Physical Power':
@@ -114,9 +140,10 @@ for sourceItem in sourceItems:
                 if sourceStat['Description'] == 'MP5':
                     item['mpFive'] = int(sourceStat['Value'][1:])
             if "Acorn" in sourceItem['DeviceName']:
-                item['type'] = "Acorn"
-                
-        items.append(item)
+                item['type'] = "Acorn"      
+        
+        if 'Evolved' not in item['name']:
+            items.append(item)
 
 with open('items_result.json', 'w') as json_file:
     json.dump(items, json_file, indent='\t', sort_keys=True)
