@@ -100,6 +100,10 @@
 		"physicalLifesteal": 15,
 		"physicalPenetration": 10,
 		"tier": 2,
+		"toggleStats": {
+			"physicalLifesteal": 25,
+			"toggle": false
+		},
 		"type": "Physical"
 	},
 	{
@@ -135,6 +139,10 @@
 		"physicalPenetration": 15,
 		"physicalPower": 20,
 		"tier": 3,
+		"toggleStats": {
+			"physicalLifesteal": 30,
+			"toggle": false
+		},
 		"type": "Physical"
 	},
 	{
@@ -347,12 +355,12 @@
 		"stacks": {
 			"current": 50,
 			"evolved": {
-				"cooldownReduction": "10"
+				"cooldownReduction": 10
 			},
 			"max": 50,
 			"stacks": [
 				{
-					"mana": "15"
+					"mana": 15
 				}
 			],
 			"type": "permanent"
@@ -687,8 +695,8 @@
 		"stacks": {
 			"current": 75,
 			"evolved": {
-				"physicalLifesteal": "5",
-				"physicalPower": "15"
+				"physicalLifesteal": 5,
+				"physicalPower": 15
 			},
 			"max": 75,
 			"stacks": [],
@@ -710,10 +718,10 @@
 			"max": 70,
 			"stacks": [
 				{
-					"physicalPower": ".5"
+					"physicalPower": 0.5
 				},
 				{
-					"physicalLifesteal": ".2"
+					"physicalLifesteal": 0.2
 				}
 			],
 			"type": "permanent"
@@ -981,6 +989,9 @@
 		"physicalPower": 50,
 		"physicalProtection": 20,
 		"tier": 3,
+		"toggleStats": {
+			"toggle": false
+		},
 		"type": "Physical"
 	},
 	{
@@ -1134,10 +1145,10 @@
 			"max": 7,
 			"stacks": [
 				{
-					"magicalProtection": "3"
+					"magicalProtection": 3
 				},
 				{
-					"physicalProtection": "3"
+					"physicalProtection": 3
 				}
 			],
 			"type": "permanent"
@@ -1240,10 +1251,10 @@
 			"max": 6,
 			"stacks": [
 				{
-					"movementSpeed": "2"
+					"movementSpeed": 2
 				},
 				{
-					"attackSpeed": "2"
+					"attackSpeed": 2
 				}
 			],
 			"type": "permanent"
@@ -1529,12 +1540,12 @@
 		"stacks": {
 			"current": 75,
 			"evolved": {
-				"manaToMagicalPower": "3"
+				"manaToMagicalPower": 3
 			},
 			"max": 75,
 			"stacks": [
 				{
-					"mana": "10"
+					"mana": 10
 				}
 			],
 			"type": "permanent"
@@ -1574,6 +1585,9 @@
 		"name": "Book of the Dead",
 		"passive": "PASSIVE - If you drop below 40% Health, you gain a shield equal to 20% of your maximum Mana. This shield lasts 6s. This effect can only occur once every 90s.",
 		"tier": 3,
+		"toggleStats": {
+			"toggle": false
+		},
 		"type": "Magical"
 	},
 	{
@@ -1601,10 +1615,10 @@
 			"max": 4,
 			"stacks": [
 				{
-					"magicalPower": "4"
+					"magicalPower": 4
 				},
 				{
-					"movementSpeed": "1"
+					"movementSpeed": 1
 				}
 			],
 			"type": "temporary"
@@ -1661,10 +1675,10 @@
 			"max": 5,
 			"stacks": [
 				{
-					"magicalPower": "4"
+					"magicalPower": 4
 				},
 				{
-					"movementSpeed": "1"
+					"movementSpeed": 1
 				}
 			],
 			"type": "temporary"
@@ -1797,7 +1811,7 @@
 			"max": 5,
 			"stacks": [
 				{
-					"physicalProtection": "7"
+					"physicalProtection": 7
 				}
 			],
 			"type": "temporary"
@@ -2387,7 +2401,7 @@
 		"stacks": {
 			"current": 75,
 			"evolved": {
-				"cooldownReduction": "10"
+				"cooldownReduction": 10
 			},
 			"max": 75,
 			"stacks": [],
@@ -2797,10 +2811,10 @@
 			"max": 25,
 			"stacks": [
 				{
-					"attackSpeed": "1"
+					"attackSpeed": 1
 				},
 				{
-					"criticalChance": "0.8"
+					"criticalChance": 0.8
 				}
 			],
 			"type": "temporary"
