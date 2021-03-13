@@ -228,7 +228,7 @@
 		"stacks": {
 			"current": 0,
 			"max": 4,
-			"stacks": [],
+			"stacks": {},
 			"type": "temporary"
 		},
 		"tier": 3,
@@ -358,11 +358,9 @@
 				"cooldownReduction": 10
 			},
 			"max": 50,
-			"stacks": [
-				{
-					"mana": 15
-				}
-			],
+			"stacks": {
+				"mana": 15
+			},
 			"type": "permanent"
 		},
 		"tier": 3,
@@ -699,7 +697,7 @@
 				"physicalPower": 15
 			},
 			"max": 75,
-			"stacks": [],
+			"stacks": {},
 			"type": "permanent"
 		},
 		"tier": 3,
@@ -716,14 +714,10 @@
 		"stacks": {
 			"current": 70,
 			"max": 70,
-			"stacks": [
-				{
-					"physicalPower": 0.5
-				},
-				{
-					"physicalLifesteal": 0.2
-				}
-			],
+			"stacks": {
+				"physicalLifesteal": 0.2,
+				"physicalPower": 0.5
+			},
 			"type": "permanent"
 		},
 		"tier": 3,
@@ -1026,7 +1020,7 @@
 		"stacks": {
 			"current": 0,
 			"max": 0,
-			"stacks": [],
+			"stacks": {},
 			"type": "permanent"
 		},
 		"tier": 3,
@@ -1143,14 +1137,10 @@
 			"current": 7,
 			"evolved": {},
 			"max": 7,
-			"stacks": [
-				{
-					"magicalProtection": 3
-				},
-				{
-					"physicalProtection": 3
-				}
-			],
+			"stacks": {
+				"magicalProtection": 3,
+				"physicalProtection": 3
+			},
 			"type": "permanent"
 		},
 		"tier": 3,
@@ -1249,14 +1239,10 @@
 		"stacks": {
 			"current": 6,
 			"max": 6,
-			"stacks": [
-				{
-					"movementSpeed": 2
-				},
-				{
-					"attackSpeed": 2
-				}
-			],
+			"stacks": {
+				"attackSpeed": 2,
+				"movementSpeed": 2
+			},
 			"type": "permanent"
 		},
 		"tier": 3,
@@ -1531,9 +1517,7 @@
 		"id": 7334,
 		"magicalPower": 80,
 		"mana": 250,
-		"manaToMagicalPower": [
-			"6"
-		],
+		"manaToMagicalPower": 6,
 		"mpFive": 15,
 		"name": "Book of Thoth",
 		"passive": "PASSIVE - You permanently gain 10 Mana per Stack, and receive 5 Stacks for a god kill and 1 Stack for a minion kill (max. 75 Stacks). 6% of your Mana from items is converted to Magical Power. At 75 stacks this item Evolves, gaining 3% extra Mana to Power conversion.",
@@ -1543,11 +1527,9 @@
 				"manaToMagicalPower": 3
 			},
 			"max": 75,
-			"stacks": [
-				{
-					"mana": 10
-				}
-			],
+			"stacks": {
+				"mana": 10
+			},
 			"type": "permanent"
 		},
 		"tier": 3,
@@ -1613,14 +1595,10 @@
 		"stacks": {
 			"current": 0,
 			"max": 4,
-			"stacks": [
-				{
-					"magicalPower": 4
-				},
-				{
-					"movementSpeed": 1
-				}
-			],
+			"stacks": {
+				"magicalPower": 4,
+				"movementSpeed": 1
+			},
 			"type": "temporary"
 		},
 		"tier": 2,
@@ -1673,14 +1651,10 @@
 		"stacks": {
 			"current": 0,
 			"max": 5,
-			"stacks": [
-				{
-					"magicalPower": 4
-				},
-				{
-					"movementSpeed": 1
-				}
-			],
+			"stacks": {
+				"magicalPower": 4,
+				"movementSpeed": 1
+			},
 			"type": "temporary"
 		},
 		"tier": 3,
@@ -1700,7 +1674,7 @@
 			"current": 8,
 			"evolved": {},
 			"max": 8,
-			"stacks": [],
+			"stacks": {},
 			"type": "permanent"
 		},
 		"tier": 3,
@@ -1809,11 +1783,9 @@
 		"stacks": {
 			"current": 0,
 			"max": 5,
-			"stacks": [
-				{
-					"physicalProtection": 7
-				}
-			],
+			"stacks": {
+				"physicalProtection": 7
+			},
 			"type": "temporary"
 		},
 		"tier": 3,
@@ -1859,7 +1831,7 @@
 		"stacks": {
 			"current": 0,
 			"max": 0,
-			"stacks": [],
+			"stacks": {},
 			"type": "permanent"
 		},
 		"tier": 3,
@@ -1962,7 +1934,7 @@
 		"stacks": {
 			"current": 0,
 			"max": 0,
-			"stacks": [],
+			"stacks": {},
 			"type": "temporary"
 		},
 		"tier": 1,
@@ -2224,7 +2196,7 @@
 		"stacks": {
 			"current": 3,
 			"max": 3,
-			"stacks": [],
+			"stacks": {},
 			"type": "permanent"
 		},
 		"tier": 3,
@@ -2330,7 +2302,7 @@
 		"stacks": {
 			"current": 10,
 			"max": 10,
-			"stacks": [],
+			"stacks": {},
 			"type": "permanent"
 		},
 		"tier": 1,
@@ -2370,7 +2342,7 @@
 			"current": 50,
 			"evolved": {},
 			"max": 50,
-			"stacks": [],
+			"stacks": {},
 			"type": "permanent"
 		},
 		"tier": 1,
@@ -2386,7 +2358,7 @@
 			"current": 15,
 			"evolved": {},
 			"max": 15,
-			"stacks": [],
+			"stacks": {},
 			"type": "permanent"
 		},
 		"tier": 1,
@@ -2404,7 +2376,7 @@
 				"cooldownReduction": 10
 			},
 			"max": 75,
-			"stacks": [],
+			"stacks": {},
 			"type": "permanent"
 		},
 		"tier": 1,
@@ -2420,16 +2392,14 @@
 			"current": 50,
 			"evolved": {},
 			"max": 50,
-			"stacks": [],
+			"stacks": {},
 			"type": "permanent"
 		},
 		"tier": 1,
 		"type": "Both"
 	},
 	{
-		"basicAttackFlatIncrease": [
-			"15"
-		],
+		"basicAttackFlatIncrease": 15,
 		"cost": 700,
 		"icon": "images/smite/items/hunters-blessing.jpg",
 		"id": 15489,
@@ -2439,7 +2409,7 @@
 			"current": 75,
 			"evolved": {},
 			"max": 75,
-			"stacks": [],
+			"stacks": {},
 			"type": "permanent"
 		},
 		"tier": 1,
@@ -2455,7 +2425,7 @@
 			"current": 75,
 			"evolved": {},
 			"max": 75,
-			"stacks": [],
+			"stacks": {},
 			"type": "permanent"
 		},
 		"tier": 1,
@@ -2471,7 +2441,7 @@
 			"current": 100,
 			"evolved": {},
 			"max": 100,
-			"stacks": [],
+			"stacks": {},
 			"type": "permanent"
 		},
 		"tier": 1,
@@ -2764,7 +2734,7 @@
 		"stacks": {
 			"current": 10,
 			"max": 10,
-			"stacks": [],
+			"stacks": {},
 			"type": "permanent"
 		},
 		"starter": true,
@@ -2792,7 +2762,7 @@
 		"stacks": {
 			"current": 3,
 			"max": 3,
-			"stacks": [],
+			"stacks": {},
 			"type": "permanent"
 		},
 		"starter": true,
@@ -2809,14 +2779,10 @@
 		"stacks": {
 			"current": 0,
 			"max": 25,
-			"stacks": [
-				{
-					"attackSpeed": 1
-				},
-				{
-					"criticalChance": 0.8
-				}
-			],
+			"stacks": {
+				"attackSpeed": 1,
+				"criticalChance": 0.8
+			},
 			"type": "temporary"
 		},
 		"starter": true,
@@ -3025,7 +2991,7 @@
 		"stacks": {
 			"current": 10,
 			"max": 10,
-			"stacks": [],
+			"stacks": {},
 			"type": "permanent"
 		},
 		"tier": 1,
@@ -3044,7 +3010,7 @@
 		"stacks": {
 			"current": 10,
 			"max": 10,
-			"stacks": [],
+			"stacks": {},
 			"type": "permanent"
 		},
 		"starter": true,
@@ -3245,7 +3211,7 @@
 		"stacks": {
 			"current": 20,
 			"max": 20,
-			"stacks": [],
+			"stacks": {},
 			"type": "permanent"
 		},
 		"tier": 1,
@@ -3262,7 +3228,7 @@
 		"stacks": {
 			"current": 20,
 			"max": 20,
-			"stacks": [],
+			"stacks": {},
 			"type": "permanent"
 		},
 		"starter": true,
@@ -3360,7 +3326,7 @@
 		"stacks": {
 			"current": 4,
 			"max": 4,
-			"stacks": [],
+			"stacks": {},
 			"type": "permanent"
 		},
 		"starter": true,

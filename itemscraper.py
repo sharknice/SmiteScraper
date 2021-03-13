@@ -63,64 +63,64 @@ for sourceItem in sourceItems:
             manaToMagicalPower = re.search("\d+% of your Mana from items is converted to Magical Power", item['passive'])
             if manaToMagicalPower:
                 amount = re.findall(r'\d+', manaToMagicalPower.group())
-                item['manaToMagicalPower'] = amount
+                item['manaToMagicalPower'] = int(amount[0])
             if '% of your Mana is converted to Physical Power' in item['passive']:
                 item['manaToPhysicalPower'] = 0.03
             basicAttackFlatIncrease = re.search("\+\d+ Basic Attack Damage", item['passive'])
             if basicAttackFlatIncrease:
                 amount = re.findall(r'\d+', basicAttackFlatIncrease.group())
-                item['basicAttackFlatIncrease'] = amount
+                item['basicAttackFlatIncrease'] = int(amount[0])
                 
             if 'stacks' in item['passive']:
-                item['stacks'] = { "current": 0, "max": 0, "stacks": [], "type": "permanent" }
+                item['stacks'] = { "current": 0, "max": 0, "stacks": {}, "type": "permanent" }
                 manaStacks = re.search("\d+ Mana per Stack", item['passive'])
                 if manaStacks:
                     amount = re.findall(r'\d+', manaStacks.group())
-                    item['stacks']['stacks'].append({ "mana" : int(amount[0])})
+                    item['stacks']['stacks']['mana']= int(amount[0])
                 physicalPowerStacks = re.search("gives you stacks of \+\d*\.?\d+ Physical Power", item['passive'])
                 if physicalPowerStacks:
                     amount = re.findall(r'\d*\.?\d+', physicalPowerStacks.group())
-                    item['stacks']['stacks'].append({ "physicalPower" : float(amount[0])})
+                    item['stacks']['stacks']['physicalPower'] = float(amount[0])
                 physicalLifestealStacks = re.search("and \+\d*\.?\d+% Physical Lifesteal", item['passive'])
                 if physicalLifestealStacks:
                     amount = re.findall(r'\d*\.?\d+', physicalLifestealStacks.group())
-                    item['stacks']['stacks'].append({ "physicalLifesteal" : float(amount[0])})
+                    item['stacks']['stacks']['physicalLifesteal'] = float(amount[0])
                 magicalPowerStacks = re.search("and \d+ Magical Power", item['passive'])
                 if magicalPowerStacks:
                     amount = re.findall(r'\d+', magicalPowerStacks.group())
-                    item['stacks']['stacks'].append({ "magicalPower" : int(amount[0])})
+                    item['stacks']['stacks']['magicalPower'] = int(amount[0])
                 magicalProtectionStacks = re.search("gain \+\d+ Magical Protection", item['passive'])
                 if magicalProtectionStacks:
                     amount = re.findall(r'\d+', magicalProtectionStacks.group())
-                    item['stacks']['stacks'].append({ "magicalProtection" : int(amount[0])})
+                    item['stacks']['stacks']['magicalProtection'] = int(amount[0])
                 physicalProtectionStacks = re.search("and \+\d+ Physical Protection", item['passive'])
                 if physicalProtectionStacks:
                     amount = re.findall(r'\d+', physicalProtectionStacks.group())
-                    item['stacks']['stacks'].append({ "physicalProtection" : int(amount[0])})
+                    item['stacks']['stacks']['physicalProtection'] = int(amount[0])
                 physicalProtectionStacks = re.search("stack of \d+ Physical Protection", item['passive'])
                 if physicalProtectionStacks:
                     amount = re.findall(r'\d+', physicalProtectionStacks.group())
-                    item['stacks']['stacks'].append({ "physicalProtection" : int(amount[0])})
+                    item['stacks']['stacks']['physicalProtection'] = int(amount[0])
                 movementSpeedStacks = re.search("provide \d+% Movement Speed", item['passive'])
                 if movementSpeedStacks:
                     amount = re.findall(r'\d+', movementSpeedStacks.group())
-                    item['stacks']['stacks'].append({ "movementSpeed" : int(amount[0])})
+                    item['stacks']['stacks']['movementSpeed'] = int(amount[0])
                 movementSpeedStacks = re.search("granting \d+% Movement Speed", item['passive'])
                 if movementSpeedStacks:
                     amount = re.findall(r'\d+', movementSpeedStacks.group())
-                    item['stacks']['stacks'].append({ "movementSpeed" : int(amount[0])})
+                    item['stacks']['stacks']['movementSpeed'] = int(amount[0])
                 attackSpeedStacks = re.search(", \d+% Attack Speed", item['passive'])
                 if attackSpeedStacks:
                     amount = re.findall(r'\d+', attackSpeedStacks.group())
-                    item['stacks']['stacks'].append({ "attackSpeed" : int(amount[0])})
+                    item['stacks']['stacks']['attackSpeed'] = int(amount[0])
                 attackSpeedStacks = re.search("gain \d+% Attack Speed", item['passive'])
                 if attackSpeedStacks:
                     amount = re.findall(r'\d+', attackSpeedStacks.group())
-                    item['stacks']['stacks'].append({ "attackSpeed" : int(amount[0])})
+                    item['stacks']['stacks']['attackSpeed'] = int(amount[0])
                 criticalStrikeStacks = re.search("and \d*\.?\d+% Physical Critical Strike Chance", item['passive'])
                 if criticalStrikeStacks:
                     amount = re.findall(r'\d*\.?\d+', criticalStrikeStacks.group())
-                    item['stacks']['stacks'].append({ "criticalChance" : float(amount[0])})
+                    item['stacks']['stacks']['criticalChance'] = float(amount[0])
 
                 maxStacks = re.search("max. \d+ stacks", item['passive'])
                 if maxStacks:
