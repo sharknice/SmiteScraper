@@ -219,7 +219,7 @@
 		"passive": "PASSIVE - On successful hit of an Ability you gain 1 stack. At 4 Stacks your next Ability that damages an enemy God will deal bonus damage equal to 30% of your Magical power to each God hit, and will heal yourself and allies within 20 units for 40% of your Magical Power and will consume the 4 stacks.",
 		"stacks": {
 			"current": 0,
-			"max": 0,
+			"max": "4",
 			"stacks": [],
 			"type": "temporary"
 		},
@@ -685,9 +685,12 @@
 		"physicalPenetrationPercent": 10,
 		"physicalPower": 20,
 		"stacks": {
-			"current": 0,
-			"evolved": {},
-			"max": 0,
+			"current": "75",
+			"evolved": {
+				"physicalLifesteal": "5",
+				"physicalPower": "15"
+			},
+			"max": "75",
 			"stacks": [],
 			"type": "permanent"
 		},
@@ -703,9 +706,16 @@
 		"physicalLifesteal": 15,
 		"physicalPower": 30,
 		"stacks": {
-			"current": 0,
-			"max": 0,
-			"stacks": [],
+			"current": "70",
+			"max": "70",
+			"stacks": [
+				{
+					"physicalPower": ".5"
+				},
+				{
+					"physicalLifesteal": ".2"
+				}
+			],
 			"type": "permanent"
 		},
 		"tier": 3,
@@ -1119,10 +1129,17 @@
 		"passive": "PASSIVE - You gain +3 Magical Protection and +3 Physical Protection for each god kill or assist. At 7 stacks this item Evolves, providing a Health Shield that gains stacks every 2s. Shield only stacks if you have not taken or dealt damage in the last 5s. Each stack provides 10% of 100 Health +5 Per Level. ",
 		"physicalProtection": 30,
 		"stacks": {
-			"current": 0,
+			"current": "7",
 			"evolved": {},
-			"max": 0,
-			"stacks": [],
+			"max": "7",
+			"stacks": [
+				{
+					"magicalProtection": "3"
+				},
+				{
+					"physicalProtection": "3"
+				}
+			],
 			"type": "permanent"
 		},
 		"tier": 3,
@@ -1219,9 +1236,16 @@
 		"name": "Talisman of Energy",
 		"passive": "PASSIVE - Getting a kill or assist on enemies causes you and allies within 70 units to gain stacks of energy. Energy stacks provide 2% Movement Speed, 2% Attack Speed, and 10MP5 per stack. Lasts 10s and stacks up to 6 times.",
 		"stacks": {
-			"current": 0,
-			"max": 0,
-			"stacks": [],
+			"current": "6",
+			"max": "6",
+			"stacks": [
+				{
+					"movementSpeed": "2"
+				},
+				{
+					"attackSpeed": "2"
+				}
+			],
 			"type": "permanent"
 		},
 		"tier": 3,
@@ -1496,13 +1520,18 @@
 		"id": 7334,
 		"magicalPower": 80,
 		"mana": 250,
+		"manaToMagicalPower": [
+			"6"
+		],
 		"mpFive": 15,
 		"name": "Book of Thoth",
 		"passive": "PASSIVE - You permanently gain 10 Mana per Stack, and receive 5 Stacks for a god kill and 1 Stack for a minion kill (max. 75 Stacks). 6% of your Mana from items is converted to Magical Power. At 75 stacks this item Evolves, gaining 3% extra Mana to Power conversion.",
 		"stacks": {
-			"current": 0,
-			"evolved": {},
-			"max": 0,
+			"current": "75",
+			"evolved": {
+				"manaToMagicalPower": "3"
+			},
+			"max": "75",
 			"stacks": [
 				{
 					"mana": "10"
@@ -1640,8 +1669,8 @@
 		"name": "Charon's Coin",
 		"passive": "PASSIVE - On god kill or assist a coin is flipped. If heads, you gain a stack of 7 HP5. If tails, you gain a stack of 2% Movement Speed. Each effect can stack up to 4 times and at 8 stacks this item evolves. You also gain 1 gold every time the coin is flipped.",
 		"stacks": {
-			"current": 0,
-			"max": 0,
+			"current": "8",
+			"max": "8",
 			"stacks": [],
 			"type": "permanent"
 		},
@@ -2160,8 +2189,8 @@
 		"name": "Oni Hunter's Garb",
 		"passive": "PASSIVE - For each enemy God within 55 units of you, you gain a stack of 3% damage mitigation. This caps at 3 stacks.",
 		"stacks": {
-			"current": 0,
-			"max": 0,
+			"current": "3",
+			"max": "3",
 			"stacks": [],
 			"type": "permanent"
 		},
@@ -2266,8 +2295,8 @@
 		"passive": "PASSIVE - Being in range of minion or jungle camp death without dealing the killing the blow restores 5 Health and 5 Mana to all allies within 55 units and also provides allies with a stacking self buff of 1% Movement Speed and 1% Attack Speed. Lasts 6s and stacks up to 10 times. ",
 		"physicalPower": 10,
 		"stacks": {
-			"current": 0,
-			"max": 0,
+			"current": "10",
+			"max": "10",
 			"stacks": [],
 			"type": "permanent"
 		},
@@ -2305,9 +2334,9 @@
 		"name": "Guardian's Blessing",
 		"passive": "+100 Health\n+10 Physical Protection and Magical Protection\n+7 HP5 & 7 MP5 while within 60ft of an ally god\n+3 Gold per Minion Assisted\n\nROLE QUEST: SUPPORT\nAssist with Minion kills to gain stacks. Each Assist is worth 1 stack. At 50 stacks Guardian's Blessing Evolves, gaining 4 Gold Per 5s.",
 		"stacks": {
-			"current": 0,
+			"current": "50",
 			"evolved": {},
-			"max": 0,
+			"max": "50",
 			"stacks": [],
 			"type": "permanent"
 		},
@@ -2321,9 +2350,9 @@
 		"name": "Warrior's Blessing",
 		"passive": "+75 Health\n+10 Physical & Magical Protection\n+25 Health Stolen And Mana Restored Upon Damaging An Enemy God, 10s Cooldown\n\nROLE QUEST: SOLO\nDealing damage to an enemy god provides 1 stack. This effect can only occur once every 10s. Getting a Kill or Assist on an Enemy god provides 3 stacks. At 15 Stacks Warrior's Blessing Evolves, gaining +15 Physical and Magical Protection.",
 		"stacks": {
-			"current": 0,
+			"current": "15",
 			"evolved": {},
-			"max": 0,
+			"max": "15",
 			"stacks": [],
 			"type": "permanent"
 		},
@@ -2337,11 +2366,11 @@
 		"name": "Mage's Blessing",
 		"passive": "+10 Bonus Ability Damage\n+10 Physical Power\n+30 Magical Power\n+2 MP5 Per 10% Missing Mana\n\nROLE QUEST: MID\nKill or Assist Lane Minions or Enemy gods to gain stacks. Lane Minions are worth 1 Stack and Enemy gods are worth 5 Stacks. At 75 Stacks Mage's Blessing Evolves, gaining 10% Cooldown Reduction.",
 		"stacks": {
-			"current": 0,
+			"current": "75",
 			"evolved": {
 				"cooldownReduction": "10"
 			},
-			"max": 0,
+			"max": "75",
 			"stacks": [],
 			"type": "permanent"
 		},
@@ -2355,9 +2384,9 @@
 		"name": "Assassin's Blessing",
 		"passive": "+7 Power \n+100 Health \n+30% Damage vs. Jungle Monsters \n+8% Health and 25 Mana Restored on Killing a Jungle Monster\n\nROLE QUEST: JUNGLE Kill or Assist Jungle Monsters or Enemy Gods to gain stacks. Jungle Monsters are worth 1 stack and Enemy Gods are worth 5 stacks. At 50 Stacks Assassin's Blessing Evolves, gaining +5 Penetration, and 5% Movement Speed.",
 		"stacks": {
-			"current": 0,
+			"current": "50",
 			"evolved": {},
-			"max": 0,
+			"max": "50",
 			"stacks": [],
 			"type": "permanent"
 		},
@@ -2371,9 +2400,9 @@
 		"name": "Hunter's Blessing",
 		"passive": "+15 Basic Attack Damage\n+10 MP5 \n\nROLE QUEST: CARRY\nKill or Assist Lane Minions or Enemy gods to gain stacks. Lane Minions are worth 1 Stack and Enemy gods are worth 5 Stacks. At 75 Stacks Hunter's Blessing Evolves, gaining 15% Attack Speed and an additional 15 Bonus Basic Attack Damage.",
 		"stacks": {
-			"current": 0,
+			"current": "75",
 			"evolved": {},
-			"max": 0,
+			"max": "75",
 			"stacks": [],
 			"type": "permanent"
 		},
@@ -2387,9 +2416,9 @@
 		"name": "Specialist's Blessing",
 		"passive": "+10 HP5\n+20 MP5\n+10% Cooldown Reduction\n\nROLE QUEST: UTILITY\nDamage enemies or Heal allies to gain stacks. Each time an enemy is damaged or an ally god is healed by your abilities, gain 1 stack. Each ability can only trigger 3 stacks. At 75 Stacks Specialist's Blessing Evolves, gaining 10% Movement Speed.",
 		"stacks": {
-			"current": 0,
+			"current": "75",
 			"evolved": {},
-			"max": 0,
+			"max": "75",
 			"stacks": [],
 			"type": "permanent"
 		},
@@ -2403,9 +2432,9 @@
 		"name": "Attacker's Blessing",
 		"passive": "+20 Physical Power\n+25 Magical Power\n\nROLE QUEST: DAMAGE\nDamage lane minions and Enemy gods to gain stacks. Dealing 100 damage to Lane Minions provide 1 Stack and Dealing 100 damage to Enemy gods provide 3 Stacks. At 100 Stacks Attacker's Blessing Evolves, gaining 10 Penetration.",
 		"stacks": {
-			"current": 0,
+			"current": "100",
 			"evolved": {},
-			"max": 0,
+			"max": "100",
 			"stacks": [],
 			"type": "permanent"
 		},
@@ -2988,8 +3017,8 @@
 		"passive": "PASSIVE - Getting an assist for a minion or jungle monster dying restores 6 Health and 6 Mana to all allies within 55 units of you and provides allies 1% Movement Speed and 2% Attack Speed for 8s. This effect stacks up to 10 times. Can be upgraded at level 17.",
 		"physicalPower": 10,
 		"stacks": {
-			"current": 0,
-			"max": 0,
+			"current": "10",
+			"max": "10",
 			"stacks": [],
 			"type": "permanent"
 		},
@@ -3007,8 +3036,8 @@
 		"passive": "PASSIVE - Getting an assist for a minion or jungle monster dying restores 1% Health and 1% Mana to all allies within 55 units of you and provides allies 2% Movement Speed and 4% Attack Speed for 8s. This effect stacks up to 10 times.",
 		"physicalPower": 30,
 		"stacks": {
-			"current": 0,
-			"max": 0,
+			"current": "10",
+			"max": "10",
 			"stacks": [],
 			"type": "permanent"
 		},
@@ -3208,8 +3237,8 @@
 		"name": "Conduit Gem",
 		"passive": "PASSIVE - Every second you gain a stack of Arcane Energy, causing your next damaging ability to deal an additional 2 True Damage and remove all stacks. This effect stacks up to 20 times. Can be upgraded at level 20.",
 		"stacks": {
-			"current": 0,
-			"max": 0,
+			"current": "20",
+			"max": "20",
 			"stacks": [],
 			"type": "permanent"
 		},
@@ -3225,8 +3254,8 @@
 		"name": "Archmage's Gem",
 		"passive": "PASSIVE - Every 1s you gain a stack of Demise, causing your next damaging ability to deal an additional 2% of your Magical Power in damage and remove all stacks. This effect stacks up to 20 times.",
 		"stacks": {
-			"current": 0,
-			"max": 0,
+			"current": "20",
+			"max": "20",
 			"stacks": [],
 			"type": "permanent"
 		},
@@ -3323,8 +3352,8 @@
 		"passive": "PASSIVE - When you are hit by an ability the Infused Sigil gains a stack. This can occur only once per ability cast. At 4 stacks it explodes after 0.5s, dealing 500 Magical Damage to enemies within 30 units of you. ",
 		"physicalProtection": 25,
 		"stacks": {
-			"current": 0,
-			"max": 0,
+			"current": "4",
+			"max": "4",
 			"stacks": [],
 			"type": "permanent"
 		},
