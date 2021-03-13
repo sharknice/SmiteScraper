@@ -114,6 +114,12 @@
 		"name": "The Executioner",
 		"passive": "PASSIVE - Basic Attacks against an enemy reduce your target's Physical Protection by 7% for 3 seconds (max. 4 Stacks).",
 		"physicalPower": 35,
+		"stacks": {
+			"current": 4,
+			"max": 4,
+			"stacks": {},
+			"type": "permanent"
+		},
 		"tier": 3,
 		"type": "Physical"
 	},
@@ -508,6 +514,15 @@
 		"passive": "PASSIVE - Every time you are damaged by a god you gain a stack that provides 3 Physical and Magical Protections. Stacks up to 7 times, Lasts 6s",
 		"physicalPower": 10,
 		"shoes": true,
+		"stacks": {
+			"current": 0,
+			"max": 7,
+			"stacks": {
+				"magicalProtection": 3,
+				"physicalProtection": 3
+			},
+			"type": "temporary"
+		},
 		"tier": 3,
 		"type": "Physical"
 	},
@@ -582,6 +597,15 @@
 		"name": "Reinforced Shoes",
 		"passive": "PASSIVE - Every time you are damaged by a god you gain a stack that provides 3 Physical and Magical Protections. Stacks up to 7 times, Lasts 6s",
 		"shoes": true,
+		"stacks": {
+			"current": 0,
+			"max": 7,
+			"stacks": {
+				"magicalProtection": 3,
+				"physicalProtection": 3
+			},
+			"type": "temporary"
+		},
 		"tier": 3,
 		"type": "Magical"
 	},
@@ -635,6 +659,14 @@
 		"name": "Rage",
 		"passive": "PASSIVE - Killing or getting an assist on an enemy god gives you 1 stack. Each stack provides 3% Critical Strike Chance. Stacks are permanent and stack up to 5 times.  ",
 		"physicalPower": 30,
+		"stacks": {
+			"current": 5,
+			"max": 5,
+			"stacks": {
+				"criticalChance": 3
+			},
+			"type": "permanent"
+		},
 		"tier": 3,
 		"type": "Physical"
 	},
@@ -884,6 +916,12 @@
 		"name": "The Sledge",
 		"passive": "PASSIVE - For each enemy god within 55 units of you, you gain a stacking buff that provides 8 Protections. Stacks up to 3 times.",
 		"physicalPower": 40,
+		"stacks": {
+			"current": 3,
+			"max": 3,
+			"stacks": {},
+			"type": "permanent"
+		},
 		"tier": 3,
 		"type": "Physical"
 	},
@@ -984,6 +1022,8 @@
 		"physicalProtection": 20,
 		"tier": 3,
 		"toggleStats": {
+			"attackSpeed": 20,
+			"physicalPower": 30,
 			"toggle": false
 		},
 		"type": "Physical"
@@ -1237,13 +1277,13 @@
 		"name": "Talisman of Energy",
 		"passive": "PASSIVE - Getting a kill or assist on enemies causes you and allies within 70 units to gain stacks of energy. Energy stacks provide 2% Movement Speed, 2% Attack Speed, and 10MP5 per stack. Lasts 10s and stacks up to 6 times.",
 		"stacks": {
-			"current": 6,
+			"current": 0,
 			"max": 6,
 			"stacks": {
 				"attackSpeed": 2,
 				"movementSpeed": 2
 			},
-			"type": "permanent"
+			"type": "temporary"
 		},
 		"tier": 3,
 		"type": "Both"
@@ -1275,6 +1315,12 @@
 		"magicalPower": 75,
 		"name": "Demonic Grip",
 		"passive": "PASSIVE - Your Basic Attacks reduce your target's Magical Protection by 10% for 3s (max 3 Stacks).",
+		"stacks": {
+			"current": 3,
+			"max": 3,
+			"stacks": {},
+			"type": "permanent"
+		},
 		"tier": 3,
 		"type": "Magical"
 	},
@@ -1310,6 +1356,12 @@
 		"magicalPower": 80,
 		"name": "Ring of Hecate",
 		"passive": "PASSIVE - Each successful basic attack applies a hex to enemies and empowers you, increasing your power by 5% and reducing the power of your opponent by 5% for 5s. (Max. 3 Stacks).",
+		"stacks": {
+			"current": 0,
+			"max": 3,
+			"stacks": {},
+			"type": "temporary"
+		},
 		"tier": 3,
 		"type": "Magical"
 	},
@@ -1464,6 +1516,15 @@
 		"mana": 200,
 		"name": "Warlock's Staff",
 		"passive": "PASSIVE - You permanently gain +1 Health and +0.8 Magical Power per Stack, and receive 5 Stacks for a god kill and 1 Stack per minion kill. (Max. 75 Stacks)",
+		"stacks": {
+			"current": 75,
+			"max": 75,
+			"stacks": {
+				"health": 1,
+				"magicalPower": 0.8
+			},
+			"type": "permanent"
+		},
 		"tier": 3,
 		"type": "Magical"
 	},
@@ -1830,9 +1891,11 @@
 		"physicalProtection": 40,
 		"stacks": {
 			"current": 0,
-			"max": 0,
-			"stacks": {},
-			"type": "permanent"
+			"max": 6,
+			"stacks": {
+				"magicalPower": 5
+			},
+			"type": "temporary"
 		},
 		"tier": 3,
 		"type": "Magical"
@@ -1884,6 +1947,14 @@
 		"name": "Ichaival",
 		"passive": "PASSIVE - Every successful Basic Attack increases your Physical Power by 15 and reduces the attack speed of your opponent by 10% for 5s. (Max. 3 Stacks)",
 		"physicalPower": 30,
+		"stacks": {
+			"current": 0,
+			"max": 3,
+			"stacks": {
+				"physicalPower": 15
+			},
+			"type": "temporary"
+		},
 		"tier": 3,
 		"type": "Physical"
 	},
@@ -1920,6 +1991,12 @@
 		"name": "Bluestone Pendant",
 		"passive": "PASSIVE - Enemies hit by your damaging Abilities take an additional 30 Physical Damage over 2s. (Max 2 Stacks)",
 		"physicalPower": 15,
+		"stacks": {
+			"current": 2,
+			"max": 2,
+			"stacks": {},
+			"type": "permanent"
+		},
 		"tier": 1,
 		"type": "Physical"
 	},
@@ -2017,6 +2094,13 @@
 		"id": 12665,
 		"name": "Gauntlet of Thebes",
 		"passive": "PASSIVE - Assists on a minion give 1 Stack and God kills and assists give 5 Stacks. Stacks provide 1 Physical and Magical Protection. At 50 Stacks this item evolves, providing an Aura of 10 Physical Protection and 10 Magical Protection.",
+		"stacks": {
+			"current": 50,
+			"evolved": {},
+			"max": 50,
+			"stacks": {},
+			"type": "permanent"
+		},
 		"tier": 3,
 		"type": "Both"
 	},
@@ -2108,6 +2192,12 @@
 		"passive": "PASSIVE - Melee Basic Attacks decreases enemy Physical protections by 10, and increase your physical protection by 10 for 3s (max. 3 Stacks).",
 		"physicalPower": 50,
 		"restrictedRoles": "guardian,hunter,mage",
+		"stacks": {
+			"current": 3,
+			"max": 3,
+			"stacks": {},
+			"type": "permanent"
+		},
 		"tier": 3,
 		"type": "Physical"
 	},
@@ -2300,10 +2390,10 @@
 		"passive": "PASSIVE - Being in range of minion or jungle camp death without dealing the killing the blow restores 5 Health and 5 Mana to all allies within 55 units and also provides allies with a stacking self buff of 1% Movement Speed and 1% Attack Speed. Lasts 6s and stacks up to 10 times. ",
 		"physicalPower": 10,
 		"stacks": {
-			"current": 10,
+			"current": 0,
 			"max": 10,
 			"stacks": {},
-			"type": "permanent"
+			"type": "temporary"
 		},
 		"tier": 1,
 		"type": "Physical"
@@ -2453,6 +2543,13 @@
 		"id": 15597,
 		"name": "Defender's Blessing",
 		"passive": "+100 Health\n+10 Physical Protection\n+10 Magical Protection\n\nROLE QUEST: TANK\nMitigate damage to gain Stacks. Mitigating 50 damage provides 1 Stack. At 75 Stacks Defender's Blessing Evolves, gaining +150 Health and Mana.",
+		"stacks": {
+			"current": 75,
+			"evolved": {},
+			"max": 75,
+			"stacks": {},
+			"type": "permanent"
+		},
 		"tier": 1,
 		"type": "Both"
 	},
@@ -2667,6 +2764,12 @@
 		"name": "Bluestone Pendant",
 		"passive": "PASSIVE - Enemies hit by your damaging Abilities take an additional 25 Physical Damage over 2s. (Max 2 Stacks) Can be upgraded at level 20.",
 		"physicalPower": 10,
+		"stacks": {
+			"current": 2,
+			"max": 2,
+			"stacks": {},
+			"type": "permanent"
+		},
 		"tier": 1,
 		"type": "Physical"
 	},
@@ -2680,6 +2783,12 @@
 		"name": "Bluestone Brooch",
 		"passive": "PASSIVE - Enemies hit by your damaging abilities take an additional 25 (+7.5% of their Current Health) as Physical Damage over 2s. (Max 2 Stacks)",
 		"physicalPower": 45,
+		"stacks": {
+			"current": 2,
+			"max": 2,
+			"stacks": {},
+			"type": "permanent"
+		},
 		"starter": true,
 		"tier": 2,
 		"type": "Physical"
@@ -2693,6 +2802,12 @@
 		"name": "Corrupted Bluestone",
 		"passive": "PASSIVE - Enemies hit by your damaging Abilities take an additional 75 Physical Damage over 5s and have their Attack Speed reduced 10%. (Max 2 Stacks). For every enemy corrupted you gain 15% Attacks Speed up to a Maximum of 5 enemies.",
 		"physicalPower": 60,
+		"stacks": {
+			"current": 2,
+			"max": 2,
+			"stacks": {},
+			"type": "permanent"
+		},
 		"starter": true,
 		"tier": 2,
 		"type": "Physical"
