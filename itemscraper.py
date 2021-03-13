@@ -118,6 +118,11 @@ for sourceItem in sourceItems:
                     amount = re.findall(r'\d+', protectionStacks.group())
                     item['stacks']['stacks']['physicalProtection'] = int(amount[0])
                     item['stacks']['stacks']['magicalProtection'] = int(amount[0])
+                protectionStacks = re.search("provide \d+ Physical and Magical Protection", item['passive'])
+                if protectionStacks:
+                    amount = re.findall(r'\d+', protectionStacks.group())
+                    item['stacks']['stacks']['physicalProtection'] = int(amount[0])
+                    item['stacks']['stacks']['magicalProtection'] = int(amount[0])
                 movementSpeedStacks = re.search("provide \d+% Movement Speed", item['passive'])
                 if movementSpeedStacks:
                     amount = re.findall(r'\d+', movementSpeedStacks.group())
@@ -205,8 +210,16 @@ for sourceItem in sourceItems:
                     if manaToMagicalPower:
                         amount = re.findall(r'\d+', manaToMagicalPower.group())
                         item['stacks']['evolved']['manaToMagicalPower'] = int(amount[0])
+                    physicalProtection = re.search("providing an Aura of \d+ Physical Protection", item['passive'])  
+                    if physicalProtection:
+                        amount = re.findall(r'\d+', physicalProtection.group())
+                        item['stacks']['evolved']['physicalProtection'] = int(amount[0])
+                    magicalProtection = re.search("and \d+ Magical Protection", item['passive'])  
+                    if magicalProtection:
+                        amount = re.findall(r'\d+', magicalProtection.group())
+                        item['stacks']['evolved']['magicalProtection'] = int(amount[0])
 
-            if 'If you drop below' in item['passive']:
+            if 'If you drop below' in item['passive'] or 'Your Critical Hits provide you with' in item['passive'] or 'While you are within' in item['passive']:
                 item['toggleStats'] = { 'toggle': False }
                 physicalLifestealToggle = re.search("gain an additional \d+% Physical Lifesteal", item['passive'])
                 if physicalLifestealToggle:
@@ -220,6 +233,19 @@ for sourceItem in sourceItems:
                 if attackSpeedToggle:
                     amount = re.findall(r'\d+', attackSpeedToggle.group())
                     item['toggleStats']['attackSpeed'] = int(amount[0])
+                attackSpeedToggle = re.search(" you gain \d+% Attack Speed", item['passive'])
+                if attackSpeedToggle:
+                    amount = re.findall(r'\d+', attackSpeedToggle.group())
+                    item['toggleStats']['attackSpeed'] = int(amount[0])
+                physicalPenetrationPercentToggle = re.search("provide you with \d+% Physical Penetration", item['passive'])
+                if physicalPenetrationPercentToggle:
+                    amount = re.findall(r'\d+', physicalPenetrationPercentToggle.group())
+                    item['toggleStats']['physicalPenetrationPercent'] = int(amount[0])
+                attackAndMovementSpeedToggle = re.search("increase your Attack Speed and Movement Speed by \d+%", item['passive'])
+                if attackAndMovementSpeedToggle:
+                    amount = re.findall(r'\d+', attackAndMovementSpeedToggle.group())
+                    item['toggleStats']['attackSpeed'] = int(amount[0])
+                    item['toggleStats']['movementSpeed'] = int(amount[0])
 
         if sourceItem['ItemDescription']['Menuitems']:
             for sourceStat in sourceItem['ItemDescription']['Menuitems']:

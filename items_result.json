@@ -2096,9 +2096,15 @@
 		"passive": "PASSIVE - Assists on a minion give 1 Stack and God kills and assists give 5 Stacks. Stacks provide 1 Physical and Magical Protection. At 50 Stacks this item evolves, providing an Aura of 10 Physical Protection and 10 Magical Protection.",
 		"stacks": {
 			"current": 50,
-			"evolved": {},
+			"evolved": {
+				"magicalProtection": 10,
+				"physicalProtection": 10
+			},
 			"max": 50,
-			"stacks": {},
+			"stacks": {
+				"magicalProtection": 1,
+				"physicalProtection": 1
+			},
 			"type": "permanent"
 		},
 		"tier": 3,
@@ -2134,6 +2140,12 @@
 		"passive": "PASSIVE - Your Critical Hits provide you with 10% Physical Penetration and increase your Attack Speed and Movement Speed by 20% for 5s.",
 		"physicalPower": 25,
 		"tier": 3,
+		"toggleStats": {
+			"attackSpeed": 20,
+			"movementSpeed": 20,
+			"physicalPenetrationPercent": 10,
+			"toggle": false
+		},
 		"type": "Physical"
 	},
 	{
@@ -3281,6 +3293,10 @@
 		"name": "Leather Cowl",
 		"passive": "PASSIVE - While you are within 66 units of an allied god you gain 10% Attack Speed. If you are alone you instead gain 5% Movement Speed. Can be upgraded at level 20.",
 		"tier": 1,
+		"toggleStats": {
+			"attackSpeed": 10,
+			"toggle": false
+		},
 		"type": "Both"
 	},
 	{
@@ -3297,6 +3313,10 @@
 		"physicalPower": 60,
 		"starter": true,
 		"tier": 2,
+		"toggleStats": {
+			"attackSpeed": 25,
+			"toggle": false
+		},
 		"type": "Physical"
 	},
 	{
