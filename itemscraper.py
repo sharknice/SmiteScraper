@@ -56,6 +56,8 @@ for sourceItem in sourceItems:
 
         if sourceItem['ItemDescription']['SecondaryDescription']:
             item['passive'] = sourceItem['ItemDescription']['SecondaryDescription']
+            if 'font color' in item['passive']:
+                item['name'] = 'REMOVE'
             if 'starter item' in item['passive'].lower():
                 item['starter'] = True
             if 'AURA' in item['passive'] and 'Allied' not in item['passive'] and 'Ally' not in item['passive']:
@@ -66,6 +68,11 @@ for sourceItem in sourceItems:
                 item['manaToMagicalPower'] = amount
             if '% of your Mana is converted to Physical Power' in item['passive']:
                 item['manaToPhysicalPower'] = 0.03
+            basicAttackFlatIncrease = re.search("\+\d+ Basic Attack Damage", item['passive'])
+            if basicAttackFlatIncrease:
+                amount = re.findall(r'\d+', basicAttackFlatIncrease.group())
+                item['basicAttackFlatIncrease'] = amount
+                
             if 'stacks' in item['passive']:
                 item['stacks'] = { "current": 0, "max": 0, "stacks": [], "type": "permanent" }
                 manaStacks = re.search("\d+ Mana per Stack", item['passive'])
@@ -80,6 +87,10 @@ for sourceItem in sourceItems:
                 if physicalLifestealStacks:
                     amount = re.findall(r'\d*\.?\d+', physicalLifestealStacks.group())
                     item['stacks']['stacks'].append({ "physicalLifesteal" : amount[0]})
+                magicalPowerStacks = re.search("and \d+ Magical Power", item['passive'])
+                if magicalPowerStacks:
+                    amount = re.findall(r'\d+', magicalPowerStacks.group())
+                    item['stacks']['stacks'].append({ "magicalPower" : amount[0]})
                 magicalProtectionStacks = re.search("gain \+\d+ Magical Protection", item['passive'])
                 if magicalProtectionStacks:
                     amount = re.findall(r'\d+', magicalProtectionStacks.group())
@@ -88,7 +99,15 @@ for sourceItem in sourceItems:
                 if physicalProtectionStacks:
                     amount = re.findall(r'\d+', physicalProtectionStacks.group())
                     item['stacks']['stacks'].append({ "physicalProtection" : amount[0]})
+                physicalProtectionStacks = re.search("stack of \d+ Physical Protection", item['passive'])
+                if physicalProtectionStacks:
+                    amount = re.findall(r'\d+', physicalProtectionStacks.group())
+                    item['stacks']['stacks'].append({ "physicalProtection" : amount[0]})
                 movementSpeedStacks = re.search("provide \d+% Movement Speed", item['passive'])
+                if movementSpeedStacks:
+                    amount = re.findall(r'\d+', movementSpeedStacks.group())
+                    item['stacks']['stacks'].append({ "movementSpeed" : amount[0]})
+                movementSpeedStacks = re.search("granting \d+% Movement Speed", item['passive'])
                 if movementSpeedStacks:
                     amount = re.findall(r'\d+', movementSpeedStacks.group())
                     item['stacks']['stacks'].append({ "movementSpeed" : amount[0]})
@@ -96,27 +115,51 @@ for sourceItem in sourceItems:
                 if attackSpeedStacks:
                     amount = re.findall(r'\d+', attackSpeedStacks.group())
                     item['stacks']['stacks'].append({ "attackSpeed" : amount[0]})
+                attackSpeedStacks = re.search("gain \d+% Attack Speed", item['passive'])
+                if attackSpeedStacks:
+                    amount = re.findall(r'\d+', attackSpeedStacks.group())
+                    item['stacks']['stacks'].append({ "attackSpeed" : amount[0]})
+                criticalStrikeStacks = re.search("and \d*\.?\d+% Physical Critical Strike Chance", item['passive'])
+                if criticalStrikeStacks:
+                    amount = re.findall(r'\d*\.?\d+', criticalStrikeStacks.group())
+                    item['stacks']['stacks'].append({ "criticalChance" : amount[0]})
 
                 maxStacks = re.search("max. \d+ stacks", item['passive'])
                 if maxStacks:
                     amount = re.findall(r'\d+', maxStacks.group())
-                    item['stacks']['max'] = amount[0]
-                    item['stacks']['current'] = amount[0]
+                    item['stacks']['max'] = int(amount[0])
+                    item['stacks']['current'] = int(amount[0])
                 maxStacks = re.search("Stacks up to \d+ times", item['passive'], re.IGNORECASE)
                 if maxStacks:
                     amount = re.findall(r'\d+', maxStacks.group())
-                    item['stacks']['max'] = amount[0]
-                    item['stacks']['current'] = amount[0]
+                    item['stacks']['max'] = int(amount[0])
+                    item['stacks']['current'] = int(amount[0])
+                maxStacks = re.search("Stack up to \d+ times", item['passive'], re.IGNORECASE)
+                if maxStacks:
+                    amount = re.findall(r'\d+', maxStacks.group())
+                    item['stacks']['max'] = int(amount[0])
+                    item['stacks']['current'] = int(amount[0])
                 maxStacks = re.search("At \d+ Stacks", item['passive'], re.IGNORECASE)
                 if maxStacks:
                     amount = re.findall(r'\d+', maxStacks.group())
-                    item['stacks']['max'] = amount[0]
-                    item['stacks']['current'] = amount[0]
+                    item['stacks']['max'] = int(amount[0])
+                    item['stacks']['current'] = int(amount[0])
+                maxStacks = re.search("max of \d+ stacks", item['passive'], re.IGNORECASE)
+                if maxStacks:
+                    amount = re.findall(r'\d+', maxStacks.group())
+                    item['stacks']['max'] = int(amount[0])
+                    item['stacks']['current'] = int(amount[0])
+                maxStacks = re.search("maximum of \d+ stacks", item['passive'], re.IGNORECASE)
+                if maxStacks:
+                    amount = re.findall(r'\d+', maxStacks.group())
+                    item['stacks']['max'] = int(amount[0])
+                    item['stacks']['current'] = int(amount[0])
 
-                if 'consume' in item['passive']:
+                if 'consume' in item['passive'] or 'Stacks last for' in item['passive'] or 'Stacks are removed' in item['passive'] or 'For every 100 gold you have gain' in item['passive']:
                     item['stacks']['type'] = "temporary"
                     item['stacks']['current'] = 0
-                if 'Evolves' in item['passive']:
+
+                if 'Evolves' in item['passive'] or 'evolves' in item['passive']:
                     item['stacks']['evolved'] = {}
                     coolDown = re.search("gaining \d+% Cooldown Reduction", item['passive'])
                     if coolDown:
@@ -194,7 +237,7 @@ for sourceItem in sourceItems:
             if "Acorn" in sourceItem['DeviceName']:
                 item['type'] = "Acorn"      
         
-        if 'Evolved' not in item['name']:
+        if 'Evolved' not in item['name'] and 'REMOVE' not in item['name']:
             items.append(item)
 
 with open('items_result.json', 'w') as json_file:
