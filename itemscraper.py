@@ -56,8 +56,6 @@ for sourceItem in sourceItems:
             item['passive'] = sourceItem['ItemDescription']['SecondaryDescription']
             if 'font color' in item['passive']:
                 item['name'] = 'REMOVE'
-            if 'starter item' in item['passive'].lower():
-                item['starter'] = True
             if 'AURA' in item['passive'] and 'Allied' not in item['passive'] and 'Ally' not in item['passive']:
                 item['enemyInAura'] = {"toggle": True}
             manaToMagicalPower = re.search("\d+% of your Mana from items is converted to Magical Power", item['passive'])
@@ -262,6 +260,8 @@ for sourceItem in sourceItems:
 
         if sourceItem['ItemDescription']['Menuitems']:
             for sourceStat in sourceItem['ItemDescription']['Menuitems']:
+                if sourceStat['Description'] == 'Basic Attack Damage':
+                    item['basicAttackFlatIncrease'] = int(sourceStat['Value'][1:])
                 if sourceStat['Description'] == 'Physical Power':
                     item['physicalPower'] = int(sourceStat['Value'][1:])
                     item['type'] = "Physical"
