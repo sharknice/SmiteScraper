@@ -193,7 +193,7 @@ for sourceItem in sourceItems:
                     item['stacks']['current'] = 0
 
                 if 'Evolves' in item['passive'] or 'evolves' in item['passive']:
-                    item['stacks']['evolved'] = {}
+                    item['stacks']['evolved'] = { 'icon': 'images/smite/items/evolved-' + imageName}
                     coolDown = re.search("gaining \d+% Cooldown Reduction", item['passive'])
                     if coolDown:
                         amount = re.findall(r'\d+', coolDown.group())
