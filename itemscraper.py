@@ -223,7 +223,7 @@ for sourceItem in sourceItems:
                         amount = re.findall(r'\d+', magicalProtection.group())
                         item['stacks']['evolved']['magicalProtection'] = int(amount[0])
 
-            if 'If you drop below' in item['passive'] or 'Your Critical Hits provide you with' in item['passive'] or 'While you are within' in item['passive']:
+            if 'If you drop below' in item['passive'] or 'Your Critical Hits provide you with' in item['passive'] or 'While you are within' in item['passive'] or 'after using an ability' in item['passive']:
                 item['toggleStats'] = { 'toggle': False }
                 physicalLifestealToggle = re.search("gain an additional \d+% Physical Lifesteal", item['passive'])
                 if physicalLifestealToggle:
@@ -250,6 +250,10 @@ for sourceItem in sourceItems:
                     amount = re.findall(r'\d+', attackAndMovementSpeedToggle.group())
                     item['toggleStats']['attackSpeed'] = int(amount[0])
                     item['toggleStats']['movementSpeed'] = int(amount[0])
+                basicAttackPercentIncrease = re.search("Basic Attack will deal an additional \d+% damage", item['passive'], re.IGNORECASE)
+                if basicAttackPercentIncrease:
+                    amount = re.findall(r'\d+', basicAttackPercentIncrease.group())
+                    item['toggleStats']['basicAttackPercentIncrease'] = int(amount[0])
 
         if sourceItem['ItemDescription']['Menuitems']:
             for sourceStat in sourceItem['ItemDescription']['Menuitems']:
