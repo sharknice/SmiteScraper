@@ -3834,7 +3834,7 @@
 	},
 	{
 		"abilityFour": {
-			"cooldown": 90,
+			"cooldown": 100,
 			"cost": [
 				80,
 				90,
@@ -3875,7 +3875,7 @@
 			"icon": "images/smite/abilities/heart-bomb.jpg",
 			"level": 5,
 			"name": "Heart Bomb",
-			"powerDamage": 80
+			"powerDamage": 75
 		},
 		"abilityThree": {
 			"cooldown": [
@@ -4049,7 +4049,7 @@
 			"icon": "images/smite/abilities/uproarious-rocket.jpg",
 			"level": 5,
 			"name": "Uproarious Rocket",
-			"powerDamage": 110
+			"powerDamage": 100
 		},
 		"abilityOne": {
 			"cooldown": 12,
@@ -4076,7 +4076,7 @@
 		"abilityThree": {
 			"cooldown": 16,
 			"cost": 70,
-			"description": "Danzaburou creates a field where he moves faster, is slow immune, takes less basic attack damage, and has no basic attack penalty. Enemies are slowed by 20%. If Danzaburou leaves the field it fades turning him into a leaf with other decoys that mimic his movement. As a leaf his movement speed is increased, he is slow immune and can pass through Enemies. After a short delay from transforming, any hit from Enemy gods or if Danzaburou himself attacks, he will revert back.",
+			"description": "Danzaburou creates a field where he moves faster, is slow immune, takes less basic attack damage, and has no basic attack penalty. Enemies are slowed by 20%. If he leaves the field it fades turning him into a leaf with other decoys that mimic his movement. As a leaf his movement speed is increased, he is slow immune and can pass through enemies and allies. After a short delay from transforming, any hit from Enemy gods or if Danzaburou himself attacks, he will revert back.",
 			"icon": "images/smite/abilities/tanuki-trickery.jpg",
 			"level": 5,
 			"name": "Tanuki Trickery",
@@ -7796,7 +7796,7 @@
 				110,
 				120
 			],
-			"description": "Ne Zha dashes forward and becomes immune to Crowd Control. If he hits an enemy god, he lifts them into the sky, banishing them for 4s, unleashing a 3-hit combo (successfully timed attacks during the combo result in critical strikes), then smashing them back to Earth in his starting location. This ability hits one initial time upon knockup, the three-hit combo, and then again dealing additional damage to enemies in the radius as he lands for a total of 5 hits. While knocked skywards, enemies are not considered Crowd Controlled.",
+			"description": "Ne Zha dashes forward and becomes CC immune. If he hits an enemy god he lifts them into the sky for 4s, unleashing a 3-hit combo. Successfully timed attacks during the combo result in these hits dealing Critical Damage. They are then smashed back to Earth, damaging the target and enemies around the landing location. When Ne Zha lands from this ability he gains bonus Protections for 5s and dashes back to where he cast this ability.",
 			"icon": "images/smite/abilities/wind-fire-wheels.jpg",
 			"level": 5,
 			"name": "Wind Fire Wheels"
@@ -7837,7 +7837,7 @@
 				220,
 				270
 			],
-			"description": "Ne Zha throws out his Armillary Sash hitting the first enemy god in its path.  The target is Stunned as Ne Zha yanks himself toward the target, dealing a powerful blow to all enemies in the area as he arrives. This ability can Critically Hit.",
+			"description": "Ne Zha throws out his Armillary Sash hitting the first enemy god in its path.  The target is Stunned as Ne Zha yanks himself toward the target, dealing a powerful blow to all enemies in the area as he arrives.",
 			"icon": "images/smite/abilities/armillary-sash.jpg",
 			"level": 5,
 			"name": "Armillary Sash",
@@ -7858,7 +7858,7 @@
 				70,
 				75
 			],
-			"description": "Ne Zha empowers himself with fighting spirit, igniting his spear for increased Attack Speed and Critical Strike Chance for a short duration. Upon activation, Ne Zha also heals themselves.",
+			"description": "Ne Zha empowers himself with fighting spirit, igniting his spear for increased Attack Speed and Critical Strike Chance for a short duration. Upon activation, Ne Zha also heals himself.",
 			"icon": "images/smite/abilities/flaming-spear.jpg",
 			"level": 5,
 			"name": "Flaming Spear",
@@ -8504,7 +8504,7 @@
 				330,
 				400
 			],
-			"description": "Odin summons a wall of spears that blocks his enemies movement. Enemies inside the ring cannot heal. Odin is immune to Slow and Root effects while in his Ring. A portion of the wall can be destroyed when hit by 5 Basic Attacks. Enemies that leave the ring through or over a wall are chased by Gungnir, taking damage and becoming slowed for 2.5s. Enemies that die inside Ring of Spears grant Odin a permanent bonus to Physical Power.",
+			"description": "Odin summons a wall of spears. Enemies inside the ring cannot heal and have their power reduced by 15%. Odin is immune to Slows and Roots while in his Ring. A portion of the wall can be destroyed when hit by 5 Basic Attacks. Enemies that leave the ring through or over a wall are chased by Gungnir, taking damage and becoming slowed for 2.5s. Enemies that die inside Ring of Spears grant Odin a permanent bonus to Physical Power.",
 			"icon": "images/smite/abilities/ring-of-spears.jpg",
 			"level": 5,
 			"name": "Ring of Spears",
@@ -9998,10 +9998,10 @@
 			],
 			"damage": [
 				85,
-				135,
-				185,
-				235,
-				285
+				130,
+				175,
+				220,
+				265
 			],
 			"description": "Set amasses his hatred, throwing it forward. Enemies caught in its path are damaged and slowed for 3s.\n\nSet's spawn are commanded when Set fires this attack, dashing towards a location Set determines. Enemies hit by a Spawn's dash take damage and are slowed for 3s. Any dash after the first will deal 40% damage. ",
 			"icon": "images/smite/abilities/skewer.jpg",
@@ -11334,6 +11334,112 @@
 		"pros": "High Area Damage",
 		"speed": 355,
 		"title": "Arbiter of the Damned",
+		"type": "Mage"
+	},
+	{
+		"abilityFour": {
+			"cooldown": 0,
+			"cost": 0,
+			"description": "Tiamat is able to summon one of her children onto the battlefield.\n\nSummon Serpents: Serpents that travel down lanes and act as minions.\n\nSummon Beast: Kusarikku who stands guard waiting for enemy gods.\n\nSummon Storm: Umu Dabrutu, the storm that chases enemies.",
+			"icon": "images/smite/abilities/children-of-creation.jpg",
+			"level": 5,
+			"name": "Children of Creation"
+		},
+		"abilityOne": {
+			"cooldown": 10,
+			"cost": [
+				55,
+				60,
+				65,
+				70,
+				75
+			],
+			"damage": [
+				60,
+				70,
+				80,
+				90,
+				100
+			],
+			"description": "Tiamat gathers power, allowing her to fire orbs of energy at the end of the channel. Each orb damages enemies and stops on enemy gods.\n\nHitting the same enemy deals 15% less damage each time, to a minimum of 70% reduction.\n\nThis ability can fire additional projectiles at ranks 3 and 5.",
+			"icon": "images/smite/abilities/primordial-onslaught.jpg",
+			"level": 5,
+			"name": "Primordial Onslaught",
+			"powerDamage": 55
+		},
+		"abilityThree": {
+			"cooldown": [
+				22,
+				20,
+				18,
+				16,
+				14
+			],
+			"cost": 40,
+			"damage": [
+				40,
+				80,
+				120,
+				160,
+				200
+			],
+			"description": "Tiamat dives into the fight landing on all fours, dealing damage and switching to her Ground stance. This ability also provides Tiamat one Hardened Scale.",
+			"icon": "images/smite/abilities/grounding-dive.jpg",
+			"level": 5,
+			"name": "Grounding Dive",
+			"powerDamage": 40
+		},
+		"abilityTwo": {
+			"cooldown": [
+				16,
+				15,
+				14,
+				13,
+				12
+			],
+			"cost": [
+				65,
+				70,
+				75,
+				80,
+				85
+			],
+			"description": "Tiamat creates an energy field dealing low damage to enemies in the entire area and then a larger amount in the inner area. The inner area of the field also stuns enemies for a short duration.",
+			"icon": "images/smite/abilities/ruination.jpg",
+			"level": 5,
+			"name": "Ruination"
+		},
+		"attackSpeed": 0.88,
+		"attackSpeedPerLevel": 0.8999999999999999,
+		"attackType": "Ranged",
+		"damage": 34.0,
+		"damagePerLevel": 7.5,
+		"health": 400,
+		"healthPerLevel": 77,
+		"hpFive": 7,
+		"hpFivePerLevel": 0.5,
+		"icon": "images/smite/gods/tiamat.jpg",
+		"id": 3990,
+		"magicalProtection": 30,
+		"magicalProtectionPerLevel": 0.9,
+		"mana": 300,
+		"manaPerLevel": 55,
+		"mpFive": 5,
+		"mpFivePerLevel": 0.44,
+		"name": "Tiamat",
+		"pantheon": "Babylonian",
+		"passive": {
+			"description": "While in Flying stance Tiamat gains health from nearby ally and enemy deaths, less from minions. In Ground stance she gains up to 5 Hardened Scales, damage mitigation that breaks after a certain amount of damage is taken. Normal minions do not provide Hardened Scales.",
+			"icon": "images/smite/abilities/death-begets-life.jpg",
+			"level": 5,
+			"name": "Death Begets Life"
+		},
+		"physicalProtection": 13,
+		"physicalProtectionPerLevel": 2.7,
+		"powerType": "Magical",
+		"pros": "High Area Damage",
+		"speed": 360,
+		"title": "Goddess of the Salt Sea",
 		"type": "Mage"
 	},
 	{
