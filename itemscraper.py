@@ -74,6 +74,11 @@ for sourceItem in sourceItems:
             if criticalStrikeDamage:
                 amount = re.findall(r'\d+', criticalStrikeDamage.group())
                 item['criticalStrikeDamage'] = int(amount[0])
+            overcapAttackSppedToPhysicalPower = re.search("For each \d*\.?\d+ Attack Speed you go over cap you gain \d+ Physical Power", item['passive'])
+            if overcapAttackSppedToPhysicalPower:
+                over = re.findall(r'\d*\.?\d+', overcapAttackSppedToPhysicalPower.group())
+                gain = re.findall(r'\d+', overcapAttackSppedToPhysicalPower.group())
+                item['overcapAttackSppedToPhysicalPower'] = float(float(over[0])/int(gain[-1]))
                 
             if 'stacks' in item['passive'] or 'Stacks' in item['passive']:
                 item['stacks'] = { "current": 0, "max": 0, "stacks": {}, "type": "permanent" }
