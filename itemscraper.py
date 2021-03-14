@@ -54,7 +54,7 @@ for sourceItem in sourceItems:
 
         if sourceItem['ItemDescription']['SecondaryDescription']:
             item['passive'] = sourceItem['ItemDescription']['SecondaryDescription']
-            if 'font color' in item['passive']:
+            if 'font color' in item['passive'] or sourceItem['ActiveFlag'] == 'n':
                 item['name'] = 'REMOVE'
             if 'AURA' in item['passive'] and 'Allied' not in item['passive'] and 'Ally' not in item['passive']:
                 item['enemyInAura'] = {"toggle": True}
@@ -267,7 +267,10 @@ for sourceItem in sourceItems:
                     item['type'] = "Physical"
                 if sourceStat['Description'] == 'Magical Power':
                     item['magicalPower'] = int(sourceStat['Value'][1:])
-                    item['type'] = "Magical"
+                    if item['type'] == 'Physical':
+                        item['type'] = "Both"
+                    else:
+                        item['type'] = "Magical"
                 if sourceStat['Description'] == 'Attack Speed':
                     item['attackSpeed'] = int(sourceStat['Value'][1:][:-1])
                 if sourceStat['Description'] == 'Physical Lifesteal':
@@ -317,7 +320,7 @@ for sourceItem in sourceItems:
                 if sourceStat['Description'] == 'MP5':
                     item['mpFive'] = int(sourceStat['Value'][1:])
             if "Acorn" in sourceItem['DeviceName']:
-                item['type'] = "Acorn"      
+                item['type'] = "Acorn"  
         
         if 'Evolved' not in item['name'] and 'REMOVE' not in item['name'] and '*' not in item['name']:
             items.append(item)
