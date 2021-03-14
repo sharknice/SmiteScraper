@@ -70,6 +70,10 @@ for sourceItem in sourceItems:
             if basicAttackFlatIncrease:
                 amount = re.findall(r'\d+', basicAttackFlatIncrease.group())
                 item['basicAttackFlatIncrease'] = int(amount[0])
+            criticalStrikeDamage = re.search("Critical Strike bonus damage dealt is increased by \d+%", item['passive'])
+            if criticalStrikeDamage:
+                amount = re.findall(r'\d+', criticalStrikeDamage.group())
+                item['criticalStrikeDamage'] = int(amount[0])
                 
             if 'stacks' in item['passive'] or 'Stacks' in item['passive']:
                 item['stacks'] = { "current": 0, "max": 0, "stacks": {}, "type": "permanent" }
