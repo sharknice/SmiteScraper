@@ -33,9 +33,6 @@
 	{
 		"cost": 2450,
 		"crowdControl": 20,
-		"enemyInAura": {
-			"toggle": true
-		},
 		"health": 200,
 		"icon": "images/smite/items/mystical-mail.jpg",
 		"id": 7537,
@@ -53,14 +50,17 @@
 		"name": "Midgardian Mail",
 		"passive": "PASSIVE - Enemies that successfully land a basic attack  on you have their Movement Speed and Attack Speed reduced by 8% for 2 seconds. This effect can stack up to 3 times and can stack with other item slow effects.",
 		"physicalProtection": 40,
+		"stacks": {
+			"current": 3,
+			"max": 3,
+			"stacks": {},
+			"type": "permanent"
+		},
 		"tier": 3,
 		"type": "Both"
 	},
 	{
 		"cost": 2100,
-		"enemyInAura": {
-			"toggle": true
-		},
 		"health": 250,
 		"icon": "images/smite/items/emperors-armor.jpg",
 		"id": 13189,
@@ -748,9 +748,6 @@
 	{
 		"cooldownReduction": 10,
 		"cost": 2100,
-		"enemyInAura": {
-			"toggle": true
-		},
 		"health": 250,
 		"icon": "images/smite/items/witchblade.jpg",
 		"id": 7910,
@@ -798,6 +795,12 @@
 		"name": "Toxic Blade",
 		"passive": "PASSIVE - Enemies hit by your basic attacks gain 15% reduced healing, stacking up to 2 times and lasting 6s.",
 		"physicalPenetration": 15,
+		"stacks": {
+			"current": 0,
+			"max": 0,
+			"stacks": {},
+			"type": "permanent"
+		},
 		"tier": 3,
 		"type": "Both"
 	},
@@ -907,9 +910,6 @@
 	},
 	{
 		"cost": 1600,
-		"enemyInAura": {
-			"toggle": true
-		},
 		"icon": "images/smite/items/spiked-shield.jpg",
 		"id": 9834,
 		"name": "Spiked Shield",
@@ -932,9 +932,6 @@
 	},
 	{
 		"cost": 2900,
-		"enemyInAura": {
-			"toggle": true
-		},
 		"health": 150,
 		"icon": "images/smite/items/void-shield.jpg",
 		"id": 9836,
@@ -1041,9 +1038,6 @@
 	},
 	{
 		"cost": 1900,
-		"enemyInAura": {
-			"toggle": true
-		},
 		"health": 150,
 		"icon": "images/smite/items/contagion.jpg",
 		"id": 17467,
@@ -1052,6 +1046,12 @@
 		"name": "Contagion",
 		"passive": "AURA - Enemy gods within 55 units have their healing reduced by 20%. This does not stack with similar Auras.",
 		"physicalProtection": 60,
+		"stacks": {
+			"current": 0,
+			"max": 0,
+			"stacks": {},
+			"type": "permanent"
+		},
 		"tier": 3,
 		"type": "Both"
 	},
@@ -1195,15 +1195,18 @@
 	},
 	{
 		"cost": 2200,
-		"enemyInAura": {
-			"toggle": true
-		},
 		"health": 250,
 		"icon": "images/smite/items/pestilence.jpg",
 		"id": 9364,
 		"magicalProtection": 80,
 		"name": "Pestilence",
 		"passive": "AURA - Enemy gods within 55 units have their healing reduced by 20%. This does not stack with similar Auras.",
+		"stacks": {
+			"current": 0,
+			"max": 0,
+			"stacks": {},
+			"type": "permanent"
+		},
 		"tier": 3,
 		"type": "Both"
 	},
@@ -1716,9 +1719,6 @@
 	},
 	{
 		"cost": 2000,
-		"enemyInAura": {
-			"toggle": true
-		},
 		"health": 150,
 		"icon": "images/smite/items/runic-shield.jpg",
 		"id": 9111,
@@ -1819,9 +1819,6 @@
 	},
 	{
 		"cost": 2150,
-		"enemyInAura": {
-			"toggle": true
-		},
 		"health": 150,
 		"icon": "images/smite/items/jade-emperors-crown.jpg",
 		"id": 14179,
@@ -1917,7 +1914,7 @@
 		"icon": "images/smite/items/silverbranch-bow.jpg",
 		"id": 14084,
 		"name": "Silverbranch Bow",
-		"overcapAttackSppedToPhysicalPower": 0.01,
+		"overcapAttackSpeedToPhysicalPower": 0.01,
 		"passive": "PASSIVE - For each 0.02 Attack Speed you go over cap you gain 2 Physical Power.",
 		"physicalPenetrationPercent": 10,
 		"physicalPower": 30,
@@ -2170,6 +2167,12 @@
 		"physicalPenetrationPercent": 20,
 		"physicalPower": 25,
 		"restrictedRoles": "guardian,hunter,mage",
+		"stacks": {
+			"current": 0,
+			"max": 0,
+			"stacks": {},
+			"type": "permanent"
+		},
 		"tier": 3,
 		"type": "Physical"
 	},
@@ -2249,9 +2252,6 @@
 	},
 	{
 		"cost": 1350,
-		"enemyInAura": {
-			"toggle": true
-		},
 		"health": 50,
 		"icon": "images/smite/items/ward-stone.jpg",
 		"id": 9853,
@@ -2287,9 +2287,6 @@
 	},
 	{
 		"cost": 2400,
-		"enemyInAura": {
-			"toggle": true
-		},
 		"health": 150,
 		"icon": "images/smite/items/void-stone.jpg",
 		"id": 7791,
@@ -2406,7 +2403,7 @@
 		"id": 17355,
 		"magicalProtection": 30,
 		"name": "Pridwen",
-		"passive": "PASSIVE - When your Ultimate ability has finished casting, you gain a Shield equal to your Protections for 5s. When destroyed, by timing out or being depleted, it explodes and deals Magical damage equal to 50% of the Shield\u2019s initial Health and slows targets by 25% for 3s. This can only occur once every 45 seconds.",
+		"passive": "PASSIVE - When your Ultimate ability has finished casting, you gain a Shield equal to your Protections for 5s. When destroyed, by timing out or being depleted, it explodes and deals Magical damage equal to 50% of the Shield\u00e2\u20ac\u2122s initial Health and slows targets by 25% for 3s. This can only occur once every 45 seconds.",
 		"physicalProtection": 30,
 		"tier": 3,
 		"type": "Both"
@@ -2489,6 +2486,12 @@
 		"name": "Thistlethorn Acorn",
 		"passive": "PASSIVE: Enemies hit by Acorn Blast are debuffed, taking 5% additional damage from Ratatoskr's abilities, stacking up to 3 times. Acorn Blast now fires 5 Acorns.",
 		"physicalPower": 45,
+		"stacks": {
+			"current": 0,
+			"max": 0,
+			"stacks": {},
+			"type": "permanent"
+		},
 		"tier": 3,
 		"type": "Acorn"
 	},
@@ -2713,6 +2716,12 @@
 		"name": "Manikin Scepter",
 		"passive": "PASSIVE - Enemies hit by your Basic Attacks are burned, taking 12 Physical Damage over 2s and have their Attack Speed reduced by 7%. Jungle Monsters take 4x the amount of damage. This effect can stack up to 4 times. Can be upgraded at level 20.",
 		"physicalProtection": 10,
+		"stacks": {
+			"current": 4,
+			"max": 4,
+			"stacks": {},
+			"type": "permanent"
+		},
 		"tier": 1,
 		"type": "Both"
 	},
@@ -2725,6 +2734,12 @@
 		"name": "Manikin Mace",
 		"passive": "PASSIVE - Enemies hit by your Basic Attacks are burned, taking 60 physical damage over 2s and have their Attack Speed slowed by 10%. Jungle Monsters and Bosses take quadruple damage. This effect can stack up to 4 times.",
 		"physicalProtection": 30,
+		"stacks": {
+			"current": 4,
+			"max": 4,
+			"stacks": {},
+			"type": "permanent"
+		},
 		"starter": true,
 		"tier": 2,
 		"type": "Both"
@@ -2775,7 +2790,7 @@
 		"magicalPenetrationPercent": 10,
 		"mana": 200,
 		"name": "Bumba's Hammer",
-		"passive": "PASSIVE - After casting an ability your next Basic Attack deals an additional 80 True Damage. After hitting a Basic Attack empowered by Bumba\u2019s Hammer, your active cooldowns are reduced by 1s and you are healed for 5% of your Maximum Health. ",
+		"passive": "PASSIVE - After casting an ability your next Basic Attack deals an additional 80 True Damage. After hitting a Basic Attack empowered by Bumba\u00e2\u20ac\u2122s Hammer, your active cooldowns are reduced by 1s and you are healed for 5% of your Maximum Health. ",
 		"physicalPenetrationPercent": 10,
 		"starter": true,
 		"tier": 2,
@@ -2841,6 +2856,12 @@
 		"name": "Blood-soaked Shroud",
 		"passive": "PASSIVE - Damaging any enemy with an ability restores 12 Health, 6 Mana and provides a stack of 1% Magical Lifesteal for 6s. This can stack infinitely. Can only trigger once per target per ability.",
 		"physicalProtection": 40,
+		"stacks": {
+			"current": 0,
+			"max": 0,
+			"stacks": {},
+			"type": "permanent"
+		},
 		"starter": true,
 		"tier": 2,
 		"type": "Magical"
@@ -2940,9 +2961,6 @@
 	},
 	{
 		"cost": 2000,
-		"enemyInAura": {
-			"toggle": true
-		},
 		"health": 200,
 		"icon": "images/smite/items/sentinels-embrace.jpg",
 		"id": 19627,
@@ -2969,9 +2987,6 @@
 	},
 	{
 		"cost": 2100,
-		"enemyInAura": {
-			"toggle": true
-		},
 		"health": 300,
 		"hpFive": 30,
 		"icon": "images/smite/items/compassion.jpg",
@@ -3055,9 +3070,6 @@
 	{
 		"attackSpeed": 20,
 		"cost": 2200,
-		"enemyInAura": {
-			"toggle": true
-		},
 		"icon": "images/smite/items/hunters-cowl.jpg",
 		"id": 19674,
 		"name": "Hunter's Cowl",
@@ -3074,9 +3086,6 @@
 	},
 	{
 		"cost": 2200,
-		"enemyInAura": {
-			"toggle": true
-		},
 		"health": 300,
 		"icon": "images/smite/items/leaders-cowl.jpg",
 		"id": 19675,
@@ -3084,6 +3093,12 @@
 		"passive": "AURA - For each friendly god within 55 units of you gain a stack of Outnumber. For each enemy god within 55 units of you lose a stack of Outnumber. Each stack of Outnumber provides 3% increased Power to friendly gods within 55 units of you.",
 		"physicalLifesteal": 15,
 		"physicalPower": 40,
+		"stacks": {
+			"current": 0,
+			"max": 0,
+			"stacks": {},
+			"type": "permanent"
+		},
 		"starter": true,
 		"tier": 2,
 		"type": "Physical"
@@ -3132,6 +3147,12 @@
 		"mpFive": 15,
 		"name": "Gem of Focus",
 		"passive": "PASSIVE - Every time you cast an ability that costs mana you gain a stack of Focus for 10s, providing 3% Movement Speed, 3% Damage Increase, and 2% Damage Taken Reduction, stacking up to 3 times.",
+		"stacks": {
+			"current": 0,
+			"max": 0,
+			"stacks": {},
+			"type": "permanent"
+		},
 		"starter": true,
 		"tier": 2,
 		"type": "Magical"
@@ -3186,6 +3207,12 @@
 		"name": "Warding Sigil",
 		"passive": "PASSIVE - When you are hit by an ability you gain a stack of Dampening, decreasing damage taken by 5 for 5s. This occurs only once per ability cast. This can stack twice. Can be upgraded at level 20.",
 		"physicalProtection": 10,
+		"stacks": {
+			"current": 0,
+			"max": 0,
+			"stacks": {},
+			"type": "temporary"
+		},
 		"tier": 1,
 		"type": "Both"
 	},
@@ -3198,6 +3225,12 @@
 		"name": "Sigil of The Old Guard",
 		"passive": "PASSIVE - Whenever you are hit by an ability you gain a stack of Rebuke, decreasing damage taken by 4% for 5s. This occurs only once per ability cast. This can stack three times. ",
 		"physicalProtection": 30,
+		"stacks": {
+			"current": 0,
+			"max": 0,
+			"stacks": {},
+			"type": "temporary"
+		},
 		"starter": true,
 		"tier": 2,
 		"type": "Both"
