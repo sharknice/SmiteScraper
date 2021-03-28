@@ -53,8 +53,8 @@ for sourceItem in sourceItems:
         item['icon'] = 'images/smite/items/' + imageName
 
         if sourceItem['ItemDescription']['SecondaryDescription']:
-            item['passive'] = sourceItem['ItemDescription']['SecondaryDescription']
-            if 'font color' in item['passive'].lower() or sourceItem['ActiveFlag'] == 'n':
+            item['passive'] = sourceItem['ItemDescription']['SecondaryDescription'].replace("<font color='#42F46E'>", "").replace("<font color='#F44242'>", "")
+            if sourceItem['ActiveFlag'] == 'n':
                 item['name'] = 'REMOVE'
             if 'AURA' in item['passive'].lower() and 'Allied'.lower() not in item['passive'].lower() and 'Ally'.lower() not in item['passive'].lower():
                 item['enemyInAura'] = {"toggle": True}
