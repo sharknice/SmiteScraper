@@ -46,10 +46,10 @@ for sourceItem in sourceItems:
 
         url = sourceItem['itemIcon_URL']
         imageName = url.rsplit('/', 1)[-1].replace('*','')
-        # try:
-        #     urllib.request.urlretrieve(url, 'images/items/' + imageName)
-        # except Exception:
-        #     print("could not download " + imageName)
+        try:
+            urllib.request.urlretrieve(url, 'images/items/' + imageName)
+        except Exception:
+            print("could not download " + imageName)
         item['icon'] = 'images/smite/items/' + imageName
 
         if sourceItem['ItemDescription']['SecondaryDescription']:

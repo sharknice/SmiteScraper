@@ -12,14 +12,16 @@ def num(s):
 def getStats(sourceStat):
     if 'initial' in sourceStat:
         return 0
-    if 'per shot' in sourceStat:
+    if ' per shot' in sourceStat:
         sourceStat = (sourceStat.split(' per shot'))[0]
-    if 'every' in sourceStat:
+    if ' every' in sourceStat:
         sourceStat = (sourceStat.split(' every'))[0]
     if ' (' in sourceStat:
         sourceStat = (sourceStat.split(' ('))[0]
     if '%' in sourceStat:
         sourceStat = (sourceStat.split('%'))[0]
+    if '+' in sourceStat:
+        sourceStat = (sourceStat.split('+'))[1]
     if '/' in sourceStat:
         return [num(number) for number in sourceStat.split('/')]
     elif sourceStat.isdigit():
@@ -35,10 +37,10 @@ def getAbilityJson(sourceJson):
 
     url = sourceJson['URL']
     imageName = url.rsplit('/', 1)[-1].replace('*', '')
-    # try:
-    #     urlretrieve(url, 'images/abilities/' + imageName)
-    # except Exception:
-    #     print("could not download " + url)
+    try:
+        urlretrieve(url, 'images/abilities/' + imageName)
+    except Exception:
+        print("could not download " + url)
     ability['icon'] = 'images/smite/abilities/' + imageName
 
     itemDescription = sourceJson['Description']['itemDescription']
