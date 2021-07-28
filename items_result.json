@@ -37,7 +37,7 @@
 		"icon": "images/smite/items/mystical-mail.jpg",
 		"id": 7537,
 		"name": "Mystical Mail",
-		"passive": "AURA - ALL enemies within 25 units are dealt 40 Magical Damage per second.",
+		"passive": "AURA - ALL enemies within 25 units are dealt 30 (+1 Per Level) Magical Damage per second.",
 		"physicalProtection": 40,
 		"tier": 3,
 		"type": "Both"
@@ -214,7 +214,7 @@
 		"magicalLifesteal": 12,
 		"magicalPower": 80,
 		"name": "Soul Gem",
-		"passive": "PASSIVE - On successful hit of an Ability you gain 1 stack. At 4 Stacks your next Ability that damages an enemy God will deal bonus damage equal to 30% of your Magical power to each God hit, and will heal yourself and allies within 20 units for 40% of your Magical Power and will consume the 4 stacks.",
+		"passive": "PASSIVE - On successful hit of an Ability you gain 1 stack. At 4 Stacks your next Ability that damages an enemy God will deal bonus damage equal to 25% of your Magical power to each God hit, and will heal yourself and allies within 20 units for 40% of your Magical Power and will consume the 4 stacks.",
 		"stacks": {
 			"current": 0,
 			"max": 4,
@@ -244,11 +244,11 @@
 		"type": "Physical"
 	},
 	{
-		"cost": 1550,
+		"cost": 1450,
 		"icon": "images/smite/items/heavy-mace.jpg",
 		"id": 7828,
 		"name": "Heavy Mace",
-		"physicalPenetration": 10,
+		"physicalPenetration": 5,
 		"physicalPower": 25,
 		"tier": 2,
 		"type": "Physical"
@@ -265,7 +265,7 @@
 		"type": "Physical"
 	},
 	{
-		"cost": 2600,
+		"cost": 2500,
 		"icon": "images/smite/items/brawlers-beat-stick.jpg",
 		"id": 7829,
 		"name": "Brawler's Beat Stick",
@@ -277,7 +277,7 @@
 	},
 	{
 		"cooldownReduction": 20,
-		"cost": 2600,
+		"cost": 2500,
 		"icon": "images/smite/items/jotunns-wrath.jpg",
 		"id": 7904,
 		"mana": 150,
@@ -289,7 +289,7 @@
 	},
 	{
 		"attackSpeed": 20,
-		"cost": 2650,
+		"cost": 2550,
 		"icon": "images/smite/items/the-crusher.jpg",
 		"id": 11111,
 		"name": "The Crusher",
@@ -337,7 +337,7 @@
 		"type": "Physical"
 	},
 	{
-		"cost": 2450,
+		"cost": 2600,
 		"icon": "images/smite/items/transcendence.jpg",
 		"id": 8547,
 		"mana": 300,
@@ -450,42 +450,6 @@
 		"type": "Physical"
 	},
 	{
-		"cost": 1450,
-		"crowdControl": 10,
-		"health": 150,
-		"icon": "images/smite/items/reinforced-greaves.jpg",
-		"id": 9629,
-		"movementSpeed": 18,
-		"name": "Reinforced Greaves",
-		"passive": "PASSIVE - Every time you are damaged by a god you gain a stack that provides 3 Physical and Magical Protections. Stacks up to 7 times, Lasts 6s",
-		"physicalPower": 10,
-		"shoes": true,
-		"stacks": {
-			"current": 0,
-			"max": 7,
-			"stacks": {
-				"magicalProtection": 3,
-				"physicalProtection": 3
-			},
-			"type": "temporary"
-		},
-		"tier": 3,
-		"type": "Physical"
-	},
-	{
-		"cost": 1500,
-		"icon": "images/smite/items/talaria-boots.jpg",
-		"id": 9630,
-		"movementSpeed": 22,
-		"mpFive": 15,
-		"name": "Talaria Boots",
-		"passive": "PASSIVE - You gain +20% additional Movement Speed after leaving the Fountain. This effect lasts 7s.",
-		"physicalPower": 15,
-		"shoes": true,
-		"tier": 3,
-		"type": "Physical"
-	},
-	{
 		"cost": 500,
 		"icon": "images/smite/items/shoes.jpg",
 		"id": 9631,
@@ -528,42 +492,6 @@
 		"mana": 250,
 		"movementSpeed": 18,
 		"name": "Shoes of Focus",
-		"shoes": true,
-		"tier": 3,
-		"type": "Magical"
-	},
-	{
-		"cost": 1450,
-		"crowdControl": 10,
-		"health": 150,
-		"icon": "images/smite/items/reinforced-shoes.jpg",
-		"id": 9636,
-		"magicalPower": 20,
-		"movementSpeed": 18,
-		"name": "Reinforced Shoes",
-		"passive": "PASSIVE - Every time you are damaged by a god you gain a stack that provides 3 Physical and Magical Protections. Stacks up to 7 times, Lasts 6s",
-		"shoes": true,
-		"stacks": {
-			"current": 0,
-			"max": 7,
-			"stacks": {
-				"magicalProtection": 3,
-				"physicalProtection": 3
-			},
-			"type": "temporary"
-		},
-		"tier": 3,
-		"type": "Magical"
-	},
-	{
-		"cost": 1500,
-		"icon": "images/smite/items/travelers-shoes.jpg",
-		"id": 9637,
-		"magicalPower": 25,
-		"movementSpeed": 22,
-		"mpFive": 15,
-		"name": "Traveler's Shoes",
-		"passive": "PASSIVE - You gain +20% additional Movement Speed after leaving the Fountain. This effect lasts 7s.",
 		"shoes": true,
 		"tier": 3,
 		"type": "Magical"
@@ -760,7 +688,7 @@
 	},
 	{
 		"cost": 1900,
-		"crowdControl": 20,
+		"crowdControl": 10,
 		"health": 250,
 		"icon": "images/smite/items/winged-blade.jpg",
 		"id": 8240,
@@ -956,15 +884,16 @@
 		"type": "Physical"
 	},
 	{
-		"attackSpeed": 15,
+		"attackSpeed": 25,
 		"cost": 2450,
 		"icon": "images/smite/items/berserkers-shield.jpg",
 		"id": 16544,
 		"name": "Berserker's Shield",
-		"passive": "PASSIVE - If you drop below 40% HP you become Berserk for 5s. Berserk provides 30 Physical Power and 20% Attack Speed.",
+		"passive": "PASSIVE - Can only be built by Assassins or Warriors. If you drop below 40% HP you become Berserk for 5s. Berserk provides 30 Physical Power and 20% Attack Speed.",
 		"physicalPenetrationPercent": 10,
 		"physicalPower": 40,
-		"physicalProtection": 20,
+		"physicalProtection": 35,
+		"restrictedRoles": "hunter",
 		"tier": 3,
 		"toggleStats": {
 			"attackSpeed": 20,
@@ -1242,8 +1171,18 @@
 		"type": "Both"
 	},
 	{
+		"attackSpeed": 5,
+		"cost": 600,
+		"icon": "images/smite/items/emerald-ring.jpg",
+		"id": 9847,
+		"magicalPower": 25,
+		"name": "Emerald Ring",
+		"tier": 1,
+		"type": "Magical"
+	},
+	{
 		"attackSpeed": 15,
-		"cost": 700,
+		"cost": 1300,
 		"icon": "images/smite/items/enchanted-ring.jpg",
 		"id": 9848,
 		"magicalPower": 55,
@@ -1332,8 +1271,8 @@
 		"cost": 1400,
 		"icon": "images/smite/items/enchanted-spear.jpg",
 		"id": 9851,
-		"magicalPenetration": 10,
-		"magicalPower": 30,
+		"magicalPenetration": 5,
+		"magicalPower": 40,
 		"name": "Enchanted Spear",
 		"tier": 2,
 		"type": "Magical"
@@ -1673,7 +1612,7 @@
 		"icon": "images/smite/items/charons-coin.jpg",
 		"id": 18183,
 		"magicalPenetrationPercent": 20,
-		"magicalPower": 90,
+		"magicalPower": 80,
 		"mpFive": 20,
 		"name": "Charon's Coin",
 		"passive": "PASSIVE - On god kill or assist a coin is flipped. If heads, you gain a stack of 7 HP5. If tails, you gain a stack of 2% Movement Speed. Each effect can stack up to 4 times and at 8 stacks this item evolves. You also gain 1 gold every time the coin is flipped.",
@@ -1811,7 +1750,7 @@
 	},
 	{
 		"cost": 2150,
-		"health": 150,
+		"health": 200,
 		"icon": "images/smite/items/jade-emperors-crown.jpg",
 		"id": 14179,
 		"magicalPower": 20,
@@ -1822,7 +1761,7 @@
 		"type": "Magical"
 	},
 	{
-		"cost": 3000,
+		"cost": 2800,
 		"crowdControl": 20,
 		"health": 100,
 		"icon": "images/smite/items/tyrannical-plate-helm.jpg",
@@ -1887,8 +1826,8 @@
 		"icon": "images/smite/items/ichaival.jpg",
 		"id": 10664,
 		"name": "Ichaival",
-		"passive": "PASSIVE - Every successful Basic Attack increases your Physical Power by 15 and reduces the attack speed of your opponent by 10% for 5s. (Max. 3 Stacks)",
-		"physicalPower": 30,
+		"passive": "PASSIVE - Every successful Basic Attack increases your Physical Power by 15 and reduces the attack speed of your opponent by 7% for 5s. (Max. 3 Stacks)",
+		"physicalPower": 35,
 		"stacks": {
 			"current": 0,
 			"max": 3,
@@ -1921,7 +1860,7 @@
 		"name": "Atalanta's Bow",
 		"passive": "PASSIVE - Upon getting a kill or assist on an Enemy god you gain Atalanta's Agility for 10s. This effect increases your Attack Speed by 20% and decreases the Movement Penalty for attacking, backpedaling, and strafing by 30%.",
 		"physicalPenetrationPercent": 10,
-		"physicalPower": 35,
+		"physicalPower": 40,
 		"tier": 3,
 		"type": "Physical"
 	},
@@ -1965,7 +1904,7 @@
 		"id": 7572,
 		"mpFive": 15,
 		"name": "Stone of Gaia",
-		"passive": "PASSIVE - If you are hit by a Knockup, Knockback, Pull, or Grab you gain 15% of your max Health over the next 5 seconds. This effect does not trigger on Vortexes. Can only occur once every 45s.\n\nPASSIVE - Regenerates 0.5% of your max health every second.",
+		"passive": "PASSIVE - If you are hit by a Knockup, Knockback, Pull, or Grab you gain 8% of your max Health over the next 5 seconds. This effect does not trigger on Vortexes. Can only occur once every 45s.\n\nPASSIVE - Regenerates 0.5% of your max health every second.",
 		"tier": 3,
 		"type": "Both"
 	},
@@ -2110,7 +2049,7 @@
 		"type": "Physical"
 	},
 	{
-		"cost": 2350,
+		"cost": 2250,
 		"icon": "images/smite/items/stone-cutting-sword.jpg",
 		"id": 12673,
 		"movementSpeed": 7,
@@ -2162,7 +2101,7 @@
 		"passive": "PASSIVE - For every non-ultimate ability on cooldown you gain a stack of Cruelty. Each stack provides 10 Physical Power and 3% Physical Lifesteal.",
 		"physicalLifesteal": 10,
 		"physicalPenetrationPercent": 20,
-		"physicalPower": 25,
+		"physicalPower": 35,
 		"restrictedRoles": "guardian,hunter,mage",
 		"stacks": {
 			"current": 0,
@@ -2227,13 +2166,13 @@
 	{
 		"cooldownReduction": 10,
 		"cost": 2150,
-		"crowdControl": 20,
+		"health": 150,
 		"icon": "images/smite/items/shoguns-kusari.jpg",
 		"id": 14178,
 		"magicalProtection": 60,
 		"mpFive": 20,
 		"name": "Shogun's Kusari",
-		"passive": "AURA - Allied gods within 70 units have their Attack Speed increased by 25%.",
+		"passive": "AURA - Allied gods within 70 units have their Attack Speed increased by 30%.",
 		"tier": 3,
 		"type": "Both"
 	},
@@ -2416,18 +2355,6 @@
 		"type": "Magical"
 	},
 	{
-		"cooldownReduction": 10,
-		"cost": 2600,
-		"icon": "images/smite/items/staff-of-myrddin.jpg",
-		"id": 17354,
-		"magicalPenetrationPercent": 10,
-		"magicalPower": 110,
-		"name": "Staff of Myrddin",
-		"passive": "PASSIVE - When your Ultimate ability has finished casting, your next non-ultimate ability cast within the next 10s will have no cooldown but will only deal 70% of its normal damage and healing. This can only occur once every 45 seconds.",
-		"tier": 3,
-		"type": "Magical"
-	},
-	{
 		"cooldownReduction": 20,
 		"cost": 2200,
 		"icon": "images/smite/items/pridwen.jpg",
@@ -2466,10 +2393,22 @@
 		"type": "Physical"
 	},
 	{
+		"cooldownReduction": 10,
+		"cost": 2600,
+		"icon": "images/smite/items/staff-of-myrddin.jpg",
+		"id": 20694,
+		"magicalPenetrationPercent": 10,
+		"magicalPower": 95,
+		"name": "Staff of Myrddin",
+		"passive": "PASSIVE - When your ultimate ability has finished casting you gain Myrddin's Brilliance which provides 80% Uncapped Cooldown Reduction, decaying to 40% Uncapped Cooldown Reduction over 7s. Uncapped Cooldown Reduction overrides normal Cooldown Reduction. At the end of the 7s you lose Myrddin's Brilliance. This can only occur once every 45s.",
+		"tier": 3,
+		"type": "Magical"
+	},
+	{
 		"cost": 0,
 		"icon": "images/smite/items/magic-acorn.jpg",
 		"id": 18703,
-		"movementSpeed": 8,
+		"movementSpeed": 2,
 		"name": "Magic Acorn",
 		"passive": "This item can be upgraded from anywhere and replaces Boots for Ratatoskr.",
 		"tier": 1,
@@ -2479,7 +2418,7 @@
 		"cost": 700,
 		"icon": "images/smite/items/lively-acorn.jpg",
 		"id": 18704,
-		"movementSpeed": 10,
+		"movementSpeed": 4,
 		"name": "Lively Acorn",
 		"passive": "PASSIVE: When Ratatoskr deals damage with an ability he restores 3% of his Maximum Health.",
 		"physicalPower": 10,
@@ -2490,7 +2429,7 @@
 		"cost": 700,
 		"icon": "images/smite/items/nettle-acorn.jpg",
 		"id": 18705,
-		"movementSpeed": 10,
+		"movementSpeed": 4,
 		"name": "Nettle Acorn",
 		"passive": " ",
 		"physicalPower": 15,
@@ -2502,7 +2441,7 @@
 		"criticalChance": 20,
 		"icon": "images/smite/items/bristlebush-acorn.jpg",
 		"id": 18706,
-		"movementSpeed": 20,
+		"movementSpeed": 6,
 		"name": "Bristlebush Acorn",
 		"passive": "PASSIVE: Dart deals 35% increased damage and can Critically Strike. When Dart damages an enemy Ratatoskr gains 10% Physical Lifesteal and 10% Basic Attack damage for 6s.",
 		"physicalPower": 35,
@@ -2513,7 +2452,7 @@
 		"cost": 2750,
 		"icon": "images/smite/items/thistlethorn-acorn.jpg",
 		"id": 18707,
-		"movementSpeed": 20,
+		"movementSpeed": 6,
 		"name": "Thistlethorn Acorn",
 		"passive": "PASSIVE: Enemies hit by Acorn Blast are debuffed, taking 5% additional damage from Ratatoskr's abilities, stacking up to 3 times. Acorn Blast now fires 5 Acorns.",
 		"physicalPower": 45,
@@ -2530,7 +2469,7 @@
 		"cost": 2750,
 		"icon": "images/smite/items/evergreen-acorn.jpg",
 		"id": 18708,
-		"movementSpeed": 20,
+		"movementSpeed": 6,
 		"name": "Evergreen Acorn",
 		"passive": "PASSIVE: When Ratatoskr deals damage to an enemy god with an ability he restores 7% of his Maximum Health and Mana.",
 		"physicalPower": 25,
@@ -2541,7 +2480,7 @@
 		"cost": 2750,
 		"icon": "images/smite/items/thickbark-acorn.jpg",
 		"id": 18709,
-		"movementSpeed": 20,
+		"movementSpeed": 6,
 		"name": "Thickbark Acorn",
 		"passive": "PASSIVE: When Ratatoskr deals damage with an ability he restores 3% of his Maximum Health. Flurry now provides protections equal to the protections shred from enemy gods. Flurry gains an additional charge.",
 		"physicalPower": 25,
@@ -2589,17 +2528,20 @@
 	},
 	{
 		"cost": 2300,
+		"health": 150,
 		"hpFive": 20,
 		"icon": "images/smite/items/corrupted-bluestone.jpg",
-		"id": 19750,
+		"id": 20689,
 		"mpFive": 20,
 		"name": "Corrupted Bluestone",
-		"passive": "PASSIVE - Enemies hit by your damaging Abilities take an additional 75 Physical Damage over 5s and have their Attack Speed reduced 10%. (Max 2 Stacks). For every enemy corrupted you gain 15% Attacks Speed up to a Maximum of 5 enemies.",
-		"physicalPower": 60,
+		"passive": "PASSIVE - Enemies hit by your damaging Abilities are corrupted, taking 75 Physical Damage over 5s and reducing their Attack Speed by 10%. (Max 2 Stacks). Each time you apply corruption you gain 10% Attack Speed and 4% increased Protections for 6s, up to a maximum of 5 stacks.",
+		"physicalPower": 50,
 		"stacks": {
 			"current": 2,
 			"max": 2,
-			"stacks": {},
+			"stacks": {
+				"attackSpeed": 10
+			},
 			"type": "permanent"
 		},
 		"starter": true,
@@ -2613,7 +2555,7 @@
 		"id": 19492,
 		"magicalPower": 30,
 		"name": "Death's Toll",
-		"passive": "PASSIVE - Hitting an enemy with a Basic Attack restores 2 Health (+0.4% of your Maximum Health) and 1 Mana (+1% of your Maximum Mana). Basic Attacks that deal AoE damage restore half as much for each enemy hit after the first. Can be upgraded at level 20.",
+		"passive": "PASSIVE - Hitting an enemy with a Basic Attack restores 2 Health (+0.4% of your Maximum Health) and 1 Mana (+1% of your Maximum Mana). Basic Attacks that deal damage in an AoE restore less health (75% for Melee Attacks, 50% for Ranged Attacks) for each enemy hit after the first. Can be upgraded at level 20.",
 		"physicalPower": 15,
 		"starter": true,
 		"tier": 1,
@@ -2626,7 +2568,7 @@
 		"id": 19493,
 		"magicalPower": 110,
 		"name": "Death's Embrace",
-		"passive": "PASSIVE - Hitting an enemy with a Basic Attack restores 2% of your Health and Mana. Basic Attacks that deal AoE damage restore half as much for each enemy hit after the first. Can be upgraded at level 20.",
+		"passive": "PASSIVE - Hitting an enemy with a Basic Attack restores 2% of your Health and Mana. Basic Attacks that deal damage in an AoE restore less health (75% for Melee Attacks, 50% for Ranged Attacks) for each enemy hit after the first. Can be upgraded at level 20.",
 		"physicalPower": 65,
 		"starter": true,
 		"tier": 2,
@@ -2710,7 +2652,7 @@
 		"id": 19496,
 		"magicalProtection": 10,
 		"name": "Warrior's Axe",
-		"passive": "PASSIVE - Damaging an enemy god steals 30 health away from your target and restores 25 mana. This effect can only occur once every 8s. Can be upgraded at level 20.",
+		"passive": "PASSIVE - Damaging an enemy god steals 35 health (+1 per level) away from your target and restores 25 mana. This effect can only occur once every 8s. Can be upgraded at level 20.",
 		"physicalProtection": 15,
 		"starter": true,
 		"tier": 1,
@@ -2749,11 +2691,11 @@
 		"icon": "images/smite/items/manikin-scepter.jpg",
 		"id": 19500,
 		"name": "Manikin Scepter",
-		"passive": "PASSIVE - Enemies hit by your Basic Attacks are burned, taking 12 Physical Damage over 2s and have their Attack Speed reduced by 3.5%. Jungle Monsters take 4x the amount of damage and restore 15 Health and Mana when they die if they are burned. This effect can stack up to 4 times. Can be upgraded at level 20.",
+		"passive": "PASSIVE - Enemies hit by your Basic Attacks are burned, taking 16 Physical Damage (+5% of your Physical and Magical Power) over 2s and have their Attack Speed reduced by 4.5%. Jungle Monsters take 4x the amount of damage and restore 3% Health and 5% Mana when they die if they are burned. This effect can stack up to 3 times. Can be upgraded at level 20.",
 		"physicalProtection": 10,
 		"stacks": {
-			"current": 4,
-			"max": 4,
+			"current": 3,
+			"max": 3,
 			"stacks": {},
 			"type": "permanent"
 		},
@@ -2768,7 +2710,7 @@
 		"icon": "images/smite/items/manikin-mace.jpg",
 		"id": 19513,
 		"name": "Manikin Mace",
-		"passive": "PASSIVE - Enemies hit by your Basic Attacks are burned, taking 60 physical damage over 2s and have their Attack Speed slowed by 10%. Jungle Monsters and Bosses take 4x damage and restore 2.5% of your Health and Mana when they die if they are burned. This effect can stack up to 4 times.",
+		"passive": "PASSIVE - Enemies hit by your Basic Attacks are burned, taking 60 physical damage over 2s and have their Attack Speed slowed by 10%. Jungle Monsters and Bosses take 4x damage and restore 3% Health and 5% Mana when they die if they are burned. This effect can stack up to 4 times.",
 		"physicalProtection": 30,
 		"stacks": {
 			"current": 4,
@@ -2873,7 +2815,7 @@
 	},
 	{
 		"cost": 700,
-		"health": 75,
+		"health": 100,
 		"icon": "images/smite/items/vampiric-shroud.jpg",
 		"id": 19510,
 		"magicalLifesteal": 5,
@@ -2892,14 +2834,8 @@
 		"magicalLifesteal": 15,
 		"magicalPower": 75,
 		"name": "Blood-soaked Shroud",
-		"passive": "PASSIVE - Damaging any enemy with an ability restores 12 Health, 6 Mana and provides a stack of 1% Magical Lifesteal for 6s. This can stack infinitely. Can only trigger once per target per ability.",
-		"physicalProtection": 40,
-		"stacks": {
-			"current": 0,
-			"max": 0,
-			"stacks": {},
-			"type": "permanent"
-		},
+		"passive": "PASSIVE - Damaging any enemy with an ability restores 2% Health and Mana. Can only trigger once per target per ability.",
+		"physicalProtection": 55,
 		"starter": true,
 		"tier": 2,
 		"type": "Magical"
@@ -2910,7 +2846,7 @@
 		"icon": "images/smite/items/sacrificial-shroud.jpg",
 		"id": 19600,
 		"magicalLifesteal": 15,
-		"magicalPower": 100,
+		"magicalPower": 115,
 		"name": "Sacrificial Shroud",
 		"passive": "PASSIVE - Your abilities deal 15% more damage, but cost 5% of your Maximum Health. If the cost would kill you, you instead don't pay the cost.",
 		"physicalProtection": 20,
@@ -2919,74 +2855,21 @@
 		"type": "Magical"
 	},
 	{
-		"cost": 600,
-		"health": 100,
-		"icon": "images/smite/items/war-flag.jpg",
-		"id": 19518,
-		"mpFive": 10,
-		"name": "War Flag",
-		"passive": "PASSIVE - Getting an assist for a minion or jungle monster dying restores 6 Health and 6 Mana to all allies within 55 units of you and provides allies 1% Movement Speed and 2% Attack Speed for 10s. This effect stacks up to 10 times. Can be upgraded at level 17.",
-		"physicalPower": 10,
-		"stacks": {
-			"current": 10,
-			"max": 10,
-			"stacks": {},
-			"type": "permanent"
-		},
-		"starter": true,
-		"tier": 1,
-		"type": "Physical"
-	},
-	{
-		"cost": 2100,
-		"health": 300,
-		"icon": "images/smite/items/war-banner.jpg",
-		"id": 19519,
-		"magicalPower": 60,
-		"mpFive": 15,
-		"name": "War Banner",
-		"passive": "PASSIVE - Getting an assist for a minion or jungle monster dying restores 1% Health and 1% Mana to all allies within 55 units of you and provides allies 2% Movement Speed and 4% Attack Speed for 10s. This effect stacks up to 10 times.",
-		"physicalPower": 30,
-		"stacks": {
-			"current": 10,
-			"max": 10,
-			"stacks": {},
-			"type": "permanent"
-		},
-		"starter": true,
-		"tier": 2,
-		"type": "Both"
-	},
-	{
-		"cost": 2100,
-		"health": 300,
-		"icon": "images/smite/items/spartan-flag.jpg",
-		"id": 19749,
-		"magicalPower": 65,
-		"mpFive": 15,
-		"name": "Spartan Flag",
-		"passive": "PASSIVE - When you damage an enemy god you call down a Spartan Flag at your location, providing 10% increased Power to allies standing in the radius. Lasts for 10s, can only occur once every 10s. ",
-		"physicalPower": 40,
-		"starter": true,
-		"tier": 2,
-		"type": "Both"
-	},
-	{
-		"cost": 600,
+		"cost": 550,
 		"health": 75,
 		"icon": "images/smite/items/sentinels-gift.jpg",
 		"id": 19609,
-		"magicalProtection": 7,
+		"magicalProtection": 10,
 		"mpFive": 7,
 		"name": "Sentinel's Gift",
 		"passive": "PASSIVE - Getting the assist for an enemy minion or jungle monster dying will provide 7 Bonus gold and restore 12 Health and 8 Mana. If you are not within 30 units of an allied god for 20 seconds this passive is disabled until you are near an allied god again. Can be upgraded at level 17.",
-		"physicalProtection": 7,
+		"physicalProtection": 10,
 		"starter": true,
 		"tier": 1,
 		"type": "Both"
 	},
 	{
-		"cost": 2100,
+		"cost": 2050,
 		"health": 300,
 		"icon": "images/smite/items/sentinels-boon.jpg",
 		"id": 19625,
@@ -3000,7 +2883,7 @@
 		"type": "Both"
 	},
 	{
-		"cost": 2100,
+		"cost": 2050,
 		"health": 200,
 		"icon": "images/smite/items/sentinels-embrace.jpg",
 		"id": 19627,
@@ -3060,7 +2943,7 @@
 		"magicalPower": 25,
 		"magicalProtection": 15,
 		"name": "Tainted Steel",
-		"passive": "PASSIVE - Enemy gods that you hit have their healing taken reduced by 20% for 6s. Can be upgraded at level 20.",
+		"passive": "PASSIVE - Enemy Gods that you hit have their healing taken reduced by 15% for 6s. You are healed for 100% of the healing reduced. Can be upgraded at level 20.",
 		"physicalPower": 15,
 		"physicalProtection": 15,
 		"starter": true,
@@ -3074,7 +2957,7 @@
 		"magicalPower": 50,
 		"magicalProtection": 80,
 		"name": "Tainted Amulet",
-		"passive": "PASSIVE - Enemy Gods that you hit have their healing taken reduced by 20% for 6s. You are healed for 100% of the healing reduced. ",
+		"passive": "PASSIVE - Enemy Gods that you hit have their healing taken reduced by 30% for 6s. You are healed for 100% of the healing reduced. ",
 		"physicalPower": 30,
 		"physicalProtection": 30,
 		"starter": true,
@@ -3085,11 +2968,11 @@
 		"cost": 2200,
 		"icon": "images/smite/items/tainted-breastplate.jpg",
 		"id": 19645,
-		"magicalPower": 60,
+		"magicalPower": 75,
 		"magicalProtection": 30,
 		"name": "Tainted Breastplate",
 		"passive": "PASSIVE - Enemy gods that you hit have their healing taken reduced by 50% for 8s.",
-		"physicalPower": 40,
+		"physicalPower": 50,
 		"physicalProtection": 70,
 		"starter": true,
 		"tier": 2,
@@ -3100,21 +2983,24 @@
 		"cost": 700,
 		"icon": "images/smite/items/leather-cowl.jpg",
 		"id": 19672,
+		"mpFive": 7,
 		"name": "Leather Cowl",
 		"passive": "PASSIVE - While you are within 66 units of an allied god you gain 10% Attack Speed. If you are alone you instead gain 5% Movement Speed. Can be upgraded at level 20.",
+		"physicalLifesteal": 10,
 		"starter": true,
 		"tier": 1,
 		"toggleStats": {
 			"attackSpeed": 10,
 			"toggle": false
 		},
-		"type": "Both"
+		"type": "Physical"
 	},
 	{
 		"attackSpeed": 20,
 		"cost": 2200,
 		"icon": "images/smite/items/hunters-cowl.jpg",
 		"id": 19674,
+		"mpFive": 15,
 		"name": "Hunter's Cowl",
 		"passive": "AURA - While you are within 55 units of an allied god you gain 25% Attack Speed Aura. If you are alone you instead gain 10% Movement Speed.",
 		"physicalLifesteal": 15,
@@ -3152,6 +3038,7 @@
 		"icon": "images/smite/items/conduit-gem.jpg",
 		"id": 19677,
 		"magicalPower": 25,
+		"mana": 100,
 		"mpFive": 10,
 		"name": "Conduit Gem",
 		"passive": "PASSIVE - Every second you gain a stack of Arcane Energy, causing your next damaging ability to deal an additional 2 True Damage and remove all stacks. This effect stacks up to 20 times. Can be upgraded at level 20.",
@@ -3246,7 +3133,7 @@
 		"type": "Both"
 	},
 	{
-		"cost": 700,
+		"cost": 600,
 		"health": 75,
 		"icon": "images/smite/items/warding-sigil.jpg",
 		"id": 19751,
@@ -3265,7 +3152,7 @@
 		"type": "Both"
 	},
 	{
-		"cost": 2200,
+		"cost": 2100,
 		"health": 200,
 		"icon": "images/smite/items/sigil-of-the-old-guard.jpg",
 		"id": 19752,
@@ -3284,7 +3171,7 @@
 		"type": "Both"
 	},
 	{
-		"cost": 2200,
+		"cost": 2100,
 		"health": 350,
 		"icon": "images/smite/items/infused-sigil.jpg",
 		"id": 19753,
@@ -3300,6 +3187,77 @@
 		},
 		"starter": true,
 		"tier": 2,
+		"type": "Both"
+	},
+	{
+		"cost": 600,
+		"health": 100,
+		"icon": "images/smite/items/war-flag.jpg",
+		"id": 20698,
+		"mpFive": 10,
+		"name": "War Flag",
+		"passive": "PASSIVE - Getting an assist when an enemy dies provides a stack that gives 1% Movement Speed and 2% Attack Speed for 8s to nearby allies up to 10 stacks. While at or above 4 stacks each time you damage an enemy god you restore 15 Health and Mana to nearby allies within 55 units and gain 8 gold. Can be upgraded at level 17.",
+		"physicalPower": 10,
+		"stacks": {
+			"current": 0,
+			"max": 0,
+			"stacks": {},
+			"type": "permanent"
+		},
+		"starter": true,
+		"tier": 1,
+		"type": "Physical"
+	},
+	{
+		"cost": 2100,
+		"health": 300,
+		"icon": "images/smite/items/spartan-flag.jpg",
+		"id": 19749,
+		"magicalPower": 65,
+		"mpFive": 15,
+		"name": "Spartan Flag",
+		"passive": "PASSIVE - When you damage an enemy god you call down a Spartan Flag at your location, providing 10% increased Power to allies standing in the radius. Lasts for 10s, can only occur once every 10s. ",
+		"physicalPower": 40,
+		"starter": true,
+		"tier": 2,
+		"type": "Both"
+	},
+	{
+		"cost": 2100,
+		"health": 300,
+		"icon": "images/smite/items/war-banner.jpg",
+		"id": 20697,
+		"magicalPower": 60,
+		"mpFive": 15,
+		"name": "War Banner",
+		"passive": "PASSIVE - Getting an assist for an enemy dying provides a stack that provides 2% Movement Speed and 4% Attack Speed for 8s to nearby allies up to 10 stacks. While at or above 4 stacks each time you damage an enemy god you restore 1.25% Health and 1.25% Mana to nearby allies within 55 units and refresh the duration of these stacks.",
+		"physicalPower": 30,
+		"stacks": {
+			"current": 0,
+			"max": 0,
+			"stacks": {},
+			"type": "permanent"
+		},
+		"starter": true,
+		"tier": 2,
+		"type": "Both"
+	},
+	{
+		"cost": 9999,
+		"icon": "images/smite/items/worn-shoes.jpg",
+		"id": 20780,
+		"name": "Worn Shoes",
+		"passive": "<font color='#9E9E6E'>The frayed threads of these shoes hint at power that has long since faded. <font color='#CE6E6E'>Shoes have been removed and the Movement Speed that would have been provided by Shoes is instead gained over your first 7 levels.",
+		"tier": 1,
+		"type": "Both"
+	},
+	{
+		"cost": 9999,
+		"icon": "images/smite/items/worn-boots.jpg",
+		"id": 20781,
+		"name": "Worn Boots",
+		"passive": "<font color='#9E9E6E'>The worn leather of these boots hint at power that has long since faded. <font color='#CE6E6E'>Boots have been removed and the Movement Speed that would have been provided by Boots is instead gained over your first 7 levels.",
+		"tier": 1,
 		"type": "Both"
 	}
 ]
