@@ -46,10 +46,10 @@ for sourceItem in sourceItems:
 
         url = sourceItem['itemIcon_URL']
         imageName = url.rsplit('/', 1)[-1].replace('*','')
-        try:
-            urllib.request.urlretrieve(url, 'images/items/' + imageName)
-        except Exception:
-            print("could not download " + imageName)
+        # try:
+        #     urllib.request.urlretrieve(url, 'images/items/' + imageName)
+        # except Exception:
+        #     print("could not download " + imageName)
         item['icon'] = 'images/smite/items/' + imageName
 
         if sourceItem['ItemDescription']['SecondaryDescription']:
@@ -322,7 +322,7 @@ for sourceItem in sourceItems:
             if "Acorn" in sourceItem['DeviceName']:
                 item['type'] = "Acorn"  
         
-        if 'Evolved' not in item['name'] and 'REMOVE' not in item['name'] and '*' not in item['name']:
+        if 'Evolved' not in item['name'] and 'REMOVE' not in item['name'] and '*' not in item['name'] and not 'shoes' in item and 'Worn' not in item['name']:
             items.append(item)
 
 with open('items_result.json', 'w') as json_file:

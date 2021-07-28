@@ -404,99 +404,6 @@
 		"type": "Physical"
 	},
 	{
-		"cost": 500,
-		"icon": "images/smite/items/boots.jpg",
-		"id": 9624,
-		"movementSpeed": 6,
-		"name": "Boots",
-		"shoes": true,
-		"tier": 1,
-		"type": "Both"
-	},
-	{
-		"cost": 900,
-		"icon": "images/smite/items/combat-boots.jpg",
-		"id": 9625,
-		"movementSpeed": 12,
-		"name": "Combat Boots",
-		"physicalPower": 10,
-		"shoes": true,
-		"tier": 2,
-		"type": "Physical"
-	},
-	{
-		"cost": 1500,
-		"icon": "images/smite/items/warrior-tabi.jpg",
-		"id": 9626,
-		"mana": 100,
-		"movementSpeed": 18,
-		"name": "Warrior Tabi",
-		"physicalPower": 40,
-		"shoes": true,
-		"tier": 3,
-		"type": "Physical"
-	},
-	{
-		"attackSpeed": 25,
-		"cost": 1450,
-		"icon": "images/smite/items/ninja-tabi.jpg",
-		"id": 9627,
-		"mana": 100,
-		"movementSpeed": 18,
-		"name": "Ninja Tabi",
-		"physicalPower": 20,
-		"shoes": true,
-		"tier": 3,
-		"type": "Physical"
-	},
-	{
-		"cost": 500,
-		"icon": "images/smite/items/shoes.jpg",
-		"id": 9631,
-		"movementSpeed": 6,
-		"name": "Shoes",
-		"shoes": true,
-		"tier": 1,
-		"type": "Both"
-	},
-	{
-		"cost": 900,
-		"icon": "images/smite/items/magic-shoes.jpg",
-		"id": 9632,
-		"magicalPower": 20,
-		"movementSpeed": 12,
-		"name": "Magic Shoes",
-		"shoes": true,
-		"tier": 2,
-		"type": "Magical"
-	},
-	{
-		"cost": 1450,
-		"icon": "images/smite/items/shoes-of-the-magi.jpg",
-		"id": 9633,
-		"magicalLifesteal": 8,
-		"magicalPower": 75,
-		"mana": 100,
-		"movementSpeed": 18,
-		"name": "Shoes of the Magi",
-		"shoes": true,
-		"tier": 3,
-		"type": "Magical"
-	},
-	{
-		"cooldownReduction": 10,
-		"cost": 1500,
-		"icon": "images/smite/items/shoes-of-focus.jpg",
-		"id": 9634,
-		"magicalPower": 55,
-		"mana": 250,
-		"movementSpeed": 18,
-		"name": "Shoes of Focus",
-		"shoes": true,
-		"tier": 3,
-		"type": "Magical"
-	},
-	{
 		"cost": 700,
 		"icon": "images/smite/items/hidden-dagger.jpg",
 		"id": 9812,
@@ -3240,24 +3147,6 @@
 		},
 		"starter": true,
 		"tier": 2,
-		"type": "Both"
-	},
-	{
-		"cost": 9999,
-		"icon": "images/smite/items/worn-shoes.jpg",
-		"id": 20780,
-		"name": "Worn Shoes",
-		"passive": "<font color='#9E9E6E'>The frayed threads of these shoes hint at power that has long since faded. <font color='#CE6E6E'>Shoes have been removed and the Movement Speed that would have been provided by Shoes is instead gained over your first 7 levels.",
-		"tier": 1,
-		"type": "Both"
-	},
-	{
-		"cost": 9999,
-		"icon": "images/smite/items/worn-boots.jpg",
-		"id": 20781,
-		"name": "Worn Boots",
-		"passive": "<font color='#9E9E6E'>The worn leather of these boots hint at power that has long since faded. <font color='#CE6E6E'>Boots have been removed and the Movement Speed that would have been provided by Boots is instead gained over your first 7 levels.",
-		"tier": 1,
 		"type": "Both"
 	}
 ]
