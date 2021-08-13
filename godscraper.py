@@ -14,6 +14,8 @@ def getStats(sourceStat):
         return 0
     if ' per shot' in sourceStat:
         sourceStat = (sourceStat.split(' per shot'))[0]
+    if ' per second' in sourceStat:
+        sourceStat = (sourceStat.split(' per second'))[0]
     if ' every' in sourceStat:
         sourceStat = (sourceStat.split(' every'))[0]
     if ' (' in sourceStat:
@@ -37,10 +39,10 @@ def getAbilityJson(sourceJson):
 
     url = sourceJson['URL']
     imageName = url.rsplit('/', 1)[-1].replace('*', '')
-    try:
-        urlretrieve(url, 'images/abilities/' + imageName)
-    except Exception:
-        print("could not download " + url)
+    # try:
+    #     urlretrieve(url, 'images/abilities/' + imageName)
+    # except Exception:
+    #     print("could not download " + url)
     ability['icon'] = 'images/smite/abilities/' + imageName
 
     itemDescription = sourceJson['Description']['itemDescription']

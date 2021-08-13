@@ -77,6 +77,10 @@ for sourceItem in sourceItems:
                 over = re.findall(r'\d*\.?\d+', overcapAttackSpeedToPhysicalPower.group())
                 gain = re.findall(r'\d+', overcapAttackSpeedToPhysicalPower.group())
                 item['overcapAttackSpeedToPhysicalPower'] = float(float(over[0])/int(gain[-1]))
+            maxHealthDamage = re.search("deal Physical Damage equal to \d+% of the target's maximum Health".lower(), item['passive'].lower())
+            if maxHealthDamage:
+                amount = re.findall(r'\d+', maxHealthDamage.group())
+                item['maxHealthDamage'] = int(amount[0])
 
             if 'stack'.lower() in item['passive'].lower():
                 item['stacks'] = { "current": 0, "max": 0, "stacks": {}, "type": "permanent" }
