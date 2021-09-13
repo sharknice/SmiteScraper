@@ -68,6 +68,10 @@ for sourceItem in sourceItems:
             if basicAttackFlatIncrease:
                 amount = re.findall(r'\d+', basicAttackFlatIncrease.group())
                 item['basicAttackFlatIncrease'] = int(amount[0])
+            basicAttackPercentPenetration = re.search("your basic attacks benefit from an additional \d+% physical penetration".lower(), item['passive'].lower())
+            if basicAttackPercentPenetration:
+                amount = re.findall(r'\d+', basicAttackPercentPenetration.group())
+                item['basicAttackPercentPenetration'] = int(amount[0])
             criticalStrikeDamage = re.search("Critical Strike bonus damage dealt is increased by \d+%".lower(), item['passive'].lower())
             if criticalStrikeDamage:
                 amount = re.findall(r'\d+', criticalStrikeDamage.group())
@@ -162,6 +166,10 @@ for sourceItem in sourceItems:
                 if healthStacks:
                     amount = re.findall(r'\d+', healthStacks.group())
                     item['stacks']['stacks']['health'] = int(amount[0])
+                basicAttackPercentIncreaseStacks = re.search("provides \d*\.?\d+% Increased Basic Attack Damage".lower(), item['passive'].lower())
+                if basicAttackPercentIncreaseStacks:
+                    amount = re.findall(r'\d*\.?\d+', basicAttackPercentIncreaseStacks.group())
+                    item['stacks']['stacks']['basicAttackPercentIncreaseStacks'] = float(amount[0])
 
                 maxStacks = re.search("max. \d+ stacks".lower(), item['passive'].lower())
                 if maxStacks:
