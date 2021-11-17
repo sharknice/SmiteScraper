@@ -270,6 +270,12 @@ for sourceItem in sourceItems:
                     amount = re.findall(r'\d+', basicAttackPercentIncrease.group())
                     item['toggleStats']['basicAttackPercentIncrease'] = int(amount[0])
 
+            damagePercentIncrease = re.search("enemies take \d+% increased damage".lower(), item['passive'].lower())
+            if damagePercentIncrease:
+                item['toggleStats'] = { 'toggle': False }
+                amount = re.findall(r'\d+', damagePercentIncrease.group())
+                item['toggleStats']['damagePercentIncrease'] = int(amount[0])
+
         if sourceItem['ItemDescription']['Menuitems']:
             for sourceStat in sourceItem['ItemDescription']['Menuitems']:
                 if sourceStat['Description'] == 'Basic Attack Damage':
