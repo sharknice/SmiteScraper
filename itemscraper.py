@@ -85,6 +85,10 @@ for sourceItem in sourceItems:
             if maxHealthDamage:
                 amount = re.findall(r'\d+', maxHealthDamage.group())
                 item['maxHealthDamage'] = int(amount[0])
+            criticalStrikeDamageDecrease = re.search("Critical Strikes bonus damage taken is decreased by \d+%".lower(), item['passive'].lower())
+            if criticalStrikeDamageDecrease:
+                amount = re.findall(r'\d+', criticalStrikeDamageDecrease.group())
+                item['criticalStrikeDamageDecrease'] = int(amount[0])
 
             if 'stack'.lower() in item['passive'].lower():
                 item['stacks'] = { "current": 0, "max": 0, "stacks": {}, "type": "permanent" }
