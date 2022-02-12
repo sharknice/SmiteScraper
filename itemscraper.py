@@ -90,6 +90,13 @@ for sourceItem in sourceItems:
                 amount = re.findall(r'\d+', criticalStrikeDamageDecrease.group())
                 item['criticalStrikeDamageDecrease'] = int(amount[0])
 
+            if 'per 10% of your available Mana'.lower() in item['passive'].lower():
+                item['stacks'] = { "current": 10, "max": 10, "stacks": {}, "type": "permanent" }
+                magicalPowerStacks = re.search("grants \d+ Magical power per".lower(), item['passive'].lower())
+                if magicalPowerStacks:
+                    amount = re.findall(r'\d+', magicalPowerStacks.group())
+                    item['stacks']['stacks']['magicalPower'] = int(amount[0])
+
             if 'stack'.lower() in item['passive'].lower():
                 item['stacks'] = { "current": 0, "max": 0, "stacks": {}, "type": "permanent" }
                 manaStacks = re.search("\d+ Mana per Stack".lower(), item['passive'].lower())
