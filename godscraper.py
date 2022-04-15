@@ -4,7 +4,8 @@ from urllib.request import Request, urlopen, urlretrieve
 
 def num(s):
     try:
-        return int(s)
+        if s.isdigit():
+            return int(s)
     except ValueError:
         return float(s)
 
@@ -57,44 +58,44 @@ def getAbilityJson(sourceJson):
         toggleStats = {}
         stacks = {}
         for rankItem in itemDescription['rankitems']:
-            if rankItem['description'] == 'Damage:' and ' (' in rankItem['value']:
+            if 'Damage:'.lower() in rankItem['description'].lower()  and ' (' in rankItem['value']:
                 stat = rankItem['value'].split(' (')
                 ability['damage'] = getStats(stat[0])
                 temp = re.findall(r'\d+', stat[1])
                 if len(temp) > 0:
                     ability['powerDamage'] = int(temp[0])
-            elif rankItem['description'] == 'Damage per Tick:':
+            elif 'Damage per Tick:'.lower() in rankItem['description'].lower():
                 stat = rankItem['value'].split(" (")
                 ability['damage'] = getStats(stat[0])
                 temp = re.findall(r'\d+', stat[1])
                 if len(temp) > 0:
                     ability['powerDamage'] = int(temp[0])
                 ability['ticks'] = 1
-            elif rankItem['description'] == 'Healing:':
+            elif rankItem['description'].lower() == 'Healing:'.lower():
                 toggleStats['hpFive'] = getStats(rankItem['value'])
-            elif rankItem['description'] == 'Movement Speed:':
+            elif rankItem['description'].lower() == 'Movement Speed:'.lower():
                 toggleStats['movementSpeed'] = getStats(rankItem['value'][:-1])
-            elif rankItem['description'] == 'Attack Speed:':
+            elif rankItem['description'].lower() == 'Attack Speed:'.lower():
                 toggleStats['attackSpeed'] = getStats(rankItem['value'][:-1])
-            elif rankItem['description'] == 'Damage Buff:':
+            elif rankItem['description'].lower() == 'Damage Buff:'.lower():
                 toggleStats['basicAttackPercentIncrease'] = getStats(
                     rankItem['value'][:-1])
-            elif rankItem['description'] == 'Landing Damage:' or rankItem['description'] == 'Ranged Damage:':
+            elif rankItem['description'].lower() == 'Landing Damage:'.lower() or rankItem['description'].lower() == 'Ranged Damage:'.lower():
                 stat = rankItem['value'].split(" (")
                 ability['secondaryDamage'] = {}
                 ability['secondaryDamage']['damage'] = getStats(stat[0])
                 temp = re.findall(r'\d+', stat[1])
                 if len(temp) > 0:
                     ability['secondaryDamage']['powerDamage'] = int(temp[0])
-            elif rankItem['description'] == 'Attack Damage:':
+            elif rankItem['description'].lower() == 'Attack Damage:'.lower():
                 stat = rankItem['value'].split(" (")
                 ability['damage'] = getStats(stat[0])
                 temp = re.findall(r'\d+', stat[1])
                 if len(temp) > 0:
                     ability['powerDamage'] = int(temp[0])
-            elif rankItem['description'] == 'Max Stacks:':
+            elif rankItem['description'].lower() == 'Max Stacks:'.lower():
                 stacks['max'] = rankItem['value']
-            elif rankItem['description'] == 'Bonus Power:':
+            elif rankItem['description'].lower() == 'Bonus Power:'.lower():
                 toggleStats['physicalPower'] = getStats(rankItem['value'])
 
         if stacks:
