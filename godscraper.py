@@ -4,10 +4,29 @@ from urllib.request import Request, urlopen, urlretrieve
 
 def num(s):
     try:
-        if s.isdigit():
+        if is_int(s):
             return int(s)
+        elif is_float(s):
+            return float(s)
     except ValueError:
         return float(s)
+
+def is_int(n):
+    try:
+        float_n = float(n)
+        int_n = int(float_n)
+    except ValueError:
+        return False
+    else:
+        return float_n == int_n
+
+def is_float(n):
+    try:
+        float_n = float(n)
+    except ValueError:
+        return False
+    else:
+        return True
 
 
 def getStats(sourceStat):
