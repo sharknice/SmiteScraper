@@ -85,15 +85,18 @@ def getAbilityJson(sourceJson):
                 temp = re.findall(r'\d+', stat[1])
                 if len(temp) > 0:
                     ability['powerDamage'] = int(temp[0])
-            elif 'Damage per Tick:'.lower() in rankItem['description'].lower():
-                stat = rankItem['value'].split(" (")
-                if "damage" in ability.keys():
-                    ability['damage'].append(getStats(stat[0]))
-                else:
-                    ability['damage'] = getStats(stat[0])
-                temp = re.findall(r'\d+', stat[1])
-                if len(temp) > 0:
-                    ability['powerDamage'] = int(temp[0])
+            elif 'Damage per '.lower() in rankItem['description'].lower():
+                if not 'bonus' in rankItem['description'].lower():
+                    stat = rankItem['value'].split(" (")
+                    if "damage" in ability.keys():
+                        ability['damage'].append(getStats(stat[0]))
+                    else:
+                        ability['damage'] = getStats(stat[0])
+                    if len(stat) > 1:
+                        if "/" in stat[1]:
+                            temp = re.findall(r'\d+', stat[1])
+                            if len(temp) > 0:
+                                ability['powerDamage'] = int(temp[0])
                 #ability['ticks'] = 1
             elif rankItem['description'].lower() == 'Healing:'.lower():
                 toggleStats['hpFive'] = getStats(rankItem['value'])
@@ -128,7 +131,6 @@ def getAbilityJson(sourceJson):
                         ability['ticks'].append(getStats(rankItem['value'].replace("s", "")))
                     else:
                         ability['ticks'] = [getStats(rankItem['value'].replace("s", ""))]
-
             #if "damage" in ability.keys(): Debug for Damage Array
                 #print(ability['damage'])
 
