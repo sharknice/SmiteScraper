@@ -93,10 +93,9 @@ def getAbilityJson(sourceJson):
                     else:
                         ability['damage'] = getStats(stat[0])
                     if len(stat) > 1:
-                        if "/" in stat[1]:
-                            temp = re.findall(r'\d+', stat[1])
-                            if len(temp) > 0:
-                                ability['powerDamage'] = int(temp[0])
+                        temp = re.findall(r'\d+', stat[1])
+                        if len(temp) > 0:
+                            ability['powerDamage'] = int(temp[0])
                 #ability['ticks'] = 1
             elif rankItem['description'].lower() == 'Healing:'.lower():
                 toggleStats['hpFive'] = getStats(rankItem['value'])
@@ -124,7 +123,7 @@ def getAbilityJson(sourceJson):
                 stacks['max'] = rankItem['value']
             elif rankItem['description'].lower() == 'Bonus Power:'.lower():
                 toggleStats['physicalPower'] = getStats(rankItem['value'])
-            if 'Duration:'.lower() in rankItem['description'].lower():
+            if 'Duration:'.lower() in rankItem['description'].lower() or 'Thrown:'.lower() in rankItem['description'].lower():
                 #print (getStats(rankItem['value'].replace("s", "")))
                 if not rankItem['description'].lower() == 'Stun Duration:'.lower():
                     if 'ticks' in ability.keys():
