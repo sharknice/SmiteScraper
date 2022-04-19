@@ -85,12 +85,20 @@ def getAbilityJson(sourceJson):
         ability['cooldown'] = getStats(itemDescription['cooldown'][:-1])
     if itemDescription['cost']:
         ability['cost'] = getStats(itemDescription['cost'])
+    
+    if itemDescription['description']:
+        #if 'seconds' in itemDescription['description']:
+            #seconds = itemDescription['description'].lower().split('seconds')
+            #print(seconds)
+        #else:
+        seconds = re.findall(r'[+-]?[0-9]*[.]?[0-9]+[s]', itemDescription['description'])
+            #print(seconds)
 
     if itemDescription['rankitems']:
         toggleStats = {}
         stacks = {}
         for rankItem in itemDescription['rankitems']:
-            print(rankItem)
+            #print(rankItem)
             if 'Damage:'.lower() in rankItem['description'].lower()  and ' (' in rankItem['value']:
                 stat = rankItem['value'].split('(')
 
@@ -162,7 +170,15 @@ def getAbilityJson(sourceJson):
                         ability['ticks'].append(getStats(rankItem['value'].replace("s", "")))
                     else:
                         ability['ticks'] = [getStats(rankItem['value'].replace("s", ""))]
-            #if "damage" in ability.keys(): Debug for Damage Array
+            if len(seconds) > 0:
+                #print(seconds)
+                if not 'ticks' in ability.keys():
+                    nums = list(map(lambda x: x.replace("s", ""), seconds))
+                    temp = []
+                    for x in nums:
+                        temp.append(float(x))
+                    ability['ticks'] = temp
+                #if "damage" in ability.keys(): Debug for Damage Array
                 #print(ability['damage'])
 
         if stacks:
