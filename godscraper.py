@@ -1,6 +1,18 @@
 import json
 import re
+import hashlib
 from urllib.request import Request, urlopen, urlretrieve
+from datetime import datetime
+
+
+url = "https://api.smitegame.com/smiteapi.svc/"
+devId = "4278"
+authKey = "9EC9E978A14745B39718310E5D6F5A25"
+    
+now = datetime.now()
+#timestamp = now.strftime("%Y%m%d%H%M%S")
+utcTime = datetime.utcnow()
+timestamp = utcTime.strftime("%Y%m%d%H%M%S")
 
 def num(s):
     try:
@@ -39,6 +51,8 @@ def getStats(sourceStat):
         sourceStat = (sourceStat.split(' every'))[0]
     if ' (' in sourceStat:
         sourceStat = (sourceStat.split(' ('))[0]
+    if '(' in sourceStat:
+        sourceStat = (sourceStat.split('('))[0]
     if '%' in sourceStat:
         sourceStat = (sourceStat.split('%'))[0]
     if '+' in sourceStat:
@@ -76,18 +90,36 @@ def getAbilityJson(sourceJson):
         toggleStats = {}
         stacks = {}
         for rankItem in itemDescription['rankitems']:
+            print(rankItem)
             if 'Damage:'.lower() in rankItem['description'].lower()  and ' (' in rankItem['value']:
-                stat = rankItem['value'].split(' (')
+                stat = rankItem['value'].split('(')
+
                 if "damage" in ability.keys():
                     ability['damage'].append(getStats(stat[0]))
                 else:
+                    #print (stat[0])
                     ability['damage'] = getStats(stat[0])
+                #print(stat[0])
                 temp = re.findall(r'\d+', stat[1])
                 if len(temp) > 0:
                     ability['powerDamage'] = int(temp[0])
+            elif 'Damage:'.lower() in rankItem['description'].lower():
+                if "of" in rankItem['value']:
+                    stat = rankItem['value'].split(' of')
+                else:
+                    stat = [rankItem['value']]
+                if "damage" in ability.keys():
+                    print(stat[0])
+                    print(getStats(stat[0]))
+                    if isinstance(ability['damage'], int):
+                        ability['damage'] = [ability['damage']]
+                    ability['damage'].append(getStats(stat[0]))
+                else:
+                    #print (stat[0])
+                    ability['damage'] = getStats(stat[0])
             elif 'Damage per '.lower() in rankItem['description'].lower():
                 if not 'bonus' in rankItem['description'].lower():
-                    stat = rankItem['value'].split(" (")
+                    stat = rankItem['value'].split("(")
                     if "damage" in ability.keys():
                         ability['damage'].append(getStats(stat[0]))
                     else:
@@ -143,75 +175,97 @@ def getAbilityJson(sourceJson):
 
     return ability
 
+def createSession():
+    stringToHash = devId + "createsession" + authKey + timestamp
+    signature = hashlib.md5(stringToHash.encode())
+    #print(signature)
+    get = (url + "createsessionjson/" + devId + "/" + signature.hexdigest() + "/" + timestamp)
+    #print(get)
+    request = Request(get, headers={'User-Agent': 'Mozilla/5.0'})
+    response = urlopen(request)
+    session = []
+    session = [json.loads(response.read())]
+    return session[0]['session_id']
 
-with open('sources/gods_source.json') as f:  # https://cms.smitegame.com/wp-json/smite-api/all-gods/1
-    sourceGods = json.load(f)
+def getGods():
+    sessionId = createSession()
+    stringToHash = devId + "getgods" + authKey + timestamp
+    signature = hashlib.md5(stringToHash.encode())
+    getg = (url + "getgodsjson/" + devId + "/" + signature.hexdigest() + "/" + sessionId + "/" + timestamp + "/1")
+    #print(getg)
+    request = Request(getg, headers={'User-Agent': 'Mozilla/5.0'})
+    response = urlopen(request)
+    godlist = []
+    godlist = json.loads(response.read())
+    #print(godlist)
+    f = open("godApiList.json", "w")
+    json.dump(godlist, f)
+    f.close()
+    return godlist
+    
+
+##with open('sources/gods_source.json') as f:  # https://cms.smitegame.com/wp-json/smite-api/all-gods/1
+##    sourceGods = json.load(f)
 
 gods = []
-for sourceGod in sourceGods:
+gods = getGods()
+newGods = []
+#print (gods)
+for sourceGod in gods:
     god = {}
-    name = sourceGod['name'].strip()
+    name = sourceGod["Name"].strip()
     print(name)
     god['name'] = name
-    god['id'] = sourceGod['id']
-    god['title'] = sourceGod['title'].strip()
-    god['pantheon'] = sourceGod['pantheon'].strip()
-    god['type'] = sourceGod['role'].strip()
-    types = sourceGod['type'].split(', ')
+    god['id'] = sourceGod["id"]
+    god['title'] = sourceGod['Title'].strip()
+    god['pantheon'] = sourceGod['Pantheon'].strip()
+    god['type'] = sourceGod['Roles'].strip()
+    types = sourceGod['Type'].split(', ')
     god['attackType'] = types[0].strip()
     if len(types) > 1:
         god['powerType'] = types[1].strip()
+    god['pros'] = sourceGod['Pros'].strip()
+    god['health'] = sourceGod['Health']
+    god['healthPerLevel'] = sourceGod['HealthPerLevel']
+    god['mana'] = sourceGod['Mana']
+    god['manaPerLevel'] = sourceGod['ManaPerLevel']
+    god['speed'] = sourceGod['Speed']
+    god['attackSpeed'] = sourceGod['AttackSpeed']
+    god['attackSpeedPerLevel'] = sourceGod['AttackSpeedPerLevel'] * 100.0
 
-    # load the god specific json
-    url = 'https://cms.smitegame.com/wp-json/wp/v2/gods?slug=' + \
-        name.replace(' ', '-') + '&lang_id=1'
-    request = Request(url, headers={'User-Agent': 'Mozilla/5.0'})
-    response = urlopen(request)
-    godData = json.loads(response.read())[0]['api_information']
-    # set the specific data
-    god['pros'] = godData['Pros'].strip()
-    god['health'] = godData['Health']
-    god['healthPerLevel'] = godData['HealthPerLevel']
-    god['mana'] = godData['Mana']
-    god['manaPerLevel'] = godData['ManaPerLevel']
-    god['speed'] = godData['Speed']
-    god['attackSpeed'] = godData['AttackSpeed']
-    god['attackSpeedPerLevel'] = godData['AttackSpeedPerLevel'] * 100.0
-
-    damage = godData['PhysicalPower']
-    damagePerLevel = godData['PhysicalPowerPerLevel']
+    damage = sourceGod['PhysicalPower']
+    damagePerLevel = sourceGod['PhysicalPowerPerLevel']
     if damage == 0:
-        damage = godData['MagicalPower']/5
-        damagePerLevel = godData['MagicalPowerPerLevel']
+        damage = sourceGod['MagicalPower']/5
+        damagePerLevel = sourceGod['MagicalPowerPerLevel']
     god['damage'] = damage
     god['damagePerLevel'] = damagePerLevel
 
-    god['physicalProtection'] = godData['PhysicalProtection']
-    god['physicalProtectionPerLevel'] = godData['PhysicalProtectionPerLevel']
-    god['magicalProtection'] = godData['MagicProtection']
-    god['magicalProtectionPerLevel'] = godData['MagicProtectionPerLevel']
-    god['hpFive'] = godData['HealthPerFive']
-    god['hpFivePerLevel'] = godData['HP5PerLevel']
-    god['mpFive'] = godData['ManaPerFive']
-    god['mpFivePerLevel'] = godData['MP5PerLevel']
+    god['physicalProtection'] = sourceGod['PhysicalProtection']
+    god['physicalProtectionPerLevel'] = sourceGod['PhysicalProtectionPerLevel']
+    god['magicalProtection'] = sourceGod['MagicProtection']
+    god['magicalProtectionPerLevel'] = sourceGod['MagicProtectionPerLevel']
+    god['hpFive'] = sourceGod['HealthPerFive']
+    god['hpFivePerLevel'] = sourceGod['HP5PerLevel']
+    god['mpFive'] = sourceGod['ManaPerFive']
+    god['mpFivePerLevel'] = sourceGod['MP5PerLevel']
 
-    url = godData['godIcon_URL']
+    url = sourceGod['godIcon_URL']
     imageName = url.rsplit('/', 1)[-1].replace('*', '')
     #urlretrieve(url, 'images/gods/' + imageName)
     god['icon'] = 'images/smite/gods/' + imageName
+    #print (sourceGod['Ability_4'])
 
     god['passive'] = getAbilityJson(
-        godData['Ability_5'])
+        sourceGod['Ability_5'])
     god['abilityOne'] = getAbilityJson(
-        godData['Ability_1'])
+        sourceGod['Ability_1'])
     god['abilityTwo'] = getAbilityJson(
-        godData['Ability_2'])
+        sourceGod['Ability_2'])
     god['abilityThree'] = getAbilityJson(
-        godData['Ability_3'])
+        sourceGod['Ability_3'])
     god['abilityFour'] = getAbilityJson(
-        godData['Ability_4'])
-
-    gods.append(god)
-
+        sourceGod['Ability_4'])
+    newGods.append(god)
 with open('gods_result.json', 'w') as json_file:
-    json.dump(gods, json_file, indent='\t', sort_keys=True)
+    json.dump(newGods, json_file, indent='\t', sort_keys=True)
