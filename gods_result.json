@@ -682,6 +682,9 @@
 			"icon": "images/smite/abilities/shifting-sands.jpg",
 			"level": 5,
 			"name": "Shifting Sands",
+			"ticks": [
+				7
+			],
 			"toggleStats": {
 				"basicAttackPercentIncrease": [
 					8,
@@ -1244,7 +1247,10 @@
 			"description": "Apollo uses his amazing voice to Mesmerize all nearby enemies and bolster himself with additional physical protection.  Any damage done breaks the effect.",
 			"icon": "images/smite/abilities/serenade.jpg",
 			"level": 5,
-			"name": "Serenade"
+			"name": "Serenade",
+			"ticks": [
+				5
+			]
 		},
 		"attackSpeed": 0.95,
 		"attackSpeedPerLevel": 1.6,
@@ -1371,7 +1377,8 @@
 					5,
 					5.5,
 					6
-				]
+				],
+				240
 			],
 			"toggleStats": {
 				"movementSpeed": 40,
@@ -1518,7 +1525,10 @@
 			"description": "Ares strengthens the defenses of himself and all nearby allies, granting Protections, HP5, and reducing Crowd Control durations. For each shackled enemy, the Protection Buffs are increased.",
 			"icon": "images/smite/abilities/bolster-defenses.jpg",
 			"level": 5,
-			"name": "Bolster Defenses"
+			"name": "Bolster Defenses",
+			"ticks": [
+				8
+			]
 		},
 		"attackSpeed": 0.9,
 		"attackSpeedPerLevel": 1.0999999999999999,
@@ -1574,7 +1584,10 @@
 			"icon": "images/smite/abilities/calydonian-boar.jpg",
 			"level": 5,
 			"name": "Calydonian Boar",
-			"powerDamage": 100
+			"powerDamage": 100,
+			"ticks": [
+				6
+			]
 		},
 		"abilityOne": {
 			"cooldown": [
@@ -3786,7 +3799,10 @@
 			"icon": "images/smite/abilities/moonflower-dance.jpg",
 			"level": 5,
 			"name": "Moonflower Dance",
-			"powerDamage": 60
+			"powerDamage": 60,
+			"ticks": [
+				4
+			]
 		},
 		"abilityTwo": {
 			"cooldown": [
@@ -4363,6 +4379,9 @@
 			"icon": "images/smite/abilities/accelerate.jpg",
 			"level": 5,
 			"name": "Accelerate",
+			"ticks": [
+				7
+			],
 			"toggleStats": {
 				"attackSpeed": [
 					15,
@@ -4892,6 +4911,9 @@
 			"icon": "images/smite/abilities/flutter.jpg",
 			"level": 5,
 			"name": "Flutter",
+			"ticks": [
+				6
+			],
 			"toggleStats": {
 				"attackSpeed": [
 					4,
@@ -4910,7 +4932,10 @@
 			"description": "Cupid places 3 floating hearts at his ground target location that heal himself or allied gods when picked up. Cupid regenerates Mana for each heart that is picked up by an ally.",
 			"icon": "images/smite/abilities/share-the-love.jpg",
 			"level": 5,
-			"name": "Share the Love"
+			"name": "Share the Love",
+			"ticks": [
+				8
+			]
 		},
 		"attackSpeed": 0.95,
 		"attackSpeedPerLevel": 1.7000000000000002,
@@ -6736,7 +6761,10 @@
 			"icon": "images/smite/abilities/pillar-of-agony.jpg",
 			"level": 5,
 			"name": "Pillar of Agony",
-			"powerDamage": 30
+			"powerDamage": 30,
+			"ticks": [
+				4
+			]
 		},
 		"abilityOne": {
 			"cooldown": 14,
@@ -6915,7 +6943,10 @@
 			"description": "He Bo unfurls his scroll in a line, releasing the flood waters. Allies on the water are immune to Slows and move faster, while enemies are Slowed.",
 			"icon": "images/smite/abilities/atlas-of-the-yellow-river.jpg",
 			"level": 5,
-			"name": "Atlas of the Yellow River"
+			"name": "Atlas of the Yellow River",
+			"ticks": [
+				7
+			]
 		},
 		"attackSpeed": 0.86,
 		"attackSpeedPerLevel": 0.8,
@@ -7233,7 +7264,10 @@
 			"icon": "images/smite/abilities/argus-the-defender.jpg",
 			"level": 5,
 			"name": "Argus, the Defender",
-			"powerDamage": 55
+			"powerDamage": 55,
+			"ticks": [
+				40
+			]
 		},
 		"abilityOne": {
 			"cooldown": 10,
@@ -7723,7 +7757,16 @@
 			"icon": "images/smite/abilities/fear-no-evil.jpg",
 			"level": 5,
 			"name": "Fear No Evil",
-			"powerDamage": 15
+			"powerDamage": 15,
+			"ticks": [
+				[
+					1,
+					1.25,
+					1.5,
+					1.75,
+					2
+				]
+			]
 		},
 		"abilityOne": {
 			"cooldown": [
@@ -8901,7 +8944,10 @@
 			"icon": "images/smite/abilities/whirlwind.jpg",
 			"level": 5,
 			"name": "Whirlwind",
-			"powerDamage": 15
+			"powerDamage": 15,
+			"ticks": [
+				4
+			]
 		},
 		"abilityTwo": {
 			"cooldown": [
@@ -9444,7 +9490,10 @@
 			"icon": "images/smite/abilities/acid-spray.jpg",
 			"level": 5,
 			"name": "Acid Spray",
-			"powerDamage": 80
+			"powerDamage": 80,
+			"ticks": [
+				4
+			]
 		},
 		"attackSpeed": 0.95,
 		"attackSpeedPerLevel": 1.3,
@@ -10353,7 +10402,10 @@
 			"icon": "images/smite/abilities/unravel.jpg",
 			"level": 5,
 			"name": "Unravel",
-			"powerDamage": 80
+			"powerDamage": 80,
+			"ticks": [
+				4
+			]
 		},
 		"attackSpeed": 1,
 		"attackSpeedPerLevel": 1.6,
@@ -10838,6 +10890,9 @@
 			"level": 5,
 			"name": "Mysterious Fog",
 			"powerDamage": 10,
+			"ticks": [
+				6
+			],
 			"toggleStats": {
 				"movementSpeed": 10,
 				"toggle": false
@@ -11650,6 +11705,9 @@
 			"icon": "images/smite/abilities/trident.jpg",
 			"level": 5,
 			"name": "Trident",
+			"ticks": [
+				6
+			],
 			"toggleStats": {
 				"movementSpeed": [
 					10,
@@ -11782,7 +11840,10 @@
 			"icon": "images/smite/abilities/divine-light.jpg",
 			"level": 5,
 			"name": "Divine Light",
-			"powerDamage": 55
+			"powerDamage": 55,
+			"ticks": [
+				3
+			]
 		},
 		"attackSpeed": 0.88,
 		"attackSpeedPerLevel": 0.8999999999999999,
@@ -11814,7 +11875,10 @@
 				"stacks": {
 					"movementSpeed": 5
 				}
-			}
+			},
+			"ticks": [
+				15
+			]
 		},
 		"physicalProtection": 10,
 		"physicalProtectionPerLevel": 3,
@@ -12315,6 +12379,9 @@
 			"level": 5,
 			"name": "Overhead kick",
 			"powerDamage": 70,
+			"ticks": [
+				1
+			],
 			"toggleStats": {
 				"movementSpeed": 50,
 				"toggle": false
@@ -13029,7 +13096,10 @@
 			"icon": "images/smite/abilities/lurking-in-the-waters.jpg",
 			"level": 5,
 			"name": "Lurking in the Waters",
-			"powerDamage": 80
+			"powerDamage": 80,
+			"ticks": [
+				5
+			]
 		},
 		"abilityOne": {
 			"cooldown": 14,
@@ -13073,7 +13143,10 @@
 			"icon": "images/smite/abilities/sickening-strike.jpg",
 			"level": 5,
 			"name": "Sickening Strike",
-			"powerDamage": 30
+			"powerDamage": 30,
+			"ticks": [
+				4
+			]
 		},
 		"abilityTwo": {
 			"cooldown": 14,
@@ -13125,7 +13198,10 @@
 				"current": 0,
 				"max": "3",
 				"stacks": {}
-			}
+			},
+			"ticks": [
+				6
+			]
 		},
 		"physicalProtection": 19,
 		"physicalProtectionPerLevel": 3,
@@ -14139,7 +14215,10 @@
 			"description": "Thor slams his hammer on the ground, causing a fissure to appear in front of him, Stunning enemies and blocking movement.",
 			"icon": "images/smite/abilities/tectonic-rift.jpg",
 			"level": 5,
-			"name": "Tectonic Rift"
+			"name": "Tectonic Rift",
+			"ticks": [
+				0
+			]
 		},
 		"attackSpeed": 1,
 		"attackSpeedPerLevel": 1.4000000000000001,
@@ -14965,7 +15044,10 @@
 			"icon": "images/smite/abilities/backfire.jpg",
 			"level": 5,
 			"name": "Backfire",
-			"powerDamage": 80
+			"powerDamage": 80,
+			"ticks": [
+				4
+			]
 		},
 		"abilityThree": {
 			"cooldown": 10,
@@ -15503,7 +15585,16 @@
 			"description": "Ymir summons a wall of ice out of the ground that blocks player movement.",
 			"icon": "images/smite/abilities/ice-wall.jpg",
 			"level": 5,
-			"name": "Ice Wall"
+			"name": "Ice Wall",
+			"ticks": [
+				[
+					2,
+					3,
+					4,
+					5,
+					6
+				]
+			]
 		},
 		"abilityThree": {
 			"cooldown": [
@@ -15754,7 +15845,10 @@
 			"icon": "images/smite/abilities/lightning-storm.jpg",
 			"level": 5,
 			"name": "Lightning Storm",
-			"powerDamage": 55
+			"powerDamage": 55,
+			"ticks": [
+				5
+			]
 		},
 		"abilityOne": {
 			"cooldown": 10,
@@ -15910,7 +16004,10 @@
 			"icon": "images/smite/abilities/expose-evil.jpg",
 			"level": 5,
 			"name": "Expose Evil",
-			"powerDamage": 20
+			"powerDamage": 20,
+			"ticks": [
+				5
+			]
 		},
 		"abilityThree": {
 			"cooldown": 15,

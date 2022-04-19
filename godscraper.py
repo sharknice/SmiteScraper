@@ -155,7 +155,7 @@ def getAbilityJson(sourceJson):
                 stacks['max'] = rankItem['value']
             elif rankItem['description'].lower() == 'Bonus Power:'.lower():
                 toggleStats['physicalPower'] = getStats(rankItem['value'])
-            if 'Duration:'.lower() in rankItem['description'].lower() or 'Thrown:'.lower() in rankItem['description'].lower():
+            if 'Duration:'.lower() in rankItem['description'].lower() or 'Thrown:'.lower() in rankItem['description'].lower() or "Lifetime:".lower() in rankItem['description'].lower():
                 #print (getStats(rankItem['value'].replace("s", "")))
                 if not rankItem['description'].lower() == 'Stun Duration:'.lower():
                     if 'ticks' in ability.keys():
