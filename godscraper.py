@@ -103,7 +103,7 @@ def getAbilityJson(sourceJson):
                 stat = rankItem['value'].split('(')
 
                 if "damage" in ability.keys():
-                    ability['damage'].append(getStats(stat[0]))
+                    ability['secondaryDamage'] = getStats(stat[0])
                 else:
                     #print (stat[0])
                     ability['damage'] = getStats(stat[0])
@@ -117,11 +117,11 @@ def getAbilityJson(sourceJson):
                 else:
                     stat = [rankItem['value']]
                 if "damage" in ability.keys():
-                    print(stat[0])
-                    print(getStats(stat[0]))
+                    #print(stat[0])
+                    #print(getStats(stat[0]))
                     if isinstance(ability['damage'], int):
                         ability['damage'] = [ability['damage']]
-                    ability['damage'].append(getStats(stat[0]))
+                    ability['secondaryDamage'] = getStats(stat[0])
                 else:
                     #print (stat[0])
                     ability['damage'] = getStats(stat[0])
@@ -129,7 +129,7 @@ def getAbilityJson(sourceJson):
                 if not 'bonus' in rankItem['description'].lower():
                     stat = rankItem['value'].split("(")
                     if "damage" in ability.keys():
-                        ability['damage'].append(getStats(stat[0]))
+                        ability['secondaryDamage'] = getStats(stat[0])
                     else:
                         ability['damage'] = getStats(stat[0])
                     if len(stat) > 1:
