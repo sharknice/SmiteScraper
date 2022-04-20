@@ -112,8 +112,10 @@ def getAbilityJson(sourceJson):
                 if len(temp) > 0:
                     ability['powerDamage'] = int(temp[0])
             elif 'Damage:'.lower() in rankItem['description'].lower():
-                if "of" in rankItem['value']:
-                    stat = rankItem['value'].split(' of')
+                if "of".lower() in rankItem['value'].lower():
+                    stat = rankItem['value'].lower().split(' of')
+                elif "per".lower() in rankItem['value'].lower():
+                    stat = rankItem['value'].lower().split(' per')
                 else:
                     stat = [rankItem['value']]
                 if "damage" in ability.keys():

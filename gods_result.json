@@ -1413,7 +1413,7 @@
 				30,
 				40,
 				50,
-				null
+				60
 			],
 			"description": "Arachne shoots a line of Web forward. She is Immune to Slows and moves faster on Web. If the Web reaches max range a Web trap will spawn. Enemy gods who walk through the trap or get hit by the projectile are Slowed by 15%, revealed to Arachne, leave a trail of Web behind them, and are attacked by Pet Broodlings. Arachne can only have 3 Web traps or projectiles active at a time.",
 			"icon": "images/smite/abilities/web.jpg",
@@ -11238,7 +11238,7 @@
 				30,
 				40,
 				50,
-				null
+				60
 			],
 			"description": "Nu Wa conjures Clay Soldiers from the Earth. If she marked a target while summoning them, they will pursue that target until it dies. If she summoned them with no target, they will attack enemy gods who damage Nu Wa, or closest enemies.\n\nSoldiers live for 10s. First they will dash at enemies within 30 units, applying a stack of protection reduction. Stacks up to 3 times, stacks last 2s. They will basic attack after that. ",
 			"icon": "images/smite/abilities/clay-soldiers.jpg",
