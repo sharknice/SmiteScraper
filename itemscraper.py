@@ -249,7 +249,7 @@ for sourceItem in sourceItems:
                         amount = re.findall(r'\d+', magicalProtection.group())
                         item['stacks']['evolved']['magicalProtection'] = int(amount[0])
 
-            if 'If you drop below'.lower() in item['passive'].lower() or 'Your Critical Hits provide you with'.lower() in item['passive'].lower() or 'While you are within'.lower() in item['passive'].lower() or 'after using an ability'.lower() in item['passive'].lower():
+            if 'while below'.lower() in item['passive'].lower() or 'If you drop below'.lower() in item['passive'].lower() or 'Your Critical Hits provide you with'.lower() in item['passive'].lower() or 'While you are within'.lower() in item['passive'].lower() or 'after using an ability'.lower() in item['passive'].lower():
                 item['toggleStats'] = { 'toggle': False }
                 physicalLifestealToggle = re.search("gain an additional \d+% Physical Lifesteal".lower(), item['passive'].lower())
                 if physicalLifestealToggle:
