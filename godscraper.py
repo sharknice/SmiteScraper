@@ -70,6 +70,11 @@ def getAbilityJson(sourceJson):
     ability['level'] = 5
     ability['name'] = sourceJson['Summary']
 
+    if ability['name'].lower() == "Time Lord".lower():
+        ability['select'] = {}
+        ability['select']['current'] = ""
+        ability['select']['options'] = [{"label": "Off"},{"hpFiveFromPercentMaxHealth": 0.015,"label": "Section I"},{"label": "Section III","magicalPowerPercentage": 0.25},{"basicAttackPowerPercentContribution": 0.45,"label": "Section IV"}]
+
     url = sourceJson['URL']
     imageName = url.rsplit('/', 1)[-1].replace('*', '')
     # try:
@@ -167,7 +172,7 @@ def getAbilityJson(sourceJson):
                 toggleStats['physicalPower'] = getStats(rankItem['value'])
             if 'Duration:'.lower() in rankItem['description'].lower() or 'Thrown:'.lower() in rankItem['description'].lower() or "Lifetime:".lower() in rankItem['description'].lower():
                 #print (getStats(rankItem['value'].replace("s", "")))
-                if not rankItem['description'].lower() == 'Stun Duration:'.lower():
+                if not rankItem['description'].lower() == 'Stun Duration:'.lower() and not "Slow".lower() in rankItem['description'].lower() and not "Disarm".lower() in rankItem['description'].lower() and not "buff" in rankItem['description'].lower():
                     if 'ticks' in ability.keys():
                         ability['ticks'].append(getStats(rankItem['value'].replace("s", "")))
                     else:
@@ -190,6 +195,28 @@ def getAbilityJson(sourceJson):
         elif toggleStats:
             toggleStats['toggle'] = False
             ability['toggleStats'] = toggleStats
+
+
+        if 'ticks' in ability.keys():
+            if not 'damage' in ability.keys():
+                del ability['ticks']
+                return ability
+            if len(ability['ticks']) == 3:
+                del ability['ticks'][0]
+            if len(ability['ticks']) >= 2:
+                print(ability['ticks'][0])
+                if ability['ticks'][0] == 0:
+                    ability['ticks'][0] = 1
+                if isinstance(ability['ticks'][0], list):
+                    ability['ticks'][0] = ability['ticks'][0][-1]
+                if isinstance(ability['ticks'][1], list):
+                    ability['ticks'][1] = ability['ticks'][1][-1]
+                print (ability['ticks'][1] / ability['ticks'][0])
+                ability['ticks'] = ability['ticks'][1] / ability['ticks'][0]
+            if isinstance(ability['ticks'], list):
+                print (ability['ticks'][0])
+                ability['ticks'] = ability['ticks'][0]
+
 
     return ability
 
