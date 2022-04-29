@@ -1,6 +1,7 @@
 import json
 import re
 import hashlib
+import math
 from urllib.request import Request, urlopen, urlretrieve
 from datetime import datetime
 
@@ -70,11 +71,7 @@ def getAbilityJson(sourceJson):
     ability['level'] = 5
     ability['name'] = sourceJson['Summary']
 
-    if ability['name'].lower() == "Time Lord".lower():
-        ability['select'] = {}
-        ability['select']['current'] = ""
-        ability['select']['options'] = [{"label": "Off"},{"hpFiveFromPercentMaxHealth": 0.015,"label": "Section I"},{"label": "Section III","magicalPowerPercentage": 0.25},{"basicAttackPowerPercentContribution": 0.45,"label": "Section IV"}]
-
+    
     url = sourceJson['URL']
     imageName = url.rsplit('/', 1)[-1].replace('*', '')
     # try:
@@ -212,7 +209,7 @@ def getAbilityJson(sourceJson):
                 if isinstance(ability['ticks'][1], list):
                     ability['ticks'][1] = ability['ticks'][1][-1]
                 print (ability['ticks'][1] / ability['ticks'][0])
-                ability['ticks'] = ability['ticks'][1] / ability['ticks'][0]
+                ability['ticks'] = math.floor(ability['ticks'][1] / ability['ticks'][0])
             if isinstance(ability['ticks'], list):
                 print (ability['ticks'][0])
                 ability['ticks'] = ability['ticks'][0]
@@ -311,6 +308,21 @@ for sourceGod in gods:
         sourceGod['Ability_3'])
     god['abilityFour'] = getAbilityJson(
         sourceGod['Ability_4'])
+
+
+    if god['name'] == "Chronos":
+        percents = re.findall(r'[+-]?[0-9]*[.]?[0-9]+[%]', god['abilityTwo']['description'])
+        nums = list(map(lambda x: x.replace("%", ""), percents))
+        god['passive']['select'] = {}
+        god['passive']['select']['current'] = ""
+        god['passive']['select']['options'] = [
+            {"label": "Off"},
+            {"hpFiveFromPercentMaxHealth": float(nums[0]) / 100, "label": "Section I"},
+            {"label": "Section III", "magicalPowerPercentage": float(nums[2])/100},
+            {"basicAttackPowerPercentContribution": float(nums[3])/100, "label": "Section IV"}]
+
+
+
     newGods.append(god)
 with open('gods_result.json', 'w') as json_file:
     json.dump(newGods, json_file, indent='\t', sort_keys=True)
