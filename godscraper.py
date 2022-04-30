@@ -105,7 +105,11 @@ def getAbilityJson(sourceJson):
                 stat = rankItem['value'].split('(')
 
                 if "damage" in ability.keys():
-                    ability['secondaryDamage'] = getStats(stat[0])
+                    ability['secondaryDamage'] = {}
+                    ability['secondaryDamage']['damage'] = getStats(stat[0])
+                    temp = re.findall(r'\d+', stat[1])
+                    if len(temp) > 0:
+                        ability['secondaryDamage']['powerDamage'] = int(temp[0])
                 else:
                     #print (stat[0])
                     ability['damage'] = getStats(stat[0])
@@ -125,7 +129,12 @@ def getAbilityJson(sourceJson):
                     #print(getStats(stat[0]))
                     if isinstance(ability['damage'], int):
                         ability['damage'] = [ability['damage']]
-                    ability['secondaryDamage'] = getStats(stat[0])
+                        ability['secondaryDamage'] = {}
+                        ability['secondaryDamage']['damage'] = getStats(stat[0])
+                        if len(stat) > 1:
+                            temp = re.findall(r'\d+', stat[1])
+                            if len(temp) > 0:
+                                ability['secondaryDamage']['powerDamage'] = int(temp[0])
                 else:
                     #print (stat[0])
                     ability['damage'] = getStats(stat[0])
@@ -133,7 +142,12 @@ def getAbilityJson(sourceJson):
                 if not 'bonus' in rankItem['description'].lower():
                     stat = rankItem['value'].split("(")
                     if "damage" in ability.keys():
-                        ability['secondaryDamage'] = getStats(stat[0])
+                        ability['secondaryDamage'] = {}
+                        ability['secondaryDamage']['damage'] = getStats(stat[0])
+                        if len(stat) > 1:
+                            temp = re.findall(r'\d+', stat[1])
+                            if len(temp) > 0:
+                                ability['secondaryDamage']['powerDamage'] = int(temp[0])
                     else:
                         ability['damage'] = getStats(stat[0])
                     if len(stat) > 1:

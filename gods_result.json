@@ -157,13 +157,16 @@
 			"level": 5,
 			"name": "Noxious Fumes",
 			"powerDamage": 20,
-			"secondaryDamage": [
-				20,
-				40,
-				60,
-				80,
-				100
-			],
+			"secondaryDamage": {
+				"damage": [
+					20,
+					40,
+					60,
+					80,
+					100
+				],
+				"powerDamage": 20
+			},
 			"ticks": 10
 		},
 		"abilityThree": {
@@ -445,13 +448,16 @@
 			"level": 5,
 			"name": "Fleeting Breath",
 			"powerDamage": 50,
-			"secondaryDamage": [
-				50,
-				100,
-				150,
-				200,
-				250
-			],
+			"secondaryDamage": {
+				"damage": [
+					50,
+					100,
+					150,
+					200,
+					250
+				],
+				"powerDamage": 50
+			},
 			"ticks": 4
 		},
 		"abilityTwo": {
@@ -469,13 +475,16 @@
 			"level": 5,
 			"name": "Corpse Explosion",
 			"powerDamage": 25,
-			"secondaryDamage": [
-				55,
-				80,
-				105,
-				130,
-				155
-			]
+			"secondaryDamage": {
+				"damage": [
+					55,
+					80,
+					105,
+					130,
+					155
+				],
+				"powerDamage": 25
+			}
 		},
 		"attackSpeed": 0.86,
 		"attackSpeedPerLevel": 0.8,
@@ -590,14 +599,7 @@
 			"icon": "images/smite/abilities/heavenly-reflection.jpg",
 			"level": 5,
 			"name": "Heavenly Reflection",
-			"powerDamage": 60,
-			"secondaryDamage": [
-				140,
-				210,
-				280,
-				350,
-				420
-			]
+			"powerDamage": 60
 		},
 		"attackSpeed": 1,
 		"attackSpeedPerLevel": 1.4000000000000001,
@@ -912,13 +914,16 @@
 			"level": 5,
 			"name": "King of the Eastern Seas",
 			"powerDamage": 50,
-			"secondaryDamage": [
-				100,
-				150,
-				200,
-				250,
-				300
-			]
+			"secondaryDamage": {
+				"damage": [
+					100,
+					150,
+					200,
+					250,
+					300
+				],
+				"powerDamage": 50
+			}
 		},
 		"abilityOne": {
 			"cooldown": 15,
@@ -986,13 +991,16 @@
 			"level": 5,
 			"name": "Dragon Call",
 			"powerDamage": 13,
-			"secondaryDamage": [
-				20,
-				25,
-				30,
-				35,
-				40
-			],
+			"secondaryDamage": {
+				"damage": [
+					20,
+					25,
+					30,
+					35,
+					40
+				],
+				"powerDamage": 13
+			},
 			"ticks": 10.0
 		},
 		"attackSpeed": 1,
@@ -1309,13 +1317,16 @@
 			"level": 5,
 			"name": "Venomous Bite",
 			"powerDamage": 8,
-			"secondaryDamage": [
-				10,
-				18,
-				26,
-				34,
-				42
-			],
+			"secondaryDamage": {
+				"damage": [
+					10,
+					18,
+					26,
+					34,
+					42
+				],
+				"powerDamage": 8
+			},
 			"ticks": 6
 		},
 		"abilityThree": {
@@ -1440,13 +1451,16 @@
 			"level": 5,
 			"name": "Shackles",
 			"powerDamage": 15,
-			"secondaryDamage": [
-				20,
-				40,
-				60,
-				80,
-				100
-			],
+			"secondaryDamage": {
+				"damage": [
+					20,
+					40,
+					60,
+					80,
+					100
+				],
+				"powerDamage": 15
+			},
 			"ticks": 2
 		},
 		"abilityThree": {
@@ -1682,13 +1696,16 @@
 			"level": 5,
 			"name": "Energy Surge (Maul Prey)",
 			"powerDamage": 30,
-			"secondaryDamage": [
-				40,
-				70,
-				100,
-				130,
-				160
-			]
+			"secondaryDamage": {
+				"damage": [
+					40,
+					70,
+					100,
+					130,
+					160
+				],
+				"powerDamage": 30
+			}
 		},
 		"abilityThree": {
 			"cooldown": 17,
@@ -1711,13 +1728,16 @@
 			"level": 5,
 			"name": "Life Tap (Heavy Charge)",
 			"powerDamage": 50,
-			"secondaryDamage": [
-				65,
-				110,
-				155,
-				200,
-				245
-			],
+			"secondaryDamage": {
+				"damage": [
+					65,
+					110,
+					155,
+					200,
+					245
+				],
+				"powerDamage": 50
+			},
 			"ticks": 0
 		},
 		"abilityTwo": {
@@ -1833,13 +1853,16 @@
 			"level": 5,
 			"name": "Shield Wall",
 			"powerDamage": 50,
-			"secondaryDamage": [
-				70,
-				135,
-				200,
-				265,
-				330
-			],
+			"secondaryDamage": {
+				"damage": [
+					70,
+					135,
+					200,
+					265,
+					330
+				],
+				"powerDamage": 50
+			},
 			"ticks": 2.0
 		},
 		"abilityTwo": {
@@ -1926,13 +1949,16 @@
 			"level": 5,
 			"name": "Gamma-Ray Burst",
 			"powerDamage": 40,
-			"secondaryDamage": [
-				120,
-				180,
-				240,
-				300,
-				360
-			],
+			"secondaryDamage": {
+				"damage": [
+					120,
+					180,
+					240,
+					300,
+					360
+				],
+				"powerDamage": 40
+			},
 			"ticks": 10
 		},
 		"abilityOne": {
@@ -2017,13 +2043,16 @@
 			"level": 5,
 			"name": "Gravity Pull",
 			"powerDamage": 35,
-			"secondaryDamage": [
-				50,
-				80,
-				110,
-				140,
-				170
-			]
+			"secondaryDamage": {
+				"damage": [
+					50,
+					80,
+					110,
+					140,
+					170
+				],
+				"powerDamage": 35
+			}
 		},
 		"attackSpeed": 0.95,
 		"attackSpeedPerLevel": 1.0999999999999999,
@@ -2220,13 +2249,16 @@
 			"level": 5,
 			"name": "Home Sweet Home",
 			"powerDamage": 10,
-			"secondaryDamage": [
-				12,
-				17,
-				22,
-				27,
-				32
-			],
+			"secondaryDamage": {
+				"damage": [
+					12,
+					17,
+					22,
+					27,
+					32
+				],
+				"powerDamage": 10
+			},
 			"ticks": 0
 		},
 		"abilityOne": {
@@ -2587,7 +2619,6 @@
 			"level": 5,
 			"name": "Life of the Party",
 			"powerDamage": 8,
-			"secondaryDamage": 10,
 			"ticks": 10
 		},
 		"abilityOne": {
@@ -2768,7 +2799,16 @@
 			"level": 5,
 			"name": "Ensnaring Claw",
 			"powerDamage": 0,
-			"secondaryDamage": 0,
+			"secondaryDamage": {
+				"damage": [
+					20,
+					25,
+					30,
+					35,
+					40
+				],
+				"powerDamage": 0
+			},
 			"ticks": 0
 		},
 		"abilityTwo": {
@@ -2928,13 +2968,16 @@
 			"level": 5,
 			"name": "Bludgeon",
 			"powerDamage": 60,
-			"secondaryDamage": [
-				70,
-				130,
-				190,
-				250,
-				310
-			],
+			"secondaryDamage": {
+				"damage": [
+					70,
+					130,
+					190,
+					250,
+					310
+				],
+				"powerDamage": 60
+			},
 			"ticks": 7.0
 		},
 		"attackSpeed": 1,
@@ -3119,7 +3162,6 @@
 			"level": 5,
 			"name": "Bat Out of Hell",
 			"powerDamage": 35,
-			"secondaryDamage": 10,
 			"ticks": 4.0
 		},
 		"abilityOne": {
@@ -3426,13 +3468,16 @@
 			"level": 5,
 			"name": "Bramble Blast",
 			"powerDamage": 5,
-			"secondaryDamage": [
-				6,
-				10,
-				14,
-				18,
-				22
-			],
+			"secondaryDamage": {
+				"damage": [
+					6,
+					10,
+					14,
+					18,
+					22
+				],
+				"powerDamage": 5
+			},
 			"ticks": 0
 		},
 		"attackSpeed": 1,
@@ -3733,13 +3778,16 @@
 			"level": 5,
 			"name": "The Maw Hungers",
 			"powerDamage": 150,
-			"secondaryDamage": [
-				300,
-				400,
-				500,
-				600,
-				700
-			],
+			"secondaryDamage": {
+				"damage": [
+					300,
+					400,
+					500,
+					600,
+					700
+				],
+				"powerDamage": 150
+			},
 			"ticks": 1,
 			"toggleStats": {
 				"movementSpeed": 35,
@@ -3767,13 +3815,16 @@
 			"level": 5,
 			"name": "Spike Shot",
 			"powerDamage": 15,
-			"secondaryDamage": [
-				10,
-				15,
-				20,
-				25,
-				30
-			],
+			"secondaryDamage": {
+				"damage": [
+					10,
+					15,
+					20,
+					25,
+					30
+				],
+				"powerDamage": 15
+			},
 			"ticks": 4
 		},
 		"abilityThree": {
@@ -3803,13 +3854,16 @@
 			"level": 5,
 			"name": "Whirlpool Form",
 			"powerDamage": 65,
-			"secondaryDamage": [
-				60,
-				100,
-				140,
-				180,
-				220
-			],
+			"secondaryDamage": {
+				"damage": [
+					60,
+					100,
+					140,
+					180,
+					220
+				],
+				"powerDamage": 65
+			},
 			"ticks": 3.0,
 			"toggleStats": {
 				"movementSpeed": 20,
@@ -3924,13 +3978,16 @@
 			"level": 5,
 			"name": "Crystallized Curses",
 			"powerDamage": 80,
-			"secondaryDamage": [
-				50,
-				80,
-				110,
-				140,
-				170
-			],
+			"secondaryDamage": {
+				"damage": [
+					50,
+					80,
+					110,
+					140,
+					170
+				],
+				"powerDamage": 80
+			},
 			"ticks": 3
 		},
 		"abilityThree": {
@@ -4306,13 +4363,16 @@
 			"level": 5,
 			"name": "Tearing The Veil",
 			"powerDamage": 30,
-			"secondaryDamage": [
-				80,
-				120,
-				160,
-				200,
-				240
-			]
+			"secondaryDamage": {
+				"damage": [
+					80,
+					120,
+					160,
+					200,
+					240
+				],
+				"powerDamage": 30
+			}
 		},
 		"abilityOne": {
 			"cooldown": 1,
@@ -4335,13 +4395,16 @@
 			"level": 5,
 			"name": "Banshee's Wail",
 			"powerDamage": 60,
-			"secondaryDamage": [
-				70,
-				110,
-				150,
-				190,
-				230
-			],
+			"secondaryDamage": {
+				"damage": [
+					70,
+					110,
+					150,
+					190,
+					230
+				],
+				"powerDamage": 60
+			},
 			"ticks": 1.5
 		},
 		"abilityThree": {
@@ -4371,13 +4434,16 @@
 			"level": 5,
 			"name": "Lurching Claw",
 			"powerDamage": 80,
-			"secondaryDamage": [
-				90,
-				140,
-				190,
-				240,
-				290
-			]
+			"secondaryDamage": {
+				"damage": [
+					90,
+					140,
+					190,
+					240,
+					290
+				],
+				"powerDamage": 80
+			}
 		},
 		"abilityTwo": {
 			"cooldown": 1,
@@ -4501,13 +4567,16 @@
 			"level": 5,
 			"name": "Rushing Terror",
 			"powerDamage": 20,
-			"secondaryDamage": [
-				40,
-				70,
-				100,
-				130,
-				160
-			]
+			"secondaryDamage": {
+				"damage": [
+					40,
+					70,
+					100,
+					130,
+					160
+				],
+				"powerDamage": 20
+			}
 		},
 		"abilityTwo": {
 			"cooldown": [
@@ -4822,13 +4891,16 @@
 			"level": 5,
 			"name": "Paolao",
 			"powerDamage": 20,
-			"secondaryDamage": [
-				60,
-				90,
-				120,
-				150,
-				180
-			],
+			"secondaryDamage": {
+				"damage": [
+					60,
+					90,
+					120,
+					150,
+					180
+				],
+				"powerDamage": 20
+			},
 			"ticks": 0
 		},
 		"abilityOne": {
@@ -4846,13 +4918,16 @@
 			"level": 5,
 			"name": "Horrible Burns",
 			"powerDamage": 15,
-			"secondaryDamage": [
-				10,
-				20,
-				30,
-				40,
-				50
-			],
+			"secondaryDamage": {
+				"damage": [
+					10,
+					20,
+					30,
+					40,
+					50
+				],
+				"powerDamage": 15
+			},
 			"ticks": 1
 		},
 		"abilityThree": {
@@ -4973,13 +5048,16 @@
 			"level": 5,
 			"name": "Fool's Gold",
 			"powerDamage": 30,
-			"secondaryDamage": [
-				30,
-				55,
-				80,
-				105,
-				130
-			]
+			"secondaryDamage": {
+				"damage": [
+					30,
+					55,
+					80,
+					105,
+					130
+				],
+				"powerDamage": 30
+			}
 		},
 		"abilityThree": {
 			"cooldown": 16,
@@ -5089,13 +5167,16 @@
 			"level": 5,
 			"name": "Golden Apple of Discord",
 			"powerDamage": 60,
-			"secondaryDamage": [
-				200,
-				250,
-				300,
-				350,
-				400
-			],
+			"secondaryDamage": {
+				"damage": [
+					200,
+					250,
+					300,
+					350,
+					400
+				],
+				"powerDamage": 60
+			},
 			"ticks": 0
 		},
 		"abilityOne": {
@@ -5119,13 +5200,16 @@
 			"level": 5,
 			"name": "Unruly Magic",
 			"powerDamage": 10,
-			"secondaryDamage": [
-				20,
-				30,
-				40,
-				50,
-				60
-			]
+			"secondaryDamage": {
+				"damage": [
+					20,
+					30,
+					40,
+					50,
+					60
+				],
+				"powerDamage": 10
+			}
 		},
 		"abilityThree": {
 			"cooldown": 16,
@@ -5162,13 +5246,16 @@
 			"level": 5,
 			"name": "Strife",
 			"powerDamage": 10,
-			"secondaryDamage": [
-				10,
-				20,
-				30,
-				40,
-				50
-			],
+			"secondaryDamage": {
+				"damage": [
+					10,
+					20,
+					30,
+					40,
+					50
+				],
+				"powerDamage": 10
+			},
 			"ticks": 1
 		},
 		"attackSpeed": 0.9,
@@ -5269,13 +5356,16 @@
 			"level": 5,
 			"name": "72 Transformations",
 			"powerDamage": 85,
-			"secondaryDamage": [
-				70,
-				130,
-				190,
-				250,
-				310
-			],
+			"secondaryDamage": {
+				"damage": [
+					70,
+					130,
+					190,
+					250,
+					310
+				],
+				"powerDamage": 85
+			},
 			"ticks": 3
 		},
 		"abilityTwo": {
@@ -5482,13 +5572,16 @@
 			"level": 5,
 			"name": "Draconic Corruption",
 			"powerDamage": 10,
-			"secondaryDamage": [
-				20,
-				30,
-				40,
-				50,
-				60
-			],
+			"secondaryDamage": {
+				"damage": [
+					20,
+					30,
+					40,
+					50,
+					60
+				],
+				"powerDamage": 10
+			},
 			"ticks": 13
 		},
 		"abilityOne": {
@@ -5518,13 +5611,16 @@
 			"level": 5,
 			"name": "Cursed Strength",
 			"powerDamage": 25,
-			"secondaryDamage": [
-				50,
-				70,
-				90,
-				110,
-				130
-			],
+			"secondaryDamage": {
+				"damage": [
+					50,
+					70,
+					90,
+					110,
+					130
+				],
+				"powerDamage": 25
+			},
 			"ticks": 1
 		},
 		"abilityThree": {
@@ -5542,13 +5638,16 @@
 			"level": 5,
 			"name": "Underhanded Tactics",
 			"powerDamage": 30,
-			"secondaryDamage": [
-				40,
-				60,
-				80,
-				100,
-				120
-			],
+			"secondaryDamage": {
+				"damage": [
+					40,
+					60,
+					80,
+					100,
+					120
+				],
+				"powerDamage": 30
+			},
 			"ticks": 0
 		},
 		"abilityTwo": {
@@ -5978,8 +6077,7 @@
 			"description": "Geb pulls apart the earth, dealing Magical Damage and stunning enemy gods hit. Targets take additional damage based on their current Health.",
 			"icon": "images/smite/abilities/cataclysm.jpg",
 			"level": 5,
-			"name": "Cataclysm",
-			"secondaryDamage": 15
+			"name": "Cataclysm"
 		},
 		"abilityOne": {
 			"cooldown": [
@@ -6095,13 +6193,16 @@
 			"level": 5,
 			"name": "Winds of Shamash",
 			"powerDamage": 50,
-			"secondaryDamage": [
-				150,
-				225,
-				300,
-				375,
-				450
-			],
+			"secondaryDamage": {
+				"damage": [
+					150,
+					225,
+					300,
+					375,
+					450
+				],
+				"powerDamage": 50
+			},
 			"ticks": 0
 		},
 		"abilityOne": {
@@ -6181,13 +6282,16 @@
 			"level": 5,
 			"name": "Drop Kick",
 			"powerDamage": 40,
-			"secondaryDamage": [
-				50,
-				95,
-				140,
-				185,
-				230
-			]
+			"secondaryDamage": {
+				"damage": [
+					50,
+					95,
+					140,
+					185,
+					230
+				],
+				"powerDamage": 40
+			}
 		},
 		"attackSpeed": 1,
 		"attackSpeedPerLevel": 1.2,
@@ -6547,13 +6651,16 @@
 			"level": 5,
 			"name": "Devour Souls",
 			"powerDamage": 50,
-			"secondaryDamage": [
-				20,
-				27,
-				34,
-				41,
-				48
-			]
+			"secondaryDamage": {
+				"damage": [
+					20,
+					27,
+					34,
+					41,
+					48
+				],
+				"powerDamage": 50
+			}
 		},
 		"abilityTwo": {
 			"cooldown": [
@@ -6737,13 +6844,16 @@
 			"level": 5,
 			"name": "Through The Realms",
 			"powerDamage": 30,
-			"secondaryDamage": [
-				35,
-				75,
-				115,
-				155,
-				195
-			],
+			"secondaryDamage": {
+				"damage": [
+					35,
+					75,
+					115,
+					155,
+					195
+				],
+				"powerDamage": 30
+			},
 			"ticks": 3
 		},
 		"abilityOne": {
@@ -6797,13 +6907,16 @@
 			"level": 5,
 			"name": "Gjallarhorn",
 			"powerDamage": 60,
-			"secondaryDamage": [
-				50,
-				90,
-				130,
-				170,
-				210
-			],
+			"secondaryDamage": {
+				"damage": [
+					50,
+					90,
+					130,
+					170,
+					210
+				],
+				"powerDamage": 60
+			},
 			"ticks": 4
 		},
 		"attackSpeed": 0.96,
@@ -6869,13 +6982,16 @@
 			"level": 5,
 			"name": "Decay (Restoration)",
 			"powerDamage": 50,
-			"secondaryDamage": [
-				60,
-				110,
-				160,
-				210,
-				260
-			]
+			"secondaryDamage": {
+				"damage": [
+					60,
+					110,
+					160,
+					210,
+					260
+				],
+				"powerDamage": 50
+			}
 		},
 		"abilityThree": {
 			"cooldown": 12,
@@ -6998,13 +7114,16 @@
 			"level": 5,
 			"name": "Royal Assault",
 			"powerDamage": 80,
-			"secondaryDamage": [
-				80,
-				135,
-				190,
-				245,
-				300
-			]
+			"secondaryDamage": {
+				"damage": [
+					80,
+					135,
+					190,
+					245,
+					300
+				],
+				"powerDamage": 80
+			}
 		},
 		"abilityThree": {
 			"cooldown": 16,
@@ -7247,7 +7366,6 @@
 			"level": 5,
 			"name": "Updraft",
 			"powerDamage": 75,
-			"secondaryDamage": 0,
 			"ticks": 0
 		},
 		"abilityThree": {
@@ -7285,13 +7403,16 @@
 			"level": 5,
 			"name": "Fracture",
 			"powerDamage": 50,
-			"secondaryDamage": [
-				60,
-				100,
-				140,
-				180,
-				220
-			],
+			"secondaryDamage": {
+				"damage": [
+					60,
+					100,
+					140,
+					180,
+					220
+				],
+				"powerDamage": 50
+			},
 			"ticks": 2
 		},
 		"attackSpeed": 1,
@@ -7854,13 +7975,16 @@
 			"level": 5,
 			"name": "Persistent Gust",
 			"powerDamage": 5,
-			"secondaryDamage": [
-				10,
-				20,
-				30,
-				40,
-				50
-			],
+			"secondaryDamage": {
+				"damage": [
+					10,
+					20,
+					30,
+					40,
+					50
+				],
+				"powerDamage": 5
+			},
 			"ticks": 7
 		},
 		"abilityThree": {
@@ -7945,13 +8069,16 @@
 			"level": 5,
 			"name": "The World Serpent",
 			"powerDamage": 20,
-			"secondaryDamage": [
-				75,
-				100,
-				125,
-				150,
-				175
-			]
+			"secondaryDamage": {
+				"damage": [
+					75,
+					100,
+					125,
+					150,
+					175
+				],
+				"powerDamage": 20
+			}
 		},
 		"abilityOne": {
 			"cooldown": [
@@ -7980,13 +8107,16 @@
 			"level": 5,
 			"name": "Venomous Haze",
 			"powerDamage": 5,
-			"secondaryDamage": [
-				15,
-				25,
-				35,
-				45,
-				55
-			],
+			"secondaryDamage": {
+				"damage": [
+					15,
+					25,
+					35,
+					45,
+					55
+				],
+				"powerDamage": 5
+			},
 			"ticks": 2
 		},
 		"abilityThree": {
@@ -8037,13 +8167,16 @@
 			"level": 5,
 			"name": "Consuming Bellow",
 			"powerDamage": 10,
-			"secondaryDamage": [
-				20,
-				25,
-				30,
-				35,
-				40
-			],
+			"secondaryDamage": {
+				"damage": [
+					20,
+					25,
+					30,
+					35,
+					40
+				],
+				"powerDamage": 10
+			},
 			"ticks": 1
 		},
 		"attackSpeed": 1,
@@ -8154,13 +8287,16 @@
 			"level": 5,
 			"name": "Lash",
 			"powerDamage": 5,
-			"secondaryDamage": [
-				5,
-				10,
-				15,
-				20,
-				25
-			],
+			"secondaryDamage": {
+				"damage": [
+					5,
+					10,
+					15,
+					20,
+					25
+				],
+				"powerDamage": 5
+			},
 			"ticks": 3
 		},
 		"attackSpeed": 1,
@@ -8338,13 +8474,16 @@
 			"level": 5,
 			"name": "Sundering Strike (Excalibur's Wrath)",
 			"powerDamage": 50,
-			"secondaryDamage": [
-				5,
-				6.5,
-				8,
-				9.5,
-				11
-			],
+			"secondaryDamage": {
+				"damage": [
+					50,
+					100,
+					150,
+					200,
+					250
+				],
+				"powerDamage": 50
+			},
 			"ticks": 1.0
 		},
 		"abilityOne": {
@@ -8368,13 +8507,16 @@
 			"level": 5,
 			"name": "Overhead Slash (Hamstring)",
 			"powerDamage": 60,
-			"secondaryDamage": [
-				60,
-				115,
-				170,
-				225,
-				280
-			],
+			"secondaryDamage": {
+				"damage": [
+					60,
+					115,
+					170,
+					225,
+					280
+				],
+				"powerDamage": 60
+			},
 			"ticks": 0
 		},
 		"abilityThree": {
@@ -8398,13 +8540,16 @@
 			"level": 5,
 			"name": "Twin Cleave (Bladestorm)",
 			"powerDamage": 40,
-			"secondaryDamage": [
-				30,
-				80,
-				130,
-				180,
-				230
-			]
+			"secondaryDamage": {
+				"damage": [
+					30,
+					80,
+					130,
+					180,
+					230
+				],
+				"powerDamage": 40
+			}
 		},
 		"abilityTwo": {
 			"cooldown": 14,
@@ -8427,13 +8572,16 @@
 			"level": 5,
 			"name": "Battle Stomp (Uppercut)",
 			"powerDamage": 40,
-			"secondaryDamage": [
-				50,
-				95,
-				140,
-				185,
-				230
-			]
+			"secondaryDamage": {
+				"damage": [
+					50,
+					95,
+					140,
+					185,
+					230
+				],
+				"powerDamage": 40
+			}
 		},
 		"attackSpeed": 1,
 		"attackSpeedPerLevel": 0.0,
@@ -8610,13 +8758,16 @@
 			"level": 5,
 			"name": "Epic Uppercut",
 			"powerDamage": 40,
-			"secondaryDamage": [
-				200,
-				290,
-				380,
-				470,
-				560
-			]
+			"secondaryDamage": {
+				"damage": [
+					200,
+					290,
+					380,
+					470,
+					560
+				],
+				"powerDamage": 40
+			}
 		},
 		"abilityOne": {
 			"cooldown": 13,
@@ -8639,13 +8790,16 @@
 			"level": 5,
 			"name": "Throw Back",
 			"powerDamage": 60,
-			"secondaryDamage": [
-				90,
-				160,
-				230,
-				300,
-				370
-			]
+			"secondaryDamage": {
+				"damage": [
+					90,
+					160,
+					230,
+					300,
+					370
+				],
+				"powerDamage": 60
+			}
 		},
 		"abilityThree": {
 			"cooldown": 15,
@@ -8739,13 +8893,16 @@
 			"level": 5,
 			"name": "Assassinate",
 			"powerDamage": 90,
-			"secondaryDamage": [
-				100,
-				145,
-				190,
-				235,
-				280
-			],
+			"secondaryDamage": {
+				"damage": [
+					100,
+					145,
+					190,
+					235,
+					280
+				],
+				"powerDamage": 90
+			},
 			"ticks": 1.0
 		},
 		"abilityOne": {
@@ -8792,13 +8949,16 @@
 			"level": 5,
 			"name": "Flurry Strike",
 			"powerDamage": 70,
-			"secondaryDamage": [
-				55,
-				75,
-				95,
-				115,
-				135
-			],
+			"secondaryDamage": {
+				"damage": [
+					55,
+					75,
+					95,
+					115,
+					135
+				],
+				"powerDamage": 70
+			},
 			"ticks": 1
 		},
 		"abilityTwo": {
@@ -9037,13 +9197,16 @@
 			"level": 5,
 			"name": "Special Delivery",
 			"powerDamage": 20,
-			"secondaryDamage": [
-				10,
-				15,
-				20,
-				25,
-				30
-			],
+			"secondaryDamage": {
+				"damage": [
+					10,
+					15,
+					20,
+					25,
+					30
+				],
+				"powerDamage": 20
+			},
 			"ticks": 1
 		},
 		"abilityTwo": {
@@ -9137,13 +9300,16 @@
 			"level": 5,
 			"name": "Elemental Mastery",
 			"powerDamage": 5,
-			"secondaryDamage": [
-				5,
-				10,
-				15,
-				20,
-				25
-			]
+			"secondaryDamage": {
+				"damage": [
+					5,
+					10,
+					15,
+					20,
+					25
+				],
+				"powerDamage": 5
+			}
 		},
 		"abilityOne": {
 			"cooldown": 14,
@@ -9160,13 +9326,16 @@
 			"level": 5,
 			"name": "Eclipse (Radiate/Frostbolt)",
 			"powerDamage": 8,
-			"secondaryDamage": [
-				5,
-				15,
-				25,
-				35,
-				45
-			],
+			"secondaryDamage": {
+				"damage": [
+					5,
+					15,
+					25,
+					35,
+					45
+				],
+				"powerDamage": 8
+			},
 			"ticks": 0
 		},
 		"abilityThree": {
@@ -9269,13 +9438,16 @@
 			"level": 5,
 			"name": "Consuming Power",
 			"powerDamage": 40,
-			"secondaryDamage": [
-				90,
-				130,
-				170,
-				210,
-				250
-			],
+			"secondaryDamage": {
+				"damage": [
+					90,
+					130,
+					170,
+					210,
+					250
+				],
+				"powerDamage": 40
+			},
 			"ticks": 4
 		},
 		"abilityOne": {
@@ -9299,13 +9471,16 @@
 			"level": 5,
 			"name": "Sigil Mastery",
 			"powerDamage": 30,
-			"secondaryDamage": [
-				40,
-				55,
-				70,
-				85,
-				100
-			],
+			"secondaryDamage": {
+				"damage": [
+					40,
+					55,
+					70,
+					85,
+					100
+				],
+				"powerDamage": 30
+			},
 			"ticks": 0
 		},
 		"abilityThree": {
@@ -9323,13 +9498,16 @@
 			"level": 5,
 			"name": "Shroud of Wildfire",
 			"powerDamage": 20,
-			"secondaryDamage": [
-				60,
-				90,
-				120,
-				150,
-				180
-			],
+			"secondaryDamage": {
+				"damage": [
+					60,
+					90,
+					120,
+					150,
+					180
+				],
+				"powerDamage": 20
+			},
 			"ticks": 4.0,
 			"toggleStats": {
 				"movementSpeed": [
@@ -9369,13 +9547,16 @@
 			"level": 5,
 			"name": "Dragonflight",
 			"powerDamage": 50,
-			"secondaryDamage": [
-				75,
-				100,
-				125,
-				150,
-				175
-			]
+			"secondaryDamage": {
+				"damage": [
+					75,
+					100,
+					125,
+					150,
+					175
+				],
+				"powerDamage": 50
+			}
 		},
 		"attackSpeed": 1,
 		"attackSpeedPerLevel": 0.8,
@@ -9426,13 +9607,16 @@
 			"level": 5,
 			"name": "Divine Mastery",
 			"powerDamage": 60,
-			"secondaryDamage": [
-				150,
-				200,
-				250,
-				300,
-				350
-			],
+			"secondaryDamage": {
+				"damage": [
+					150,
+					200,
+					250,
+					300,
+					350
+				],
+				"powerDamage": 60
+			},
 			"ticks": 1.0
 		},
 		"abilityOne": {
@@ -9489,13 +9673,16 @@
 			"level": 5,
 			"name": "Grapple",
 			"powerDamage": 20,
-			"secondaryDamage": [
-				40,
-				50,
-				60,
-				70,
-				80
-			],
+			"secondaryDamage": {
+				"damage": [
+					40,
+					50,
+					60,
+					70,
+					80
+				],
+				"powerDamage": 20
+			},
 			"ticks": 6
 		},
 		"abilityTwo": {
@@ -9519,13 +9706,16 @@
 			"level": 5,
 			"name": "Spear Thrust",
 			"powerDamage": 10,
-			"secondaryDamage": [
-				20,
-				30,
-				40,
-				50,
-				60
-			],
+			"secondaryDamage": {
+				"damage": [
+					20,
+					30,
+					40,
+					50,
+					60
+				],
+				"powerDamage": 10
+			},
 			"ticks": 3
 		},
 		"attackSpeed": 1,
@@ -9606,13 +9796,16 @@
 			"level": 5,
 			"name": "Universe Ring Toss",
 			"powerDamage": 20,
-			"secondaryDamage": [
-				75,
-				100,
-				125,
-				150,
-				175
-			],
+			"secondaryDamage": {
+				"damage": [
+					75,
+					100,
+					125,
+					150,
+					175
+				],
+				"powerDamage": 20
+			},
 			"ticks": 2,
 			"toggleStats": {
 				"movementSpeed": 5,
@@ -10037,13 +10230,16 @@
 			"level": 5,
 			"name": "Barrier Formation",
 			"powerDamage": 5,
-			"secondaryDamage": [
-				10,
-				15,
-				20,
-				25,
-				30
-			],
+			"secondaryDamage": {
+				"damage": [
+					10,
+					15,
+					20,
+					25,
+					30
+				],
+				"powerDamage": 5
+			},
 			"ticks": 4
 		},
 		"attackSpeed": 1,
@@ -10101,13 +10297,16 @@
 			"level": 5,
 			"name": "Night Terror",
 			"powerDamage": 5,
-			"secondaryDamage": [
-				20,
-				25,
-				30,
-				35,
-				40
-			]
+			"secondaryDamage": {
+				"damage": [
+					20,
+					25,
+					30,
+					35,
+					40
+				],
+				"powerDamage": 5
+			}
 		},
 		"abilityOne": {
 			"cooldown": 10,
@@ -10242,13 +10441,16 @@
 			"level": 5,
 			"name": "Mysterious Fog",
 			"powerDamage": 10,
-			"secondaryDamage": [
-				10,
-				20,
-				30,
-				40,
-				50
-			],
+			"secondaryDamage": {
+				"damage": [
+					10,
+					20,
+					30,
+					40,
+					50
+				],
+				"powerDamage": 10
+			},
 			"ticks": 6,
 			"toggleStats": {
 				"movementSpeed": 10,
@@ -10393,13 +10595,16 @@
 			"level": 5,
 			"name": "Gungnir's Might",
 			"powerDamage": 60,
-			"secondaryDamage": [
-				60,
-				110,
-				160,
-				210,
-				260
-			],
+			"secondaryDamage": {
+				"damage": [
+					60,
+					110,
+					160,
+					210,
+					260
+				],
+				"powerDamage": 60
+			},
 			"ticks": 1,
 			"toggleStats": {
 				"attackSpeed": 30,
@@ -10701,13 +10906,16 @@
 			"level": 5,
 			"name": "Volcanic Lightning",
 			"powerDamage": 40,
-			"secondaryDamage": [
-				100,
-				140,
-				180,
-				220,
-				260
-			]
+			"secondaryDamage": {
+				"damage": [
+					100,
+					140,
+					180,
+					220,
+					260
+				],
+				"powerDamage": 40
+			}
 		},
 		"abilityOne": {
 			"cooldown": 14,
@@ -10730,7 +10938,10 @@
 			"level": 5,
 			"name": "Pyroclast",
 			"powerDamage": 15,
-			"secondaryDamage": 0
+			"secondaryDamage": {
+				"damage": 0,
+				"powerDamage": 15
+			}
 		},
 		"abilityThree": {
 			"cooldown": 0,
@@ -10747,13 +10958,16 @@
 			"level": 5,
 			"name": "Magma Rush",
 			"powerDamage": 20,
-			"secondaryDamage": [
-				20,
-				35,
-				50,
-				65,
-				80
-			]
+			"secondaryDamage": {
+				"damage": [
+					20,
+					35,
+					50,
+					65,
+					80
+				],
+				"powerDamage": 20
+			}
 		},
 		"abilityTwo": {
 			"cooldown": 15,
@@ -10776,14 +10990,17 @@
 			"level": 5,
 			"name": "Eruption",
 			"powerDamage": 60,
-			"secondaryDamage": [
-				null,
-				140,
-				null,
-				180,
-				null,
-				220
-			]
+			"secondaryDamage": {
+				"damage": [
+					null,
+					140,
+					null,
+					180,
+					null,
+					220
+				],
+				"powerDamage": 60
+			}
 		},
 		"attackSpeed": 1,
 		"attackSpeedPerLevel": 2.0,
@@ -10840,13 +11057,16 @@
 			"level": 5,
 			"name": "Grasp of Death",
 			"powerDamage": 30,
-			"secondaryDamage": [
-				65,
-				90,
-				115,
-				140,
-				165
-			],
+			"secondaryDamage": {
+				"damage": [
+					65,
+					90,
+					115,
+					140,
+					165
+				],
+				"powerDamage": 30
+			},
 			"ticks": 5
 		},
 		"abilityOne": {
@@ -11304,13 +11524,16 @@
 			"level": 5,
 			"name": "Raiju",
 			"powerDamage": 10,
-			"secondaryDamage": [
-				14,
-				21,
-				28,
-				35,
-				42
-			],
+			"secondaryDamage": {
+				"damage": [
+					14,
+					21,
+					28,
+					35,
+					42
+				],
+				"powerDamage": 10
+			},
 			"ticks": 1
 		},
 		"attackSpeed": 0.87,
@@ -12059,13 +12282,15 @@
 			"level": 5,
 			"name": "Spawn of Set",
 			"powerDamage": 25,
-			"secondaryDamage": [
-				50,
-				55,
-				60,
-				65,
-				70
-			],
+			"secondaryDamage": {
+				"damage": [
+					50,
+					55,
+					60,
+					65,
+					70
+				]
+			},
 			"ticks": [
 				8,
 				9,
@@ -12127,7 +12352,6 @@
 			"level": 5,
 			"name": "Shiva Tandava",
 			"powerDamage": 40,
-			"secondaryDamage": 50,
 			"ticks": 1.5,
 			"toggleStats": {
 				"hpFive": [
@@ -12161,13 +12385,16 @@
 			"level": 5,
 			"name": "Emblazoned Sweep",
 			"powerDamage": 5,
-			"secondaryDamage": [
-				10,
-				20,
-				30,
-				40,
-				50
-			]
+			"secondaryDamage": {
+				"damage": [
+					10,
+					20,
+					30,
+					40,
+					50
+				],
+				"powerDamage": 5
+			}
 		},
 		"abilityThree": {
 			"cooldown": 18,
@@ -12190,13 +12417,16 @@
 			"level": 5,
 			"name": "Pillar of Dawn",
 			"powerDamage": 4,
-			"secondaryDamage": [
-				7,
-				11,
-				15,
-				19,
-				23
-			]
+			"secondaryDamage": {
+				"damage": [
+					7,
+					11,
+					15,
+					19,
+					23
+				],
+				"powerDamage": 4
+			}
 		},
 		"abilityTwo": {
 			"cooldown": 14,
@@ -12321,13 +12551,16 @@
 			"level": 5,
 			"name": "Permafrost",
 			"powerDamage": 5,
-			"secondaryDamage": [
-				5,
-				10,
-				15,
-				20,
-				25
-			],
+			"secondaryDamage": {
+				"damage": [
+					5,
+					10,
+					15,
+					20,
+					25
+				],
+				"powerDamage": 5
+			},
 			"ticks": 6,
 			"toggleStats": {
 				"movementSpeed": [
@@ -12375,7 +12608,9 @@
 			"icon": "images/smite/abilities/kaldr-the-winter-wolf.jpg",
 			"level": 5,
 			"name": "Kaldr, The Winter Wolf",
-			"secondaryDamage": 0,
+			"secondaryDamage": {
+				"damage": 0
+			},
 			"ticks": 5.0
 		},
 		"physicalProtection": 11,
@@ -12714,13 +12949,16 @@
 			"level": 5,
 			"name": "72 Transformations",
 			"powerDamage": 60,
-			"secondaryDamage": [
-				70,
-				105,
-				140,
-				175,
-				210
-			]
+			"secondaryDamage": {
+				"damage": [
+					70,
+					105,
+					140,
+					175,
+					210
+				],
+				"powerDamage": 60
+			}
 		},
 		"abilityTwo": {
 			"cooldown": 10,
@@ -13080,13 +13318,16 @@
 			"level": 5,
 			"name": "Monolith",
 			"powerDamage": 5,
-			"secondaryDamage": [
-				10,
-				12,
-				14,
-				16,
-				18
-			],
+			"secondaryDamage": {
+				"damage": [
+					10,
+					12,
+					14,
+					16,
+					18
+				],
+				"powerDamage": 5
+			},
 			"ticks": 10
 		},
 		"abilityTwo": {
@@ -13110,13 +13351,16 @@
 			"level": 5,
 			"name": "Crushing Earth",
 			"powerDamage": 35,
-			"secondaryDamage": [
-				60,
-				110,
-				160,
-				210,
-				260
-			],
+			"secondaryDamage": {
+				"damage": [
+					60,
+					110,
+					160,
+					210,
+					260
+				],
+				"powerDamage": 35
+			},
 			"ticks": 5
 		},
 		"attackSpeed": 0.9,
@@ -13358,13 +13602,16 @@
 			"level": 5,
 			"name": "Dark Omen",
 			"powerDamage": 40,
-			"secondaryDamage": [
-				40,
-				70,
-				100,
-				130,
-				160
-			]
+			"secondaryDamage": {
+				"damage": [
+					40,
+					70,
+					100,
+					130,
+					160
+				],
+				"powerDamage": 40
+			}
 		},
 		"attackSpeed": 0.87,
 		"attackSpeedPerLevel": 0.8999999999999999,
@@ -13429,13 +13676,16 @@
 			"level": 5,
 			"name": "Anvil of Dawn",
 			"powerDamage": 15,
-			"secondaryDamage": [
-				20,
-				30,
-				40,
-				50,
-				60
-			]
+			"secondaryDamage": {
+				"damage": [
+					20,
+					30,
+					40,
+					50,
+					60
+				],
+				"powerDamage": 15
+			}
 		},
 		"abilityOne": {
 			"cooldown": 12,
@@ -13480,13 +13730,16 @@
 			"level": 5,
 			"name": "Berserker Barrage",
 			"powerDamage": 60,
-			"secondaryDamage": [
-				45,
-				65,
-				85,
-				105,
-				125
-			]
+			"secondaryDamage": {
+				"damage": [
+					45,
+					65,
+					85,
+					105,
+					125
+				],
+				"powerDamage": 60
+			}
 		},
 		"abilityTwo": {
 			"cooldown": [
@@ -13601,13 +13854,16 @@
 			"level": 5,
 			"name": "Glyph of Pain",
 			"powerDamage": 5,
-			"secondaryDamage": [
-				20,
-				25,
-				30,
-				35,
-				40
-			]
+			"secondaryDamage": {
+				"damage": [
+					20,
+					25,
+					30,
+					35,
+					40
+				],
+				"powerDamage": 5
+			}
 		},
 		"abilityTwo": {
 			"cooldown": [
@@ -13751,13 +14007,16 @@
 			"level": 5,
 			"name": "Ruination",
 			"powerDamage": 50,
-			"secondaryDamage": [
-				60,
-				95,
-				130,
-				165,
-				200
-			]
+			"secondaryDamage": {
+				"damage": [
+					60,
+					95,
+					130,
+					165,
+					200
+				],
+				"powerDamage": 50
+			}
 		},
 		"attackSpeed": 0.88,
 		"attackSpeedPerLevel": 0.8999999999999999,
@@ -13814,13 +14073,16 @@
 			"level": 5,
 			"name": "Piercing Moonlight",
 			"powerDamage": 45,
-			"secondaryDamage": [
-				70,
-				100,
-				130,
-				160,
-				190
-			]
+			"secondaryDamage": {
+				"damage": [
+					70,
+					100,
+					130,
+					160,
+					190
+				],
+				"powerDamage": 45
+			}
 		},
 		"abilityOne": {
 			"cooldown": 12,
@@ -13865,7 +14127,10 @@
 			"level": 5,
 			"name": "Silver Moon Caltrops",
 			"powerDamage": 30,
-			"secondaryDamage": 0,
+			"secondaryDamage": {
+				"damage": 0,
+				"powerDamage": 30
+			},
 			"ticks": 1.5
 		},
 		"abilityTwo": {
@@ -13889,13 +14154,16 @@
 			"level": 5,
 			"name": "Kusarigama",
 			"powerDamage": 70,
-			"secondaryDamage": [
-				50,
-				105,
-				160,
-				215,
-				270
-			]
+			"secondaryDamage": {
+				"damage": [
+					50,
+					105,
+					160,
+					215,
+					270
+				],
+				"powerDamage": 70
+			}
 		},
 		"attackSpeed": 1,
 		"attackSpeedPerLevel": 1.3,
@@ -13982,13 +14250,16 @@
 			"level": 5,
 			"name": "Fearless",
 			"powerDamage": 50,
-			"secondaryDamage": [
-				70,
-				120,
-				170,
-				220,
-				270
-			]
+			"secondaryDamage": {
+				"damage": [
+					70,
+					120,
+					170,
+					220,
+					270
+				],
+				"powerDamage": 50
+			}
 		},
 		"abilityThree": {
 			"cooldown": [
@@ -14453,8 +14724,7 @@
 			"icon": "images/smite/abilities/rising-jaguar.jpg",
 			"level": 5,
 			"name": "Rising Jaguar",
-			"powerDamage": 50,
-			"secondaryDamage": 30
+			"powerDamage": 50
 		},
 		"abilityTwo": {
 			"cooldown": [
@@ -14483,13 +14753,16 @@
 			"level": 5,
 			"name": "Poison Darts",
 			"powerDamage": 10,
-			"secondaryDamage": [
-				10,
-				15,
-				20,
-				25,
-				30
-			],
+			"secondaryDamage": {
+				"damage": [
+					10,
+					15,
+					20,
+					25,
+					30
+				],
+				"powerDamage": 10
+			},
 			"ticks": 6
 		},
 		"attackSpeed": 0.95,
@@ -14574,13 +14847,6 @@
 			"level": 5,
 			"name": "Furious Roar",
 			"powerDamage": 60,
-			"secondaryDamage": [
-				1.5,
-				2,
-				2.5,
-				3,
-				3.5
-			],
 			"ticks": 4
 		},
 		"abilityThree": {
@@ -14627,13 +14893,16 @@
 			"level": 5,
 			"name": "Hook Slam",
 			"powerDamage": 45,
-			"secondaryDamage": [
-				50,
-				80,
-				110,
-				140,
-				170
-			],
+			"secondaryDamage": {
+				"damage": [
+					50,
+					80,
+					110,
+					140,
+					170
+				],
+				"powerDamage": 45
+			},
 			"ticks": [
 				1,
 				1.1,
@@ -14710,13 +14979,16 @@
 			"level": 5,
 			"name": "Bouncing Bubble (Moonstrike)",
 			"powerDamage": 15,
-			"secondaryDamage": [
-				20,
-				40,
-				60,
-				80,
-				100
-			]
+			"secondaryDamage": {
+				"damage": [
+					20,
+					40,
+					60,
+					80,
+					100
+				],
+				"powerDamage": 15
+			}
 		},
 		"abilityThree": {
 			"cost": 0,
@@ -14933,13 +15205,16 @@
 			"level": 5,
 			"name": "Dueling Dragons",
 			"powerDamage": 45,
-			"secondaryDamage": [
-				100,
-				140,
-				180,
-				220,
-				260
-			],
+			"secondaryDamage": {
+				"damage": [
+					100,
+					140,
+					180,
+					220,
+					260
+				],
+				"powerDamage": 45
+			},
 			"ticks": 3.0
 		},
 		"abilityOne": {
@@ -14969,7 +15244,10 @@
 			"level": 5,
 			"name": "Flames of the Phoenix",
 			"powerDamage": 8,
-			"secondaryDamage": 0,
+			"secondaryDamage": {
+				"damage": 0,
+				"powerDamage": 8
+			},
 			"ticks": 0
 		},
 		"abilityThree": {
@@ -15013,13 +15291,16 @@
 			"level": 5,
 			"name": "Dao Cultivation",
 			"powerDamage": 50,
-			"secondaryDamage": [
-				50,
-				95,
-				140,
-				185,
-				230
-			],
+			"secondaryDamage": {
+				"damage": [
+					50,
+					95,
+					140,
+					185,
+					230
+				],
+				"powerDamage": 50
+			},
 			"ticks": 0
 		},
 		"attackSpeed": 1,
@@ -15132,13 +15413,16 @@
 			"level": 5,
 			"name": "Aegis Assault",
 			"powerDamage": 30,
-			"secondaryDamage": [
-				55,
-				65,
-				75,
-				85,
-				95
-			],
+			"secondaryDamage": {
+				"damage": [
+					55,
+					65,
+					75,
+					85,
+					95
+				],
+				"powerDamage": 30
+			},
 			"ticks": 5.0,
 			"toggleStats": {
 				"attackSpeed": [
