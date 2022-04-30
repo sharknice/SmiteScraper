@@ -105,7 +105,11 @@ def getAbilityJson(sourceJson):
                 stat = rankItem['value'].split('(')
 
                 if "damage" in ability.keys():
-                    ability['secondaryDamage'] = getStats(stat[0])
+                    ability['secondaryDamage'] = {}
+                    ability['secondaryDamage']['damage'] = getStats(stat[0])
+                    temp = re.findall(r'\d+', stat[1])
+                    if len(temp) > 0:
+                        ability['secondaryDamage']['powerDamage'] = int(temp[0])
                 else:
                     #print (stat[0])
                     ability['damage'] = getStats(stat[0])
@@ -125,7 +129,12 @@ def getAbilityJson(sourceJson):
                     #print(getStats(stat[0]))
                     if isinstance(ability['damage'], int):
                         ability['damage'] = [ability['damage']]
-                    ability['secondaryDamage'] = getStats(stat[0])
+                        ability['secondaryDamage'] = {}
+                        ability['secondaryDamage']['damage'] = getStats(stat[0])
+                        if len(stat) > 1:
+                            temp = re.findall(r'\d+', stat[1])
+                            if len(temp) > 0:
+                                ability['secondaryDamage']['powerDamage'] = int(temp[0])
                 else:
                     #print (stat[0])
                     ability['damage'] = getStats(stat[0])
@@ -133,7 +142,12 @@ def getAbilityJson(sourceJson):
                 if not 'bonus' in rankItem['description'].lower():
                     stat = rankItem['value'].split("(")
                     if "damage" in ability.keys():
-                        ability['secondaryDamage'] = getStats(stat[0])
+                        ability['secondaryDamage'] = {}
+                        ability['secondaryDamage']['damage'] = getStats(stat[0])
+                        if len(stat) > 1:
+                            temp = re.findall(r'\d+', stat[1])
+                            if len(temp) > 0:
+                                ability['secondaryDamage']['powerDamage'] = int(temp[0])
                     else:
                         ability['damage'] = getStats(stat[0])
                     if len(stat) > 1:
@@ -148,8 +162,8 @@ def getAbilityJson(sourceJson):
             elif rankItem['description'].lower() == 'Attack Speed:'.lower():
                 toggleStats['attackSpeed'] = getStats(rankItem['value'][:-1])
             elif rankItem['description'].lower() == 'Damage Buff:'.lower():
-                toggleStats['basicAttackPercentIncrease'] = getStats(
-                    rankItem['value'][:-1])
+                toggleStats['basicAttackPercentIncrease'] = getStats(rankItem['value'][:-1])
+                toggleStats['basicAttackPercentIncrease'] = [element * .1 for element in toggleStats['basicAttackPercentIncrease']]
             elif rankItem['description'].lower() == 'Landing Damage:'.lower() or rankItem['description'].lower() == 'Ranged Damage:'.lower():
                 stat = rankItem['value'].split(" (")
                 ability['secondaryDamage'] = {}
@@ -213,6 +227,17 @@ def getAbilityJson(sourceJson):
             if isinstance(ability['ticks'], list):
                 print (ability['ticks'][0])
                 ability['ticks'] = ability['ticks'][0]
+    if itemDescription['menuitems']:
+        for menuitem in itemDescription['menuitems']:
+            toggleStats = {}
+            if menuitem['value'].lower() == "buff":
+                if "basic attack damage" in itemDescription['description'].lower():
+                    percents = re.findall(r'[+-]?[0-9]*[.]?[0-9]+[%]', itemDescription['description'])
+                    if len(percents) > 0:
+                        toggleStats['basicAttackPercentIncrease'] = float(list(map(lambda x: x.replace("%", ""), percents))[0]) / 100
+                        #print(toggleStats['basicAttackPercentIncrease'])
+                        toggleStats['toggle'] = False
+                        ability['toggleStats'] = toggleStats
 
 
     return ability
