@@ -1,13 +1,45 @@
 import json
 import re
+import hashlib
+import math
 from urllib.request import Request, urlopen, urlretrieve
+from datetime import datetime
+
+
+url = "https://api.smitegame.com/smiteapi.svc/"
+devId = "4278"
+authKey = "9EC9E978A14745B39718310E5D6F5A25"
+    
+now = datetime.now()
+#timestamp = now.strftime("%Y%m%d%H%M%S")
+utcTime = datetime.utcnow()
+timestamp = utcTime.strftime("%Y%m%d%H%M%S")
 
 def num(s):
     try:
-        return int(s)
+        if is_int(s):
+            return int(s)
+        elif is_float(s):
+            return float(s)
     except ValueError:
-        return float(s)
+        return s
 
+def is_int(n):
+    try:
+        float_n = float(n)
+        int_n = int(float_n)
+    except ValueError:
+        return False
+    else:
+        return float_n == int_n
+
+def is_float(n):
+    try:
+        float_n = float(n)
+    except ValueError:
+        return False
+    else:
+        return True
 
 def getStats(sourceStat):
     if 'initial' in sourceStat:
@@ -20,6 +52,8 @@ def getStats(sourceStat):
         sourceStat = (sourceStat.split(' every'))[0]
     if ' (' in sourceStat:
         sourceStat = (sourceStat.split(' ('))[0]
+    if '(' in sourceStat:
+        sourceStat = (sourceStat.split('('))[0]
     if '%' in sourceStat:
         sourceStat = (sourceStat.split('%'))[0]
     if '+' in sourceStat:
@@ -37,6 +71,7 @@ def getAbilityJson(sourceJson):
     ability['level'] = 5
     ability['name'] = sourceJson['Summary']
 
+    
     url = sourceJson['URL']
     imageName = url.rsplit('/', 1)[-1].replace('*', '')
     # try:
@@ -52,50 +87,103 @@ def getAbilityJson(sourceJson):
         ability['cooldown'] = getStats(itemDescription['cooldown'][:-1])
     if itemDescription['cost']:
         ability['cost'] = getStats(itemDescription['cost'])
+    
+    if itemDescription['description']:
+        #if 'seconds' in itemDescription['description']:
+            #seconds = itemDescription['description'].lower().split('seconds')
+            #print(seconds)
+        #else:
+        seconds = re.findall(r'[+-]?[0-9]*[.]?[0-9]+[s]', itemDescription['description'])
+            #print(seconds)
 
     if itemDescription['rankitems']:
         toggleStats = {}
         stacks = {}
         for rankItem in itemDescription['rankitems']:
-            if rankItem['description'] == 'Damage:' and ' (' in rankItem['value']:
-                stat = rankItem['value'].split(' (')
-                ability['damage'] = getStats(stat[0])
+            #print(rankItem)
+            if 'Damage:'.lower() in rankItem['description'].lower()  and ' (' in rankItem['value']:
+                stat = rankItem['value'].split('(')
+
+                if "damage" in ability.keys():
+                    ability['secondaryDamage'] = getStats(stat[0])
+                else:
+                    #print (stat[0])
+                    ability['damage'] = getStats(stat[0])
+                #print(stat[0])
                 temp = re.findall(r'\d+', stat[1])
                 if len(temp) > 0:
                     ability['powerDamage'] = int(temp[0])
-            elif rankItem['description'] == 'Damage per Tick:':
-                stat = rankItem['value'].split(" (")
-                ability['damage'] = getStats(stat[0])
-                temp = re.findall(r'\d+', stat[1])
-                if len(temp) > 0:
-                    ability['powerDamage'] = int(temp[0])
-                ability['ticks'] = 1
-            elif rankItem['description'] == 'Healing:':
+            elif 'Damage:'.lower() in rankItem['description'].lower():
+                if "of".lower() in rankItem['value'].lower():
+                    stat = rankItem['value'].lower().split(' of')
+                elif "per".lower() in rankItem['value'].lower():
+                    stat = rankItem['value'].lower().split(' per')
+                else:
+                    stat = [rankItem['value']]
+                if "damage" in ability.keys():
+                    #print(stat[0])
+                    #print(getStats(stat[0]))
+                    if isinstance(ability['damage'], int):
+                        ability['damage'] = [ability['damage']]
+                    ability['secondaryDamage'] = getStats(stat[0])
+                else:
+                    #print (stat[0])
+                    ability['damage'] = getStats(stat[0])
+            elif 'Damage per '.lower() in rankItem['description'].lower():
+                if not 'bonus' in rankItem['description'].lower():
+                    stat = rankItem['value'].split("(")
+                    if "damage" in ability.keys():
+                        ability['secondaryDamage'] = getStats(stat[0])
+                    else:
+                        ability['damage'] = getStats(stat[0])
+                    if len(stat) > 1:
+                        temp = re.findall(r'\d+', stat[1])
+                        if len(temp) > 0:
+                            ability['powerDamage'] = int(temp[0])
+                #ability['ticks'] = 1
+            elif rankItem['description'].lower() == 'Healing:'.lower():
                 toggleStats['hpFive'] = getStats(rankItem['value'])
-            elif rankItem['description'] == 'Movement Speed:':
+            elif rankItem['description'].lower() == 'Movement Speed:'.lower():
                 toggleStats['movementSpeed'] = getStats(rankItem['value'][:-1])
-            elif rankItem['description'] == 'Attack Speed:':
+            elif rankItem['description'].lower() == 'Attack Speed:'.lower():
                 toggleStats['attackSpeed'] = getStats(rankItem['value'][:-1])
-            elif rankItem['description'] == 'Damage Buff:':
+            elif rankItem['description'].lower() == 'Damage Buff:'.lower():
                 toggleStats['basicAttackPercentIncrease'] = getStats(
                     rankItem['value'][:-1])
-            elif rankItem['description'] == 'Landing Damage:' or rankItem['description'] == 'Ranged Damage:':
+            elif rankItem['description'].lower() == 'Landing Damage:'.lower() or rankItem['description'].lower() == 'Ranged Damage:'.lower():
                 stat = rankItem['value'].split(" (")
                 ability['secondaryDamage'] = {}
                 ability['secondaryDamage']['damage'] = getStats(stat[0])
                 temp = re.findall(r'\d+', stat[1])
                 if len(temp) > 0:
                     ability['secondaryDamage']['powerDamage'] = int(temp[0])
-            elif rankItem['description'] == 'Attack Damage:':
+            elif rankItem['description'].lower() == 'Attack Damage:'.lower():
                 stat = rankItem['value'].split(" (")
-                ability['damage'] = getStats(stat[0])
+                ability['damage'].append(getStats(stat[0]))
                 temp = re.findall(r'\d+', stat[1])
                 if len(temp) > 0:
                     ability['powerDamage'] = int(temp[0])
-            elif rankItem['description'] == 'Max Stacks:':
+            elif rankItem['description'].lower() == 'Max Stacks:'.lower():
                 stacks['max'] = rankItem['value']
-            elif rankItem['description'] == 'Bonus Power:':
+            elif rankItem['description'].lower() == 'Bonus Power:'.lower():
                 toggleStats['physicalPower'] = getStats(rankItem['value'])
+            if 'Duration:'.lower() in rankItem['description'].lower() or 'Thrown:'.lower() in rankItem['description'].lower() or "Lifetime:".lower() in rankItem['description'].lower():
+                #print (getStats(rankItem['value'].replace("s", "")))
+                if not rankItem['description'].lower() == 'Stun Duration:'.lower() and not "Slow".lower() in rankItem['description'].lower() and not "Disarm".lower() in rankItem['description'].lower() and not "buff" in rankItem['description'].lower():
+                    if 'ticks' in ability.keys():
+                        ability['ticks'].append(getStats(rankItem['value'].replace("s", "")))
+                    else:
+                        ability['ticks'] = [getStats(rankItem['value'].replace("s", ""))]
+            if len(seconds) > 0:
+                #print(seconds)
+                if not 'ticks' in ability.keys():
+                    nums = list(map(lambda x: x.replace("s", ""), seconds))
+                    temp = []
+                    for x in nums:
+                        temp.append(float(x))
+                    ability['ticks'] = temp
+                #if "damage" in ability.keys(): Debug for Damage Array
+                #print(ability['damage'])
 
         if stacks:
             stacks['current'] = 0
@@ -105,77 +193,136 @@ def getAbilityJson(sourceJson):
             toggleStats['toggle'] = False
             ability['toggleStats'] = toggleStats
 
+
+        if 'ticks' in ability.keys():
+            if not 'damage' in ability.keys():
+                del ability['ticks']
+                return ability
+            if len(ability['ticks']) == 3:
+                del ability['ticks'][0]
+            if len(ability['ticks']) >= 2:
+                print(ability['ticks'][0])
+                if ability['ticks'][0] == 0:
+                    ability['ticks'][0] = 1
+                if isinstance(ability['ticks'][0], list):
+                    ability['ticks'][0] = ability['ticks'][0][-1]
+                if isinstance(ability['ticks'][1], list):
+                    ability['ticks'][1] = ability['ticks'][1][-1]
+                print (ability['ticks'][1] / ability['ticks'][0])
+                ability['ticks'] = math.floor(ability['ticks'][1] / ability['ticks'][0])
+            if isinstance(ability['ticks'], list):
+                print (ability['ticks'][0])
+                ability['ticks'] = ability['ticks'][0]
+
+
     return ability
 
+def createSession():
+    stringToHash = devId + "createsession" + authKey + timestamp
+    signature = hashlib.md5(stringToHash.encode())
+    #print(signature)
+    get = (url + "createsessionjson/" + devId + "/" + signature.hexdigest() + "/" + timestamp)
+    #print(get)
+    request = Request(get, headers={'User-Agent': 'Mozilla/5.0'})
+    response = urlopen(request)
+    session = []
+    session = [json.loads(response.read())]
+    return session[0]['session_id']
 
-with open('sources/gods_source.json') as f:  # https://cms.smitegame.com/wp-json/smite-api/all-gods/1
-    sourceGods = json.load(f)
+def getGods():
+    sessionId = createSession()
+    stringToHash = devId + "getgods" + authKey + timestamp
+    signature = hashlib.md5(stringToHash.encode())
+    getg = (url + "getgodsjson/" + devId + "/" + signature.hexdigest() + "/" + sessionId + "/" + timestamp + "/1")
+    #print(getg)
+    request = Request(getg, headers={'User-Agent': 'Mozilla/5.0'})
+    response = urlopen(request)
+    godlist = []
+    godlist = json.loads(response.read())
+    #print(godlist)
+    f = open("godApiList.json", "w")
+    json.dump(godlist, f)
+    f.close()
+    return godlist
+    
+
+##with open('sources/gods_source.json') as f:  # https://cms.smitegame.com/wp-json/smite-api/all-gods/1
+##    sourceGods = json.load(f)
 
 gods = []
-for sourceGod in sourceGods:
+gods = getGods()
+newGods = []
+#print (gods)
+for sourceGod in gods:
     god = {}
-    name = sourceGod['name'].strip()
+    name = sourceGod["Name"].strip()
     print(name)
     god['name'] = name
-    god['id'] = sourceGod['id']
-    god['title'] = sourceGod['title'].strip()
-    god['pantheon'] = sourceGod['pantheon'].strip()
-    god['type'] = sourceGod['role'].strip()
-    types = sourceGod['type'].split(', ')
+    god['id'] = sourceGod["id"]
+    god['title'] = sourceGod['Title'].strip()
+    god['pantheon'] = sourceGod['Pantheon'].strip()
+    god['type'] = sourceGod['Roles'].strip()
+    types = sourceGod['Type'].split(', ')
     god['attackType'] = types[0].strip()
     if len(types) > 1:
         god['powerType'] = types[1].strip()
+    god['pros'] = sourceGod['Pros'].strip()
+    god['health'] = sourceGod['Health']
+    god['healthPerLevel'] = sourceGod['HealthPerLevel']
+    god['mana'] = sourceGod['Mana']
+    god['manaPerLevel'] = sourceGod['ManaPerLevel']
+    god['speed'] = sourceGod['Speed']
+    god['attackSpeed'] = sourceGod['AttackSpeed']
+    god['attackSpeedPerLevel'] = sourceGod['AttackSpeedPerLevel'] * 100.0
 
-    # load the god specific json
-    url = 'https://cms.smitegame.com/wp-json/wp/v2/gods?slug=' + \
-        name.replace(' ', '-') + '&lang_id=1'
-    request = Request(url, headers={'User-Agent': 'Mozilla/5.0'})
-    response = urlopen(request)
-    godData = json.loads(response.read())[0]['api_information']
-    # set the specific data
-    god['pros'] = godData['Pros'].strip()
-    god['health'] = godData['Health']
-    god['healthPerLevel'] = godData['HealthPerLevel']
-    god['mana'] = godData['Mana']
-    god['manaPerLevel'] = godData['ManaPerLevel']
-    god['speed'] = godData['Speed']
-    god['attackSpeed'] = godData['AttackSpeed']
-    god['attackSpeedPerLevel'] = godData['AttackSpeedPerLevel'] * 100.0
-
-    damage = godData['PhysicalPower']
-    damagePerLevel = godData['PhysicalPowerPerLevel']
+    damage = sourceGod['PhysicalPower']
+    damagePerLevel = sourceGod['PhysicalPowerPerLevel']
     if damage == 0:
-        damage = godData['MagicalPower']/5
-        damagePerLevel = godData['MagicalPowerPerLevel']
+        damage = sourceGod['MagicalPower']/5
+        damagePerLevel = sourceGod['MagicalPowerPerLevel']
     god['damage'] = damage
     god['damagePerLevel'] = damagePerLevel
 
-    god['physicalProtection'] = godData['PhysicalProtection']
-    god['physicalProtectionPerLevel'] = godData['PhysicalProtectionPerLevel']
-    god['magicalProtection'] = godData['MagicProtection']
-    god['magicalProtectionPerLevel'] = godData['MagicProtectionPerLevel']
-    god['hpFive'] = godData['HealthPerFive']
-    god['hpFivePerLevel'] = godData['HP5PerLevel']
-    god['mpFive'] = godData['ManaPerFive']
-    god['mpFivePerLevel'] = godData['MP5PerLevel']
+    god['physicalProtection'] = sourceGod['PhysicalProtection']
+    god['physicalProtectionPerLevel'] = sourceGod['PhysicalProtectionPerLevel']
+    god['magicalProtection'] = sourceGod['MagicProtection']
+    god['magicalProtectionPerLevel'] = sourceGod['MagicProtectionPerLevel']
+    god['hpFive'] = sourceGod['HealthPerFive']
+    god['hpFivePerLevel'] = sourceGod['HP5PerLevel']
+    god['mpFive'] = sourceGod['ManaPerFive']
+    god['mpFivePerLevel'] = sourceGod['MP5PerLevel']
 
-    url = godData['godIcon_URL']
+    url = sourceGod['godIcon_URL']
     imageName = url.rsplit('/', 1)[-1].replace('*', '')
     #urlretrieve(url, 'images/gods/' + imageName)
     god['icon'] = 'images/smite/gods/' + imageName
+    #print (sourceGod['Ability_4'])
 
     god['passive'] = getAbilityJson(
-        godData['Ability_5'])
+        sourceGod['Ability_5'])
     god['abilityOne'] = getAbilityJson(
-        godData['Ability_1'])
+        sourceGod['Ability_1'])
     god['abilityTwo'] = getAbilityJson(
-        godData['Ability_2'])
+        sourceGod['Ability_2'])
     god['abilityThree'] = getAbilityJson(
-        godData['Ability_3'])
+        sourceGod['Ability_3'])
     god['abilityFour'] = getAbilityJson(
-        godData['Ability_4'])
+        sourceGod['Ability_4'])
 
-    gods.append(god)
 
+    if god['name'] == "Chronos":
+        percents = re.findall(r'[+-]?[0-9]*[.]?[0-9]+[%]', god['abilityTwo']['description'])
+        nums = list(map(lambda x: x.replace("%", ""), percents))
+        god['passive']['select'] = {}
+        god['passive']['select']['current'] = ""
+        god['passive']['select']['options'] = [
+            {"label": "Off"},
+            {"hpFiveFromPercentMaxHealth": float(nums[0]) / 100, "label": "Section I"},
+            {"label": "Section III", "magicalPowerPercentage": float(nums[2])/100},
+            {"basicAttackPowerPercentContribution": float(nums[3])/100, "label": "Section IV"}]
+
+
+
+    newGods.append(god)
 with open('gods_result.json', 'w') as json_file:
-    json.dump(gods, json_file, indent='\t', sort_keys=True)
+    json.dump(newGods, json_file, indent='\t', sort_keys=True)
