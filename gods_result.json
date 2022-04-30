@@ -164,9 +164,7 @@
 				80,
 				100
 			],
-			"ticks": [
-				10
-			]
+			"ticks": 10
 		},
 		"abilityThree": {
 			"cooldown": 15,
@@ -189,11 +187,7 @@
 			"level": 5,
 			"name": "Path of Flames",
 			"powerDamage": 15,
-			"ticks": [
-				0.5,
-				2.0,
-				3
-			]
+			"ticks": 1
 		},
 		"abilityTwo": {
 			"cooldown": [
@@ -249,10 +243,7 @@
 			"level": 5,
 			"name": "Combustion",
 			"powerDamage": 8,
-			"ticks": [
-				0.5,
-				3.0
-			]
+			"ticks": 6
 		},
 		"physicalProtection": 11,
 		"physicalProtectionPerLevel": 2.6,
@@ -326,9 +317,7 @@
 			"level": 5,
 			"name": "Honey",
 			"powerDamage": 15,
-			"ticks": [
-				4.0
-			]
+			"ticks": 4.0
 		},
 		"abilityTwo": {
 			"cooldown": [
@@ -384,11 +373,7 @@
 			"level": 5,
 			"name": "Bees!",
 			"powerDamage": 6,
-			"ticks": [
-				0.5,
-				2.0,
-				1.0
-			]
+			"ticks": 0
 		},
 		"physicalProtection": 12,
 		"physicalProtectionPerLevel": 3,
@@ -414,9 +399,7 @@
 			"level": 5,
 			"name": "Empty the Crypts",
 			"powerDamage": 10,
-			"ticks": [
-				5
-			]
+			"ticks": 5
 		},
 		"abilityOne": {
 			"cooldown": 14,
@@ -439,9 +422,7 @@
 			"level": 5,
 			"name": "Undead Surge",
 			"powerDamage": 35,
-			"ticks": [
-				5.0
-			]
+			"ticks": 5.0
 		},
 		"abilityThree": {
 			"cooldown": 10,
@@ -471,9 +452,7 @@
 				200,
 				250
 			],
-			"ticks": [
-				4
-			]
+			"ticks": 4
 		},
 		"abilityTwo": {
 			"cooldown": 8,
@@ -553,10 +532,7 @@
 			"level": 5,
 			"name": "Dazzling Offensive",
 			"powerDamage": 50,
-			"ticks": [
-				1.0,
-				2
-			]
+			"ticks": 1.0
 		},
 		"abilityOne": {
 			"cooldown": 9,
@@ -592,9 +568,7 @@
 			"icon": "images/smite/abilities/glorious-charge.jpg",
 			"level": 5,
 			"name": "Glorious Charge",
-			"ticks": [
-				1
-			]
+			"ticks": 1
 		},
 		"abilityTwo": {
 			"cooldown": 12,
@@ -648,10 +622,7 @@
 			"description": "Amaterasu illuminates enemies she hits with basic attacks. After 3 hits on the same target the enemy gains an aura, exposing their weaknesses and causing them to take more damage from all sources. Any other enemies that come near the afflicted target are weakened as well.",
 			"icon": "images/smite/abilities/illuminating-strike.jpg",
 			"level": 5,
-			"name": "Illuminating Strike",
-			"ticks": [
-				5
-			]
+			"name": "Illuminating Strike"
 		},
 		"physicalProtection": 18,
 		"physicalProtectionPerLevel": 3,
@@ -683,9 +654,7 @@
 			"level": 5,
 			"name": "Desert Fury",
 			"powerDamage": 30,
-			"ticks": [
-				8
-			]
+			"ticks": 8
 		},
 		"abilityOne": {
 			"cooldown": 14,
@@ -700,16 +669,13 @@
 			"icon": "images/smite/abilities/shifting-sands.jpg",
 			"level": 5,
 			"name": "Shifting Sands",
-			"ticks": [
-				7
-			],
 			"toggleStats": {
 				"basicAttackPercentIncrease": [
-					8,
-					11,
-					14,
-					17,
-					20
+					0.8,
+					1.1,
+					1.4000000000000001,
+					1.7000000000000002,
+					2.0
 				],
 				"toggle": false
 			}
@@ -841,10 +807,7 @@
 			"level": 5,
 			"name": "Plague of Locusts",
 			"powerDamage": 40,
-			"ticks": [
-				0.5,
-				3.0
-			]
+			"ticks": 6
 		},
 		"abilityThree": {
 			"cooldown": [
@@ -873,10 +836,7 @@
 			"level": 5,
 			"name": "Grasping Hands",
 			"powerDamage": 35,
-			"ticks": [
-				0.5,
-				2.0
-			]
+			"ticks": 4
 		},
 		"abilityTwo": {
 			"cooldown": [
@@ -920,10 +880,7 @@
 				"current": 0,
 				"max": "3",
 				"stacks": {}
-			},
-			"ticks": [
-				5
-			]
+			}
 		},
 		"physicalProtection": 10,
 		"physicalProtectionPerLevel": 2.5,
@@ -978,9 +935,7 @@
 			"level": 5,
 			"name": "Water Illusion",
 			"powerDamage": 60,
-			"ticks": [
-				5.0
-			]
+			"ticks": 5.0
 		},
 		"abilityThree": {
 			"cooldown": 7,
@@ -1038,9 +993,7 @@
 				35,
 				40
 			],
-			"ticks": [
-				10.0
-			]
+			"ticks": 10.0
 		},
 		"attackSpeed": 1,
 		"attackSpeedPerLevel": 2.0,
@@ -1082,16 +1035,7 @@
 			"description": "Aphrodite pledges undying love to herself and her soul mate.  While this is active, her and her soul mate are invulnerable to all damage for a short duration.  All Crowd Control effects are also removed when activated.",
 			"icon": "images/smite/abilities/undying-love.jpg",
 			"level": 5,
-			"name": "Undying Love",
-			"ticks": [
-				[
-					0.8,
-					1.1,
-					1.4,
-					1.7,
-					2
-				]
-			]
+			"name": "Undying Love"
 		},
 		"abilityOne": {
 			"cooldown": [
@@ -1112,10 +1056,6 @@
 			"icon": "images/smite/abilities/kiss.jpg",
 			"level": 5,
 			"name": "Kiss",
-			"ticks": [
-				1.0,
-				5
-			],
 			"toggleStats": {
 				"movementSpeed": [
 					8,
@@ -1148,10 +1088,7 @@
 			"level": 5,
 			"name": "Love Birds",
 			"powerDamage": 15,
-			"ticks": [
-				0.5,
-				3.0
-			]
+			"ticks": 6
 		},
 		"abilityTwo": {
 			"cooldown": 12,
@@ -1174,9 +1111,7 @@
 			"level": 5,
 			"name": "Back Off!",
 			"powerDamage": 70,
-			"ticks": [
-				2.0
-			]
+			"ticks": 2.0
 		},
 		"attackSpeed": 0.87,
 		"attackSpeedPerLevel": 0.8,
@@ -1233,10 +1168,7 @@
 			"level": 5,
 			"name": "Across The Sky",
 			"powerDamage": 25,
-			"ticks": [
-				0.2,
-				0.8
-			]
+			"ticks": 4
 		},
 		"abilityOne": {
 			"cooldown": 11,
@@ -1274,10 +1206,7 @@
 			"icon": "images/smite/abilities/the-moves.jpg",
 			"level": 5,
 			"name": "The Moves",
-			"powerDamage": 60,
-			"ticks": [
-				3
-			]
+			"powerDamage": 60
 		},
 		"abilityTwo": {
 			"cooldown": [
@@ -1291,10 +1220,7 @@
 			"description": "Apollo uses his amazing voice to Mesmerize all nearby enemies and bolster himself with additional physical protection.  Any damage done breaks the effect.",
 			"icon": "images/smite/abilities/serenade.jpg",
 			"level": 5,
-			"name": "Serenade",
-			"ticks": [
-				5
-			]
+			"name": "Serenade"
 		},
 		"attackSpeed": 0.95,
 		"attackSpeedPerLevel": 1.6,
@@ -1319,10 +1245,7 @@
 			"description": "After 10 successful Basic Attacks, Apollo gains Audacity, increasing his Attack Speed by 100% for the next 5 Basic Attacks (hit or miss) he makes. Apollo also gains 1 stack of Audacity for each successful damaging ability on Enemy gods.",
 			"icon": "images/smite/abilities/audacity.jpg",
 			"level": 5,
-			"name": "Audacity",
-			"ticks": [
-				0
-			]
+			"name": "Audacity"
 		},
 		"physicalProtection": 12,
 		"physicalProtectionPerLevel": 2.7,
@@ -1393,11 +1316,7 @@
 				34,
 				42
 			],
-			"ticks": [
-				5.0,
-				0.5,
-				3.0
-			]
+			"ticks": 6
 		},
 		"abilityThree": {
 			"cooldown": 14,
@@ -1419,16 +1338,7 @@
 			"icon": "images/smite/abilities/web.jpg",
 			"level": 5,
 			"name": "Web",
-			"ticks": [
-				[
-					4,
-					4.5,
-					5,
-					5.5,
-					6
-				],
-				240
-			],
+			"ticks": 240,
 			"toggleStats": {
 				"movementSpeed": 40,
 				"toggle": false
@@ -1441,9 +1351,6 @@
 			"icon": "images/smite/abilities/cocoon.jpg",
 			"level": 5,
 			"name": "Cocoon",
-			"ticks": [
-				6.0
-			],
 			"toggleStats": {
 				"attackSpeed": [
 					30,
@@ -1510,9 +1417,7 @@
 			"level": 5,
 			"name": "No Escape",
 			"powerDamage": 40,
-			"ticks": [
-				2.5
-			]
+			"ticks": 2.5
 		},
 		"abilityOne": {
 			"cooldown": 15,
@@ -1542,10 +1447,7 @@
 				80,
 				100
 			],
-			"ticks": [
-				2.0,
-				4
-			]
+			"ticks": 2
 		},
 		"abilityThree": {
 			"cooldown": 12,
@@ -1568,10 +1470,7 @@
 			"level": 5,
 			"name": "Searing Flesh",
 			"powerDamage": 7,
-			"ticks": [
-				0.5,
-				4.0
-			]
+			"ticks": 8
 		},
 		"abilityTwo": {
 			"cooldown": 15,
@@ -1585,10 +1484,7 @@
 			"description": "Ares strengthens the defenses of himself and all nearby allies, granting Protections, HP5, and reducing Crowd Control durations. For each shackled enemy, the Protection Buffs are increased.",
 			"icon": "images/smite/abilities/bolster-defenses.jpg",
 			"level": 5,
-			"name": "Bolster Defenses",
-			"ticks": [
-				8
-			]
+			"name": "Bolster Defenses"
 		},
 		"attackSpeed": 0.9,
 		"attackSpeedPerLevel": 1.0999999999999999,
@@ -1645,10 +1541,7 @@
 			"level": 5,
 			"name": "Calydonian Boar",
 			"powerDamage": 100,
-			"ticks": [
-				1.5,
-				6
-			]
+			"ticks": 4
 		},
 		"abilityOne": {
 			"cooldown": [
@@ -1671,9 +1564,7 @@
 			"level": 5,
 			"name": "Transgressor's Fate",
 			"powerDamage": 30,
-			"ticks": [
-				3.0
-			]
+			"ticks": 3.0
 		},
 		"abilityThree": {
 			"cooldown": 10,
@@ -1695,10 +1586,7 @@
 			"icon": "images/smite/abilities/suppress-the-insolent.jpg",
 			"level": 5,
 			"name": "Suppress the Insolent",
-			"powerDamage": 60,
-			"ticks": [
-				2
-			]
+			"powerDamage": 60
 		},
 		"abilityTwo": {
 			"cooldown": [
@@ -1719,16 +1607,6 @@
 			"icon": "images/smite/abilities/vengeful-assault.jpg",
 			"level": 5,
 			"name": "Vengeful Assault",
-			"ticks": [
-				0.6,
-				[
-					3,
-					3.5,
-					4,
-					4.5,
-					5
-				]
-			],
 			"toggleStats": {
 				"attackSpeed": [
 					40,
@@ -1781,10 +1659,7 @@
 			"description": "Active: Artio Shapeshifts between her Druid stance and Bear stance.\n\nPassive: Every time Artio hits at least 1 enemy with an ability she gains 1 stack of Invigoration. Invigoration stacks increase her Movement Speed and MP5. Stacks last 6s, and stack up to 8 times.\n",
 			"icon": "images/smite/abilities/shapeshift.jpg",
 			"level": 5,
-			"name": "Shapeshift",
-			"ticks": [
-				6.0
-			]
+			"name": "Shapeshift"
 		},
 		"abilityOne": {
 			"cooldown": 12,
@@ -1843,12 +1718,7 @@
 				200,
 				245
 			],
-			"ticks": [
-				2.0,
-				1.0,
-				3.0,
-				2.0
-			]
+			"ticks": 0
 		},
 		"abilityTwo": {
 			"cooldown": 15,
@@ -1862,23 +1732,7 @@
 			"description": "Druid Form: Artio creates a thicket of vines around herself that cripples enemy gods and decreases their Magical or Physical Power as long as they are in the area.\n\nBear Form: Artio lets out a ferocious roar that Stuns all nearby enemies and increases her own Physical and Magical Protections for 4s.",
 			"icon": "images/smite/abilities/entangling-vines.jpg",
 			"level": 5,
-			"name": "Entangling Vines (Ferocious Roar)",
-			"ticks": [
-				[
-					4,
-					4.5,
-					5,
-					5.5,
-					6
-				],
-				[
-					1,
-					1.1,
-					1.2,
-					1.3,
-					1.4
-				]
-			]
+			"name": "Entangling Vines (Ferocious Roar)"
 		},
 		"attackSpeed": 1,
 		"attackSpeedPerLevel": 1.2,
@@ -1903,10 +1757,7 @@
 			"description": "Enemy gods hit by Artio's Druid or Bear damaging abilities will begin to decompose. This effect decreases their Physical and Magical Protections. This effect stacks. ",
 			"icon": "images/smite/abilities/decompose.jpg",
 			"level": 5,
-			"name": "Decompose",
-			"ticks": [
-				0
-			]
+			"name": "Decompose"
 		},
 		"physicalProtection": 20,
 		"physicalProtectionPerLevel": 3.2,
@@ -1959,10 +1810,7 @@
 			"icon": "images/smite/abilities/preemptive-strike.jpg",
 			"level": 5,
 			"name": "Preemptive Strike",
-			"powerDamage": 50,
-			"ticks": [
-				0
-			]
+			"powerDamage": 50
 		},
 		"abilityThree": {
 			"cooldown": 14,
@@ -1992,9 +1840,7 @@
 				265,
 				330
 			],
-			"ticks": [
-				2.0
-			]
+			"ticks": 2.0
 		},
 		"abilityTwo": {
 			"cooldown": 18,
@@ -2018,13 +1864,11 @@
 			"name": "Confound",
 			"powerDamage": 20,
 			"ticks": [
-				[
-					"1.0",
-					1.25,
-					1.5,
-					1.75,
-					"2.0"
-				]
+				"1.0",
+				1.25,
+				1.5,
+				1.75,
+				"2.0"
 			]
 		},
 		"attackSpeed": 1,
@@ -2089,10 +1933,7 @@
 				300,
 				360
 			],
-			"ticks": [
-				0.5,
-				5.0
-			]
+			"ticks": 10
 		},
 		"abilityOne": {
 			"cooldown": [
@@ -2121,10 +1962,7 @@
 			"level": 5,
 			"name": "Unburden",
 			"powerDamage": 40,
-			"ticks": [
-				5.0,
-				2
-			]
+			"ticks": 5.0
 		},
 		"abilityThree": {
 			"cooldown": 16,
@@ -2212,10 +2050,7 @@
 			"icon": "images/smite/abilities/the-astrolabe.jpg",
 			"level": 5,
 			"name": "The Astrolabe",
-			"ticks": [
-				1.5,
-				2.0
-			]
+			"ticks": 1
 		},
 		"physicalProtection": 20,
 		"physicalProtectionPerLevel": 3.2,
@@ -2247,9 +2082,7 @@
 			"level": 5,
 			"name": "Gravity Surge",
 			"powerDamage": 80,
-			"ticks": [
-				6.0
-			],
+			"ticks": 6.0,
 			"toggleStats": {
 				"attackSpeed": [
 					30,
@@ -2330,10 +2163,7 @@
 			"level": 5,
 			"name": "Feather Step",
 			"powerDamage": 50,
-			"ticks": [
-				1.5,
-				0
-			]
+			"ticks": 0
 		},
 		"attackSpeed": 1,
 		"attackSpeedPerLevel": 1.9,
@@ -2358,10 +2188,7 @@
 			"description": "If Awilix has not taken or dealt damage in the last 5s and she strikes an enemy first, she increases her Physical Power for a short duration.",
 			"icon": "images/smite/abilities/initiative.jpg",
 			"level": 5,
-			"name": "Initiative",
-			"ticks": [
-				5.0
-			]
+			"name": "Initiative"
 		},
 		"physicalProtection": 13,
 		"physicalProtectionPerLevel": 3,
@@ -2400,10 +2227,7 @@
 				27,
 				32
 			],
-			"ticks": [
-				8.0,
-				0.4
-			]
+			"ticks": 0
 		},
 		"abilityOne": {
 			"cooldown": 12,
@@ -2426,9 +2250,7 @@
 			"level": 5,
 			"name": "Wild Witchcraft",
 			"powerDamage": 70,
-			"ticks": [
-				4.0
-			],
+			"ticks": 4.0,
 			"toggleStats": {
 				"movementSpeed": [
 					20,
@@ -2461,9 +2283,7 @@
 			"level": 5,
 			"name": "Blast Off!",
 			"powerDamage": 85,
-			"ticks": [
-				1.0
-			]
+			"ticks": 1.0
 		},
 		"abilityTwo": {
 			"cooldown": 14,
@@ -2486,10 +2306,7 @@
 			"level": 5,
 			"name": "Baba's Brew",
 			"powerDamage": 70,
-			"ticks": [
-				2.5,
-				5.0
-			]
+			"ticks": 2
 		},
 		"attackSpeed": 0.95,
 		"attackSpeedPerLevel": 1.0,
@@ -2539,11 +2356,7 @@
 			"icon": "images/smite/abilities/intoxicate.jpg",
 			"level": 5,
 			"name": "Intoxicate",
-			"powerDamage": 60,
-			"ticks": [
-				6,
-				5
-			]
+			"powerDamage": 60
 		},
 		"abilityOne": {
 			"cooldown": 8,
@@ -2551,10 +2364,7 @@
 			"description": "Bacchus takes a drink from his jug, giving him additional Buffs.",
 			"icon": "images/smite/abilities/chug.jpg",
 			"level": 5,
-			"name": "Chug",
-			"ticks": [
-				6
-			]
+			"name": "Chug"
 		},
 		"abilityThree": {
 			"cooldown": 14,
@@ -2577,12 +2387,7 @@
 			"level": 5,
 			"name": "Belch of the Gods",
 			"powerDamage": 15,
-			"ticks": [
-				0.5,
-				2.0,
-				1.0,
-				4
-			]
+			"ticks": 4
 		},
 		"abilityTwo": {
 			"cooldown": [
@@ -2610,10 +2415,7 @@
 			"icon": "images/smite/abilities/belly-flop.jpg",
 			"level": 5,
 			"name": "Belly Flop",
-			"powerDamage": 70,
-			"ticks": [
-				2
-			]
+			"powerDamage": 70
 		},
 		"attackSpeed": 0.88,
 		"attackSpeedPerLevel": 0.8999999999999999,
@@ -2670,13 +2472,7 @@
 			"level": 5,
 			"name": "Regurgitate",
 			"powerDamage": 15,
-			"ticks": [
-				3.0,
-				6.0,
-				3,
-				6,
-				0
-			]
+			"ticks": 2
 		},
 		"abilityOne": {
 			"cooldown": 12,
@@ -2699,10 +2495,7 @@
 			"level": 5,
 			"name": "Take Down",
 			"powerDamage": 60,
-			"ticks": [
-				3.0,
-				3
-			]
+			"ticks": 1
 		},
 		"abilityThree": {
 			"cooldown": 12,
@@ -2724,9 +2517,7 @@
 			"icon": "images/smite/abilities/butcher-blades.jpg",
 			"level": 5,
 			"name": "Butcher Blades",
-			"ticks": [
-				6
-			]
+			"ticks": 6
 		},
 		"abilityTwo": {
 			"cooldown": 15,
@@ -2734,11 +2525,7 @@
 			"description": "Bakasura grabs a minion and devours it, healing himself, restoring Mana, reducing His 1st and 3rd ability cooldowns, and gaining a Protections Buff. Large Jungle monsters must be at 33% Health to be eaten, but will provide 2 minions toward Regurgitate. Up to 6 minions can be stored for Regurgitate.",
 			"icon": "images/smite/abilities/eat-minion.jpg",
 			"level": 5,
-			"name": "Eat Minion",
-			"ticks": [
-				1.0,
-				10
-			]
+			"name": "Eat Minion"
 		},
 		"attackSpeed": 1,
 		"attackSpeedPerLevel": 1.6,
@@ -2768,10 +2555,7 @@
 				"current": 0,
 				"max": "3",
 				"stacks": {}
-			},
-			"ticks": [
-				10
-			]
+			}
 		},
 		"physicalProtection": 13,
 		"physicalProtectionPerLevel": 2.8,
@@ -2804,10 +2588,7 @@
 			"name": "Life of the Party",
 			"powerDamage": 8,
 			"secondaryDamage": 10,
-			"ticks": [
-				0.33,
-				3.5
-			]
+			"ticks": 10
 		},
 		"abilityOne": {
 			"cooldown": 9,
@@ -2852,13 +2633,7 @@
 			"level": 5,
 			"name": "Wrap It Up",
 			"powerDamage": 8,
-			"ticks": [
-				0.5,
-				2.5,
-				1.0,
-				0,
-				0
-			]
+			"ticks": 5
 		},
 		"abilityTwo": {
 			"cooldown": [
@@ -2994,11 +2769,7 @@
 			"name": "Ensnaring Claw",
 			"powerDamage": 0,
 			"secondaryDamage": 0,
-			"ticks": [
-				0.5,
-				4.0,
-				2.0
-			]
+			"ticks": 0
 		},
 		"abilityTwo": {
 			"cooldown": 11,
@@ -3021,9 +2792,7 @@
 			"level": 5,
 			"name": "Razor Whip",
 			"powerDamage": 20,
-			"ticks": [
-				2
-			]
+			"ticks": 2
 		},
 		"attackSpeed": 1,
 		"attackSpeedPerLevel": 2.0,
@@ -3048,10 +2817,7 @@
 			"description": "Bastet gains Physical Lifesteal and Physical Ability Lifesteal when hitting enemies. Additionally enemy gods hit are revealed to Bastet for 6s.",
 			"icon": "images/smite/abilities/nightstalker.jpg",
 			"level": 5,
-			"name": "Nightstalker",
-			"ticks": [
-				6.0
-			]
+			"name": "Nightstalker"
 		},
 		"physicalProtection": 12,
 		"physicalProtectionPerLevel": 2.9,
@@ -3077,10 +2843,7 @@
 			"level": 5,
 			"name": "Eagle's Rally",
 			"powerDamage": 50,
-			"ticks": [
-				1.25,
-				8
-			]
+			"ticks": 6
 		},
 		"abilityOne": {
 			"cooldown": 14,
@@ -3097,9 +2860,7 @@
 			"level": 5,
 			"name": "Shield Bash",
 			"powerDamage": 50,
-			"ticks": [
-				7.0
-			]
+			"ticks": 7.0
 		},
 		"abilityThree": {
 			"cooldown": [
@@ -3128,16 +2889,7 @@
 			"level": 5,
 			"name": "Scourge",
 			"powerDamage": 50,
-			"ticks": [
-				7.0,
-				[
-					1.4,
-					1.6,
-					1.8,
-					2,
-					2.2
-				]
-			],
+			"ticks": 7.0,
 			"toggleStats": {
 				"hpFive": [
 					25,
@@ -3183,9 +2935,7 @@
 				250,
 				310
 			],
-			"ticks": [
-				7.0
-			]
+			"ticks": 7.0
 		},
 		"attackSpeed": 1,
 		"attackSpeedPerLevel": 1.2,
@@ -3211,9 +2961,6 @@
 			"icon": "images/smite/abilities/master-of-war.jpg",
 			"level": 5,
 			"name": "Master of War",
-			"ticks": [
-				7.0
-			],
 			"toggleStats": {
 				"movementSpeed": 3,
 				"toggle": false
@@ -3293,9 +3040,7 @@
 			"level": 5,
 			"name": "Tremors",
 			"powerDamage": 35,
-			"ticks": [
-				10.0
-			]
+			"ticks": 10.0
 		},
 		"abilityTwo": {
 			"cooldown": 10,
@@ -3375,9 +3120,7 @@
 			"name": "Bat Out of Hell",
 			"powerDamage": 35,
 			"secondaryDamage": 10,
-			"ticks": [
-				4.0
-			]
+			"ticks": 4.0
 		},
 		"abilityOne": {
 			"cooldown": 13,
@@ -3400,9 +3143,7 @@
 			"level": 5,
 			"name": "Screech",
 			"powerDamage": 70,
-			"ticks": [
-				15.0
-			]
+			"ticks": 15.0
 		},
 		"abilityThree": {
 			"cooldown": [
@@ -3453,10 +3194,7 @@
 			"level": 5,
 			"name": "Vampire Bats",
 			"powerDamage": 110,
-			"ticks": [
-				3.0,
-				300.0
-			]
+			"ticks": 100
 		},
 		"attackSpeed": 1,
 		"attackSpeedPerLevel": 2.0,
@@ -3481,10 +3219,7 @@
 			"description": "Camazotz has a passive Essence Drinker bonus for Physical Lifesteal and Healing. Also, anytime a god dies they leave behind a pool of their essence in the spot they were slain. Camazotz may stand inside these pools to drink the essence every .5s, replenishing his Health and Mana.",
 			"icon": "images/smite/abilities/essence-drinker.jpg",
 			"level": 5,
-			"name": "Essence Drinker",
-			"ticks": [
-				0.5
-			]
+			"name": "Essence Drinker"
 		},
 		"physicalProtection": 11,
 		"physicalProtectionPerLevel": 3,
@@ -3581,10 +3316,7 @@
 				"max": "3",
 				"stacks": {}
 			},
-			"ticks": [
-				2.4,
-				2
-			]
+			"ticks": 2.4
 		},
 		"attackSpeed": 1,
 		"attackSpeedPerLevel": 1.0,
@@ -3635,10 +3367,7 @@
 			"level": 5,
 			"name": "The Wild Hunt",
 			"powerDamage": 90,
-			"ticks": [
-				1.0,
-				2
-			]
+			"ticks": 2
 		},
 		"abilityOne": {
 			"cooldown": 0,
@@ -3646,11 +3375,7 @@
 			"description": "Cernnunos imbues his glaive with the power of the 4 seasons. Activating this ability rotates him through 4 different bonuses to his basic attacks.\n\nSpring Growth: Bonus Physical Lifesteal\nSummer Heat: Bonus Damage\nAutumn Decay: Debuff for 7s\nWinter Chill: Slows for 1s",
 			"icon": "images/smite/abilities/shifter-of-seasons.jpg",
 			"level": 5,
-			"name": "Shifter of Seasons",
-			"ticks": [
-				7.0,
-				1.0
-			]
+			"name": "Shifter of Seasons"
 		},
 		"abilityThree": {
 			"cooldown": [
@@ -3708,11 +3433,7 @@
 				18,
 				22
 			],
-			"ticks": [
-				0.5,
-				5.0,
-				1
-			]
+			"ticks": 0
 		},
 		"attackSpeed": 1,
 		"attackSpeedPerLevel": 1.4000000000000001,
@@ -3770,9 +3491,7 @@
 			"level": 5,
 			"name": "Storm Call",
 			"powerDamage": 120,
-			"ticks": [
-				3
-			]
+			"ticks": 3
 		},
 		"abilityOne": {
 			"cooldown": 10,
@@ -3795,9 +3514,7 @@
 			"level": 5,
 			"name": "Thunder Strike",
 			"powerDamage": 70,
-			"ticks": [
-				5.0
-			]
+			"ticks": 5.0
 		},
 		"abilityThree": {
 			"cooldown": 16,
@@ -3812,9 +3529,6 @@
 			"icon": "images/smite/abilities/rain-dance.jpg",
 			"level": 5,
 			"name": "Rain Dance",
-			"ticks": [
-				6.0
-			],
 			"toggleStats": {
 				"hpFive": [
 					10,
@@ -3853,9 +3567,7 @@
 			"level": 5,
 			"name": "Torrent",
 			"powerDamage": 70,
-			"ticks": [
-				6
-			]
+			"ticks": 6
 		},
 		"attackSpeed": 1,
 		"attackSpeedPerLevel": 1.2,
@@ -3956,9 +3668,7 @@
 			"level": 5,
 			"name": "Moonflower Dance",
 			"powerDamage": 60,
-			"ticks": [
-				4
-			]
+			"ticks": 4
 		},
 		"abilityTwo": {
 			"cooldown": [
@@ -4030,10 +3740,7 @@
 				600,
 				700
 			],
-			"ticks": [
-				6.0,
-				6.0
-			],
+			"ticks": 1,
 			"toggleStats": {
 				"movementSpeed": 35,
 				"toggle": false
@@ -4067,9 +3774,7 @@
 				25,
 				30
 			],
-			"ticks": [
-				4
-			]
+			"ticks": 4
 		},
 		"abilityThree": {
 			"cooldown": [
@@ -4105,9 +3810,7 @@
 				180,
 				220
 			],
-			"ticks": [
-				3.0
-			],
+			"ticks": 3.0,
 			"toggleStats": {
 				"movementSpeed": 20,
 				"toggle": false
@@ -4140,9 +3843,7 @@
 			"level": 5,
 			"name": "Capsize",
 			"powerDamage": 85,
-			"ticks": [
-				0
-			]
+			"ticks": 0
 		},
 		"attackSpeed": 0.95,
 		"attackSpeedPerLevel": 1.5,
@@ -4191,9 +3892,6 @@
 			"icon": "images/smite/abilities/living-nightmare.jpg",
 			"level": 5,
 			"name": "Living Nightmare",
-			"ticks": [
-				6
-			],
 			"toggleStats": {
 				"movementSpeed": 30,
 				"toggle": false
@@ -4233,9 +3931,7 @@
 				140,
 				170
 			],
-			"ticks": [
-				3
-			]
+			"ticks": 3
 		},
 		"abilityThree": {
 			"cooldown": [
@@ -4258,10 +3954,7 @@
 			"level": 5,
 			"name": "Into Darkness",
 			"powerDamage": 45,
-			"ticks": [
-				2.0,
-				3.0
-			]
+			"ticks": 1
 		},
 		"abilityTwo": {
 			"cooldown": 12,
@@ -4276,15 +3969,6 @@
 			"icon": "images/smite/abilities/vicious-barrage.jpg",
 			"level": 5,
 			"name": "Vicious Barrage",
-			"ticks": [
-				[
-					3,
-					3.5,
-					4,
-					4.5,
-					5
-				]
-			],
 			"toggleStats": {
 				"attackSpeed": [
 					40,
@@ -4322,9 +4006,7 @@
 			"level": 5,
 			"name": "Heart of Cold",
 			"powerDamage": 1,
-			"ticks": [
-				5
-			]
+			"ticks": 5
 		},
 		"physicalProtection": 11,
 		"physicalProtectionPerLevel": 3,
@@ -4378,9 +4060,7 @@
 			"level": 5,
 			"name": "Training Exercise",
 			"powerDamage": 80,
-			"ticks": [
-				0.3
-			]
+			"ticks": 0.3
 		},
 		"abilityThree": {
 			"cooldown": 16,
@@ -4429,10 +4109,7 @@
 			"level": 5,
 			"name": "Masterful Shot",
 			"powerDamage": 80,
-			"ticks": [
-				0,
-				2
-			]
+			"ticks": 0
 		},
 		"attackSpeed": 1,
 		"attackSpeedPerLevel": 1.4000000000000001,
@@ -4462,10 +4139,7 @@
 				"current": 0,
 				"max": "3",
 				"stacks": {}
-			},
-			"ticks": [
-				12.0
-			]
+			}
 		},
 		"physicalProtection": 12,
 		"physicalProtectionPerLevel": 2.8,
@@ -4545,9 +4219,6 @@
 			"icon": "images/smite/abilities/accelerate.jpg",
 			"level": 5,
 			"name": "Accelerate",
-			"ticks": [
-				7
-			],
 			"toggleStats": {
 				"attackSpeed": [
 					15,
@@ -4583,7 +4254,27 @@
 			"description": "Chronos becomes empowered as time flows around him. Every 1.5 minutes he gains a stack that increases his Magical Power. Stacks up to 25 times, stacks are permanent.",
 			"icon": "images/smite/abilities/time-lord.jpg",
 			"level": 5,
-			"name": "Time Lord"
+			"name": "Time Lord",
+			"select": {
+				"current": "",
+				"options": [
+					{
+						"label": "Off"
+					},
+					{
+						"hpFiveFromPercentMaxHealth": 0.015,
+						"label": "Section I"
+					},
+					{
+						"label": "Section III",
+						"magicalPowerPercentage": 0.25
+					},
+					{
+						"basicAttackPowerPercentContribution": 0.35,
+						"label": "Section IV"
+					}
+				]
+			}
 		},
 		"physicalProtection": 11,
 		"physicalProtectionPerLevel": 2.9,
@@ -4651,9 +4342,7 @@
 				190,
 				230
 			],
-			"ticks": [
-				1.5
-			]
+			"ticks": 1.5
 		},
 		"abilityThree": {
 			"cooldown": [
@@ -4711,9 +4400,7 @@
 			"level": 5,
 			"name": "Flickering Visions",
 			"powerDamage": 70,
-			"ticks": [
-				4.0
-			],
+			"ticks": 4.0,
 			"toggleStats": {
 				"movementSpeed": 25,
 				"toggle": false
@@ -4769,13 +4456,11 @@
 			"name": "Descend into Madness",
 			"powerDamage": 50,
 			"ticks": [
-				[
-					10,
-					11,
-					12,
-					13,
-					14
-				]
+				10,
+				11,
+				12,
+				13,
+				14
 			]
 		},
 		"abilityOne": {
@@ -4793,10 +4478,7 @@
 			"level": 5,
 			"name": "Sanity Break",
 			"powerDamage": 40,
-			"ticks": [
-				6.0,
-				0
-			]
+			"ticks": 0
 		},
 		"abilityThree": {
 			"cooldown": 16,
@@ -4855,11 +4537,8 @@
 			"name": "The Mire",
 			"powerDamage": 30,
 			"ticks": [
-				1,
-				[
-					null,
-					null
-				]
+				null,
+				null
 			]
 		},
 		"attackSpeed": 0.9,
@@ -4885,11 +4564,7 @@
 			"description": "Cthulhu breaks down the mental fortitude of enemy gods, applying stacks of Torment with abilities and the final hit of his basic attack chain. On reaching 4 stacks of Torment, enemies are afflicted by Insanity. Additionally, Cthulhu gains Magical Power per nearby enemy god with Insanity.",
 			"icon": "images/smite/abilities/prey-on-fear.jpg",
 			"level": 5,
-			"name": "Prey on Fear",
-			"ticks": [
-				5,
-				20
-			]
+			"name": "Prey on Fear"
 		},
 		"physicalProtection": 21,
 		"physicalProtectionPerLevel": 3.2,
@@ -4915,10 +4590,7 @@
 			"level": 5,
 			"name": "Spear of Mortal Pain (War Cry)",
 			"powerDamage": 65,
-			"ticks": [
-				35.0,
-				1
-			]
+			"ticks": 0
 		},
 		"abilityOne": {
 			"cooldown": [
@@ -4941,10 +4613,7 @@
 			"level": 5,
 			"name": "Barbed Spear (Ground Slam)",
 			"powerDamage": 55,
-			"ticks": [
-				4.0,
-				1
-			]
+			"ticks": 0
 		},
 		"abilityThree": {
 			"cooldown": 15,
@@ -4977,10 +4646,7 @@
 			"level": 5,
 			"name": "Vent Anger",
 			"powerDamage": 5,
-			"ticks": [
-				0.5,
-				6
-			],
+			"ticks": 12,
 			"toggleStats": {
 				"movementSpeed": 5,
 				"toggle": false
@@ -5010,10 +4676,6 @@
 			"icon": "images/smite/abilities/berserk.jpg",
 			"level": 5,
 			"name": "Berserk",
-			"ticks": [
-				3.0,
-				20
-			],
 			"toggleStats": {
 				"physicalPower": 0,
 				"toggle": false
@@ -5071,10 +4733,7 @@
 			"level": 5,
 			"name": "Heart Bomb",
 			"powerDamage": 0,
-			"ticks": [
-				1.0,
-				3
-			]
+			"ticks": 3
 		},
 		"abilityThree": {
 			"cooldown": [
@@ -5089,9 +4748,6 @@
 			"icon": "images/smite/abilities/flutter.jpg",
 			"level": 5,
 			"name": "Flutter",
-			"ticks": [
-				6
-			],
 			"toggleStats": {
 				"attackSpeed": [
 					4,
@@ -5110,10 +4766,7 @@
 			"description": "Cupid places 3 floating hearts at his ground target location that heal himself or allied gods when picked up. Cupid regenerates Mana for each heart that is picked up by an ally.",
 			"icon": "images/smite/abilities/share-the-love.jpg",
 			"level": 5,
-			"name": "Share the Love",
-			"ticks": [
-				8
-			]
+			"name": "Share the Love"
 		},
 		"attackSpeed": 0.95,
 		"attackSpeedPerLevel": 1.7000000000000002,
@@ -5176,10 +4829,7 @@
 				150,
 				180
 			],
-			"ticks": [
-				2.0,
-				1
-			]
+			"ticks": 0
 		},
 		"abilityOne": {
 			"cooldown": 9,
@@ -5203,11 +4853,7 @@
 				40,
 				50
 			],
-			"ticks": [
-				1.0,
-				3.0,
-				3.0
-			]
+			"ticks": 1
 		},
 		"abilityThree": {
 			"cooldown": 17,
@@ -5279,10 +4925,7 @@
 			"level": 5,
 			"name": "Torture Blades",
 			"powerDamage": 7,
-			"ticks": [
-				1.0,
-				2.0
-			]
+			"ticks": 2
 		},
 		"physicalProtection": 14,
 		"physicalProtectionPerLevel": 3,
@@ -5346,10 +4989,7 @@
 			"icon": "images/smite/abilities/tanuki-trickery.jpg",
 			"level": 5,
 			"name": "Tanuki Trickery",
-			"ticks": [
-				5,
-				4
-			],
+			"ticks": 0,
 			"toggleStats": {
 				"movementSpeed": [
 					10,
@@ -5388,9 +5028,7 @@
 			"level": 5,
 			"name": "Alluring Spirits",
 			"powerDamage": 70,
-			"ticks": [
-				1
-			],
+			"ticks": 1,
 			"toggleStats": {
 				"hpFive": [
 					30,
@@ -5458,10 +5096,7 @@
 				350,
 				400
 			],
-			"ticks": [
-				0,
-				0
-			]
+			"ticks": 0
 		},
 		"abilityOne": {
 			"cooldown": 12,
@@ -5504,12 +5139,7 @@
 			"description": "Discordia leaps a short distance and then creates an area of confusion where she lands that persists for 5s. While inside the area she becomes stealthed, gains bonus movement speed, and Her 1st and 2nd ability cooldowns are decreased by an additional amount of time every .5s she remains in the area. Attacking from the area will briefly reveal her. ",
 			"icon": "images/smite/abilities/erratic-behavior.jpg",
 			"level": 5,
-			"name": "Erratic Behavior",
-			"ticks": [
-				5.0,
-				1.0,
-				0.5
-			]
+			"name": "Erratic Behavior"
 		},
 		"abilityTwo": {
 			"cooldown": 15,
@@ -5539,10 +5169,7 @@
 				40,
 				50
 			],
-			"ticks": [
-				1.0,
-				1.0
-			]
+			"ticks": 1
 		},
 		"attackSpeed": 0.9,
 		"attackSpeedPerLevel": 0.8999999999999999,
@@ -5590,11 +5217,7 @@
 			"description": "Erlang Shen Taunts nearby Enemy gods, gaining Damage Mitigation for the next 4s. Afterwards, if Erlang Shen is still alive he is Healed for a flat amount plus 15% of his Maximum Health.",
 			"icon": "images/smite/abilities/9-turns-blessing.jpg",
 			"level": 5,
-			"name": "9 Turns Blessing",
-			"ticks": [
-				4.0,
-				0
-			]
+			"name": "9 Turns Blessing"
 		},
 		"abilityOne": {
 			"cooldown": 14,
@@ -5617,11 +5240,7 @@
 			"level": 5,
 			"name": "Spot Weakness",
 			"powerDamage": 5,
-			"ticks": [
-				3.0,
-				1.0,
-				5
-			]
+			"ticks": 5
 		},
 		"abilityThree": {
 			"cooldown": [
@@ -5657,10 +5276,7 @@
 				250,
 				310
 			],
-			"ticks": [
-				4.0,
-				12.0
-			]
+			"ticks": 3
 		},
 		"abilityTwo": {
 			"cooldown": 16,
@@ -5683,9 +5299,7 @@
 			"level": 5,
 			"name": "Pin",
 			"powerDamage": 55,
-			"ticks": [
-				0
-			]
+			"ticks": 0
 		},
 		"attackSpeed": 1,
 		"attackSpeedPerLevel": 1.0,
@@ -5743,9 +5357,7 @@
 			"level": 5,
 			"name": "Circle of Protection",
 			"powerDamage": 50,
-			"ticks": [
-				5.0
-			],
+			"ticks": 5.0,
 			"toggleStats": {
 				"hpFive": [
 					90,
@@ -5778,9 +5390,7 @@
 			"level": 5,
 			"name": "Wing Gust",
 			"powerDamage": 40,
-			"ticks": [
-				3
-			],
+			"ticks": 3,
 			"toggleStats": {
 				"movementSpeed": 25,
 				"toggle": false
@@ -5798,16 +5408,7 @@
 			"description": "Eset Silences and slows enemy gods at her target location. Enemy gods hit also lose a portion of their Magical Protection. If Eset successfully hits an enemy god, allies near the Dispel Magic or Eset gain a shield. If Eset hits multiple enemy gods, the shield is increased by 40% for each enemy hit after the first up to a maximum of 80%.",
 			"icon": "images/smite/abilities/dispel-magic.jpg",
 			"level": 5,
-			"name": "Dispel Magic",
-			"ticks": [
-				[
-					1.5,
-					1.75,
-					2,
-					2.25,
-					2.5
-				]
-			]
+			"name": "Dispel Magic"
 		},
 		"abilityTwo": {
 			"cooldown": 10,
@@ -5830,9 +5431,7 @@
 			"level": 5,
 			"name": "Spirit Ball",
 			"powerDamage": 70,
-			"ticks": [
-				1.5
-			]
+			"ticks": 1.5
 		},
 		"attackSpeed": 1,
 		"attackSpeedPerLevel": 0.0,
@@ -5890,16 +5489,7 @@
 				50,
 				60
 			],
-			"ticks": [
-				3.0,
-				[
-					20,
-					25,
-					30,
-					35,
-					40
-				]
-			]
+			"ticks": 13
 		},
 		"abilityOne": {
 			"cooldown": [
@@ -5935,10 +5525,7 @@
 				110,
 				130
 			],
-			"ticks": [
-				3.0,
-				3.0
-			]
+			"ticks": 1
 		},
 		"abilityThree": {
 			"cooldown": 15,
@@ -5962,11 +5549,7 @@
 				100,
 				120
 			],
-			"ticks": [
-				2.0,
-				3.0,
-				2.0
-			]
+			"ticks": 0
 		},
 		"abilityTwo": {
 			"cooldown": 16,
@@ -5988,9 +5571,7 @@
 			"icon": "images/smite/abilities/coerce.jpg",
 			"level": 5,
 			"name": "Coerce",
-			"ticks": [
-				5.0
-			]
+			"ticks": 5.0
 		},
 		"attackSpeed": 0.9,
 		"attackSpeedPerLevel": 1.0999999999999999,
@@ -6041,9 +5622,7 @@
 			"level": 5,
 			"name": "Ragnarok",
 			"powerDamage": 120,
-			"ticks": [
-				0
-			],
+			"ticks": 0,
 			"toggleStats": {
 				"movementSpeed": 75,
 				"toggle": false
@@ -6099,10 +5678,7 @@
 			"description": "Fenrir rears back and howls, inspiring himself with a Physical Power and Lifesteal Buff. While inspired Fenrir generates 2 runes.",
 			"icon": "images/smite/abilities/seething-howl.jpg",
 			"level": 5,
-			"name": "Seething Howl",
-			"ticks": [
-				6
-			]
+			"name": "Seething Howl"
 		},
 		"attackSpeed": 1,
 		"attackSpeedPerLevel": 1.7000000000000002,
@@ -6159,9 +5735,7 @@
 			"level": 5,
 			"name": "Valkyrie's Discretion",
 			"powerDamage": 35,
-			"ticks": [
-				0
-			]
+			"ticks": 0
 		},
 		"abilityOne": {
 			"cooldown": 11,
@@ -6184,9 +5758,7 @@
 			"level": 5,
 			"name": "Irradiate",
 			"powerDamage": 25,
-			"ticks": [
-				5
-			]
+			"ticks": 5
 		},
 		"abilityThree": {
 			"cooldown": [
@@ -6206,10 +5778,7 @@
 			"description": "At her ground target location, Freya Banishes her enemies into the air for a short time.  The enemies can't be hit or take action while in the air.",
 			"icon": "images/smite/abilities/banish.jpg",
 			"level": 5,
-			"name": "Banish",
-			"ticks": [
-				0
-			]
+			"name": "Banish"
 		},
 		"abilityTwo": {
 			"cooldown": 11,
@@ -6232,9 +5801,7 @@
 			"level": 5,
 			"name": "Pulse",
 			"powerDamage": 15,
-			"ticks": [
-				6
-			]
+			"ticks": 6
 		},
 		"attackSpeed": 0.95,
 		"attackSpeedPerLevel": 1.9,
@@ -6291,10 +5858,7 @@
 			"level": 5,
 			"name": "Dharmic Pillars",
 			"powerDamage": 40,
-			"ticks": [
-				6,
-				3
-			]
+			"ticks": 6
 		},
 		"abilityOne": {
 			"cooldown": [
@@ -6323,9 +5887,7 @@
 			"level": 5,
 			"name": "Turn of Fate",
 			"powerDamage": 55,
-			"ticks": [
-				4
-			]
+			"ticks": 4
 		},
 		"abilityThree": {
 			"cooldown": 15,
@@ -6367,10 +5929,7 @@
 			"description": "Ganesha begins chanting and rises into the lotus position, where he is slowed slightly but may travel freely in all directions. While chanting, he silences Enemy gods in a cone in front of him, increasing Physical and Magical Protections for all nearby Allied Gods. He is knockback immune while channeling this ability.",
 			"icon": "images/smite/abilities/ohm.jpg",
 			"level": 5,
-			"name": "Ohm",
-			"ticks": [
-				0
-			]
+			"name": "Ohm"
 		},
 		"attackSpeed": 1,
 		"attackSpeedPerLevel": 1.2,
@@ -6395,10 +5954,7 @@
 			"description": "Any time Ganesha deals a killing blow, the nearest Friendly God receives credit for the kill and Ganesha receives the rewards for an assist instead. In addition, his assist range is increased by 20 and the time before he loses his assist credit is increased by 5s.",
 			"icon": "images/smite/abilities/good-fortune.jpg",
 			"level": 5,
-			"name": "Good Fortune",
-			"ticks": [
-				15
-			]
+			"name": "Good Fortune"
 		},
 		"physicalProtection": 20,
 		"physicalProtectionPerLevel": 3.2,
@@ -6452,16 +6008,7 @@
 			"level": 5,
 			"name": "Roll Out",
 			"powerDamage": 50,
-			"ticks": [
-				3.0,
-				[
-					1,
-					1.25,
-					1.5,
-					1.75,
-					2
-				]
-			]
+			"ticks": 3.0
 		},
 		"abilityThree": {
 			"cooldown": 18,
@@ -6469,16 +6016,7 @@
 			"description": "Geb targets himself or an ally to put a Shield around. The Shield blocks all damage and lasts until its time expires or it takes enough damage to be destroyed. The Shield also cleanses any Crowd Control when applied.",
 			"icon": "images/smite/abilities/stone-shield.jpg",
 			"level": 5,
-			"name": "Stone Shield",
-			"ticks": [
-				[
-					2,
-					2.5,
-					3,
-					3.5,
-					4
-				]
-			]
+			"name": "Stone Shield"
 		},
 		"abilityTwo": {
 			"cooldown": 15,
@@ -6564,12 +6102,7 @@
 				375,
 				450
 			],
-			"ticks": [
-				6.0,
-				2.0,
-				0.5,
-				6.0
-			]
+			"ticks": 0
 		},
 		"abilityOne": {
 			"cooldown": [
@@ -6598,12 +6131,7 @@
 			"level": 5,
 			"name": "Sun-forged Scimitar",
 			"powerDamage": 50,
-			"ticks": [
-				3.0,
-				2.0,
-				0.8,
-				6.0
-			]
+			"ticks": 0
 		},
 		"abilityThree": {
 			"cooldown": 16,
@@ -6620,9 +6148,7 @@
 			"level": 5,
 			"name": "Hero's Advance",
 			"powerDamage": 40,
-			"ticks": [
-				5.0
-			],
+			"ticks": 5.0,
 			"toggleStats": {
 				"movementSpeed": [
 					25,
@@ -6718,9 +6244,7 @@
 			"level": 5,
 			"name": "Cavalry Charge",
 			"powerDamage": 30,
-			"ticks": [
-				4.0
-			]
+			"ticks": 4.0
 		},
 		"abilityOne": {
 			"cooldown": 14,
@@ -6729,9 +6253,6 @@
 			"icon": "images/smite/abilities/conviction.jpg",
 			"level": 5,
 			"name": "Conviction",
-			"ticks": [
-				2.0
-			],
 			"toggleStats": {
 				"hpFive": [
 					50,
@@ -6764,11 +6285,7 @@
 			"level": 5,
 			"name": "Taolu Assault",
 			"powerDamage": 20,
-			"ticks": [
-				0.3,
-				3.0,
-				5
-			]
+			"ticks": 1
 		},
 		"abilityTwo": {
 			"cooldown": 14,
@@ -6791,10 +6308,7 @@
 			"level": 5,
 			"name": "Warrior's Will",
 			"powerDamage": 60,
-			"ticks": [
-				2.0,
-				2
-			]
+			"ticks": 2.0
 		},
 		"attackSpeed": 1,
 		"attackSpeedPerLevel": 1.2,
@@ -6819,10 +6333,7 @@
 			"description": "Each time Guan Yu takes or deals damage he gains stacks. At max stacks Painless becomes active and all of Guan Yu's abilities gain boosted effects. Once active, stacks will reset if Guan Yu has not taken or dealt damage in the last 5s.",
 			"icon": "images/smite/abilities/painless.jpg",
 			"level": 5,
-			"name": "Painless",
-			"ticks": [
-				5.0
-			]
+			"name": "Painless"
 		},
 		"physicalProtection": 16,
 		"physicalProtectionPerLevel": 3,
@@ -6853,10 +6364,7 @@
 			"icon": "images/smite/abilities/mounted-archery.jpg",
 			"level": 5,
 			"name": "Mounted Archery",
-			"powerDamage": 95,
-			"ticks": [
-				0
-			]
+			"powerDamage": 95
 		},
 		"abilityOne": {
 			"cooldown": [
@@ -6923,13 +6431,11 @@
 			"name": "Heavenly Banner",
 			"powerDamage": 55,
 			"ticks": [
-				[
-					4,
-					4.5,
-					5,
-					5.5,
-					6
-				]
+				4,
+				4.5,
+				5,
+				5.5,
+				6
 			],
 			"toggleStats": {
 				"attackSpeed": [
@@ -6970,11 +6476,7 @@
 				"current": 0,
 				"max": "5",
 				"stacks": {}
-			},
-			"ticks": [
-				8.0,
-				8
-			]
+			}
 		},
 		"physicalProtection": 11,
 		"physicalProtectionPerLevel": 2.75,
@@ -7000,12 +6502,7 @@
 			"level": 5,
 			"name": "Pillar of Agony",
 			"powerDamage": 30,
-			"ticks": [
-				0.5,
-				4.0,
-				0.2,
-				4
-			]
+			"ticks": 0
 		},
 		"abilityOne": {
 			"cooldown": 14,
@@ -7027,10 +6524,7 @@
 			"icon": "images/smite/abilities/death-from-below.jpg",
 			"level": 5,
 			"name": "Death From Below",
-			"powerDamage": 60,
-			"ticks": [
-				2
-			]
+			"powerDamage": 60
 		},
 		"abilityThree": {
 			"cooldown": 10,
@@ -7098,10 +6592,7 @@
 			"description": "Hades' normal staff attacks apply a Debuff to the enemy, called Blight. This Debuff stays on the target and can be refreshed. If an enemy is afflicted by Blight their Magical and Physical Power is reduced. Also each of Hades' other powers have an additional effect.",
 			"icon": "images/smite/abilities/blight.jpg",
 			"level": 5,
-			"name": "Blight",
-			"ticks": [
-				8
-			]
+			"name": "Blight"
 		},
 		"physicalProtection": 18,
 		"physicalProtectionPerLevel": 2.6,
@@ -7184,10 +6675,7 @@
 			"description": "He Bo unfurls his scroll in a line, releasing the flood waters. Allies on the water are immune to Slows and move faster, while enemies are Slowed.",
 			"icon": "images/smite/abilities/atlas-of-the-yellow-river.jpg",
 			"level": 5,
-			"name": "Atlas of the Yellow River",
-			"ticks": [
-				7
-			]
+			"name": "Atlas of the Yellow River"
 		},
 		"attackSpeed": 0.86,
 		"attackSpeedPerLevel": 0.8,
@@ -7217,10 +6705,7 @@
 				"current": 0,
 				"max": "3",
 				"stacks": {}
-			},
-			"ticks": [
-				5
-			]
+			}
 		},
 		"physicalProtection": 9,
 		"physicalProtectionPerLevel": 2.6,
@@ -7259,12 +6744,7 @@
 				155,
 				195
 			],
-			"ticks": [
-				0.5,
-				1.5,
-				2.5,
-				4
-			]
+			"ticks": 3
 		},
 		"abilityOne": {
 			"cooldown": 14,
@@ -7324,12 +6804,7 @@
 				170,
 				210
 			],
-			"ticks": [
-				2.0,
-				0.5,
-				2.0,
-				0
-			]
+			"ticks": 4
 		},
 		"attackSpeed": 0.96,
 		"attackSpeedPerLevel": 1.4000000000000001,
@@ -7354,10 +6829,7 @@
 			"description": "When Heimdallr gains vision of an enemy god he gains Physical Power, up to a maximum of 5 gods. When an enemy god would disappear from vision (including Stealth) Heimdallr continues to see them for 4s. Heimdallr's Critical Strikes only deal 40% bonus damage.",
 			"icon": "images/smite/abilities/the-vigilant.jpg",
 			"level": 5,
-			"name": "The Vigilant",
-			"ticks": [
-				4.0
-			]
+			"name": "The Vigilant"
 		},
 		"physicalProtection": 16,
 		"physicalProtectionPerLevel": 3,
@@ -7426,10 +6898,7 @@
 			"level": 5,
 			"name": "Repulse (Inspire)",
 			"powerDamage": 75,
-			"ticks": [
-				1.0,
-				5
-			]
+			"ticks": 5
 		},
 		"abilityTwo": {
 			"cooldown": [
@@ -7449,11 +6918,7 @@
 			"description": "HINDER (Dark Stance) - Hel debuffs all enemies in the targeted area, reducing their Magical Protection and slowing them for 3s.\n\nCLEANSE (Light Stance) - Hel cleanses all allied gods in the targeted area, removing all Crowd Control effects instantly and protecting them from future ones for a duration.",
 			"icon": "images/smite/abilities/hinder.jpg",
 			"level": 5,
-			"name": "Hinder (Cleanse)",
-			"ticks": [
-				3.0,
-				0
-			]
+			"name": "Hinder (Cleanse)"
 		},
 		"attackSpeed": 0.86,
 		"attackSpeedPerLevel": 0.8,
@@ -7510,10 +6975,7 @@
 			"level": 5,
 			"name": "Argus, the Defender",
 			"powerDamage": 55,
-			"ticks": [
-				1.0,
-				40
-			]
+			"ticks": 40
 		},
 		"abilityOne": {
 			"cooldown": 10,
@@ -7565,9 +7027,7 @@
 			"level": 5,
 			"name": "Divine Shroud",
 			"powerDamage": 7,
-			"ticks": [
-				5
-			],
+			"ticks": 5,
 			"toggleStats": {
 				"movementSpeed": 15,
 				"toggle": false
@@ -7589,13 +7049,11 @@
 			"name": "Polymorph",
 			"powerDamage": 80,
 			"ticks": [
-				[
-					1.2,
-					1.4,
-					1.6,
-					1.8,
-					2
-				]
+				1.2,
+				1.4,
+				1.6,
+				1.8,
+				2
 			]
 		},
 		"attackSpeed": 0.9,
@@ -7621,11 +7079,7 @@
 			"description": "Each time Hera deals damage to gods with her Abilities or Basic Attacks Argus, The Defender's cooldown is reduced by 1s and Divine Shroud's cooldown is reduced by 0.33s. If Argus is active he is instead healed.",
 			"icon": "images/smite/abilities/commanding-presence.jpg",
 			"level": 5,
-			"name": "Commanding Presence",
-			"ticks": [
-				1.0,
-				0.33
-			]
+			"name": "Commanding Presence"
 		},
 		"physicalProtection": 9,
 		"physicalProtectionPerLevel": 2.7,
@@ -7686,10 +7140,7 @@
 			"description": "Hercules heals himself instantly and gains increased Magical and Physical Protections for the next 4s. A percentage of the damage taken during this time is returned to him as an additional heal at the end of the duration.",
 			"icon": "images/smite/abilities/mitigate-wounds.jpg",
 			"level": 5,
-			"name": "Mitigate Wounds",
-			"ticks": [
-				4.0
-			]
+			"name": "Mitigate Wounds"
 		},
 		"abilityTwo": {
 			"cooldown": 14,
@@ -7741,10 +7192,7 @@
 				"current": 0,
 				"max": "3",
 				"stacks": {}
-			},
-			"ticks": [
-				5
-			]
+			}
 		},
 		"physicalProtection": 18,
 		"physicalProtectionPerLevel": 3,
@@ -7770,9 +7218,7 @@
 			"level": 5,
 			"name": "To The Skies!",
 			"powerDamage": 80,
-			"ticks": [
-				2.0
-			]
+			"ticks": 2.0
 		},
 		"abilityOne": {
 			"cooldown": [
@@ -7802,10 +7248,7 @@
 			"name": "Updraft",
 			"powerDamage": 75,
 			"secondaryDamage": 0,
-			"ticks": [
-				5.0,
-				2.5
-			]
+			"ticks": 0
 		},
 		"abilityThree": {
 			"cooldown": 16,
@@ -7813,10 +7256,7 @@
 			"description": "Horus rushes to the aid of an ally. After selecting an ally, Horus will fly to their location before descending. Upon landing, the selected ally and all nearby allies have their health restored and gain protections for 3s.",
 			"icon": "images/smite/abilities/protectors-surge.jpg",
 			"level": 5,
-			"name": "Protector's Surge",
-			"ticks": [
-				3.0
-			]
+			"name": "Protector's Surge"
 		},
 		"abilityTwo": {
 			"cooldown": [
@@ -7852,10 +7292,7 @@
 				180,
 				220
 			],
-			"ticks": [
-				1.25,
-				3.0
-			]
+			"ticks": 2
 		},
 		"attackSpeed": 1,
 		"attackSpeedPerLevel": 1.2,
@@ -7880,10 +7317,7 @@
 			"description": "Each time Horus is damaged by an enemy god, Horus gains a stack of Resolute. If Set is the god damaging Horus, Horus gains 2 stacks. Each stack increases Horus' Protections and CCR. Resolute stacks to a max count of 10 for 3s. When Resolute fades, Horus is healed based on the amount of stacks. ",
 			"icon": "images/smite/abilities/resolute.jpg",
 			"level": 5,
-			"name": "Resolute",
-			"ticks": [
-				3.0
-			]
+			"name": "Resolute"
 		},
 		"physicalProtection": 17,
 		"physicalProtectionPerLevel": 3,
@@ -7909,10 +7343,7 @@
 			"level": 5,
 			"name": "Sunbreaker",
 			"powerDamage": 25,
-			"ticks": [
-				0,
-				0
-			]
+			"ticks": 0
 		},
 		"abilityOne": {
 			"cooldown": 10,
@@ -7970,10 +7401,7 @@
 			"description": "Hou Yi marks an enemy with Mark of the Golden Crow. Marked enemies take extra damage for every 10% of their missing health from Hou Yi\u2019s abilities and basic attacks. Also, marked enemies, including stealthed gods, are visible to Hou Yi on the minimap. The mark lasts for 10s.",
 			"icon": "images/smite/abilities/mark-of-the-golden-crow.jpg",
 			"level": 5,
-			"name": "Mark of the Golden Crow",
-			"ticks": [
-				10.0
-			]
+			"name": "Mark of the Golden Crow"
 		},
 		"attackSpeed": 0.95,
 		"attackSpeedPerLevel": 1.0999999999999999,
@@ -8030,16 +7458,7 @@
 			"level": 5,
 			"name": "Fear No Evil",
 			"powerDamage": 15,
-			"ticks": [
-				0.25,
-				[
-					1,
-					1.25,
-					1.5,
-					1.75,
-					2
-				]
-			]
+			"ticks": 8
 		},
 		"abilityOne": {
 			"cooldown": [
@@ -8061,10 +7480,7 @@
 			"icon": "images/smite/abilities/somersault.jpg",
 			"level": 5,
 			"name": "Somersault",
-			"powerDamage": 70,
-			"ticks": [
-				2
-			]
+			"powerDamage": 70
 		},
 		"abilityThree": {
 			"cooldown": 13,
@@ -8166,13 +7582,11 @@
 			"name": "Dark Portal",
 			"powerDamage": 100,
 			"ticks": [
-				[
-					1.5,
-					1.65,
-					1.8,
-					1.95,
-					2.1
-				]
+				1.5,
+				1.65,
+				1.8,
+				1.95,
+				2.1
 			]
 		},
 		"abilityOne": {
@@ -8195,9 +7609,7 @@
 			"icon": "images/smite/abilities/sickle-storm.jpg",
 			"level": 5,
 			"name": "Sickle Storm",
-			"ticks": [
-				6.0
-			],
+			"ticks": 6.0,
 			"toggleStats": {
 				"attackSpeed": [
 					45,
@@ -8221,16 +7633,7 @@
 			"description": "Izanami descends into the underworld, becoming Stealthed, and leaps away from her current position.\n\nTaking damage, or firing a damaging Ability or Basic Attack breaks her Stealth.",
 			"icon": "images/smite/abilities/fade-away.jpg",
 			"level": 5,
-			"name": "Fade Away",
-			"ticks": [
-				[
-					3,
-					3.5,
-					4,
-					4.5,
-					5
-				]
-			]
+			"name": "Fade Away"
 		},
 		"abilityTwo": {
 			"cooldown": [
@@ -8252,10 +7655,7 @@
 			"icon": "images/smite/abilities/spectral-projection.jpg",
 			"level": 5,
 			"name": "Spectral Projection",
-			"powerDamage": 80,
-			"ticks": [
-				3
-			]
+			"powerDamage": 80
 		},
 		"attackSpeed": 0.92,
 		"attackSpeedPerLevel": 1.6,
@@ -8311,9 +7711,7 @@
 			"level": 5,
 			"name": "Through Space and Time",
 			"powerDamage": 65,
-			"ticks": [
-				10.0
-			]
+			"ticks": 10.0
 		},
 		"abilityOne": {
 			"cooldown": 12,
@@ -8330,10 +7728,7 @@
 			"level": 5,
 			"name": "Portal",
 			"powerDamage": 60,
-			"ticks": [
-				0,
-				5
-			]
+			"ticks": 5
 		},
 		"abilityThree": {
 			"cooldown": 15,
@@ -8348,16 +7743,6 @@
 			"icon": "images/smite/abilities/threshold.jpg",
 			"level": 5,
 			"name": "Threshold",
-			"ticks": [
-				[
-					3,
-					3.5,
-					4,
-					4.5,
-					5
-				],
-				0
-			],
 			"toggleStats": {
 				"movementSpeed": [
 					10,
@@ -8446,9 +7831,7 @@
 			"level": 5,
 			"name": "Air Strike",
 			"powerDamage": 0,
-			"ticks": [
-				2.0
-			]
+			"ticks": 2.0
 		},
 		"abilityOne": {
 			"cooldown": 12,
@@ -8478,11 +7861,7 @@
 				40,
 				50
 			],
-			"ticks": [
-				6.0,
-				1.0,
-				7.0
-			]
+			"ticks": 7
 		},
 		"abilityThree": {
 			"cooldown": [
@@ -8503,9 +7882,6 @@
 			"icon": "images/smite/abilities/agility.jpg",
 			"level": 5,
 			"name": "Agility",
-			"ticks": [
-				4.0
-			],
 			"toggleStats": {
 				"movementSpeed": 15,
 				"toggle": false
@@ -8611,11 +7987,7 @@
 				45,
 				55
 			],
-			"ticks": [
-				8.0,
-				1,
-				20
-			]
+			"ticks": 2
 		},
 		"abilityThree": {
 			"cooldown": [
@@ -8644,9 +8016,7 @@
 			"level": 5,
 			"name": "Submerge",
 			"powerDamage": 50,
-			"ticks": [
-				5
-			],
+			"ticks": 5,
 			"toggleStats": {
 				"movementSpeed": 35,
 				"toggle": false
@@ -8674,10 +8044,7 @@
 				35,
 				40
 			],
-			"ticks": [
-				1.2,
-				1.5
-			]
+			"ticks": 1
 		},
 		"attackSpeed": 1,
 		"attackSpeedPerLevel": 1.0,
@@ -8702,10 +8069,7 @@
 			"description": "Jormungandr is so large that he cannot be affected by Hard Displacement. Instead, he gets Dazed, a fading, non-cleansable slow that increases the damage he takes for the duration. Any Attack speed past base speeds up the recharge rate of Jormungandr's Basic Attack. Jormungandr's Basic Attacks do not proc item hit effects.",
 			"icon": "images/smite/abilities/immovable.jpg",
 			"level": 5,
-			"name": "Immovable",
-			"ticks": [
-				2
-			]
+			"name": "Immovable"
 		},
 		"physicalProtection": 21,
 		"physicalProtectionPerLevel": 3.5,
@@ -8738,13 +8102,11 @@
 			"name": "Destruction",
 			"powerDamage": 5,
 			"ticks": [
-				[
-					3.5,
-					3.75,
-					4,
-					4.25,
-					4.5
-				]
+				3.5,
+				3.75,
+				4,
+				4.25,
+				4.5
 			]
 		},
 		"abilityOne": {
@@ -8769,16 +8131,7 @@
 			"description": "Kali hurls her incense at her feet, exploding it. Enemies hit are Stunned, while Kali gains a Physical Power bonus.",
 			"icon": "images/smite/abilities/incense.jpg",
 			"level": 5,
-			"name": "Incense",
-			"ticks": [
-				[
-					4,
-					5,
-					6,
-					7,
-					8
-				]
-			]
+			"name": "Incense"
 		},
 		"abilityTwo": {
 			"cooldown": 12,
@@ -8808,9 +8161,7 @@
 				20,
 				25
 			],
-			"ticks": [
-				3
-			]
+			"ticks": 3
 		},
 		"attackSpeed": 1,
 		"attackSpeedPerLevel": 2.1999999999999997,
@@ -8859,9 +8210,6 @@
 			"icon": "images/smite/abilities/scarabs-blessing.jpg",
 			"level": 5,
 			"name": "Scarab's Blessing",
-			"ticks": [
-				5
-			],
 			"toggleStats": {
 				"movementSpeed": [
 					20,
@@ -8889,13 +8237,11 @@
 			"name": "Abduct",
 			"powerDamage": 40,
 			"ticks": [
-				[
-					1.5,
-					1.6,
-					1.7,
-					1.8,
-					1.9
-				]
+				1.5,
+				1.6,
+				1.7,
+				1.8,
+				1.9
 			]
 		},
 		"abilityThree": {
@@ -8941,9 +8287,7 @@
 			"level": 5,
 			"name": "Rising Dawn",
 			"powerDamage": 5,
-			"ticks": [
-				3
-			]
+			"ticks": 3
 		},
 		"attackSpeed": 1,
 		"attackSpeedPerLevel": 1.2,
@@ -8968,13 +8312,7 @@
 			"description": "Every 5s, Khepri applies a shield to himself and nearby allied gods for 2% of the target's Maximum Health for 15s.  The rate is slowed to every 10s if Khepri has taken or dealt damage in the last 5s. (Max 10%)",
 			"icon": "images/smite/abilities/fortitude.jpg",
 			"level": 5,
-			"name": "Fortitude",
-			"ticks": [
-				5.0,
-				15.0,
-				10.0,
-				5.0
-			]
+			"name": "Fortitude"
 		},
 		"physicalProtection": 19,
 		"physicalProtectionPerLevel": 3,
@@ -9007,9 +8345,7 @@
 				9.5,
 				11
 			],
-			"ticks": [
-				1.0
-			]
+			"ticks": 1.0
 		},
 		"abilityOne": {
 			"cooldown": 14,
@@ -9039,9 +8375,7 @@
 				225,
 				280
 			],
-			"ticks": [
-				0
-			]
+			"ticks": 0
 		},
 		"abilityThree": {
 			"cooldown": 16,
@@ -9099,9 +8433,6 @@
 				140,
 				185,
 				230
-			],
-			"ticks": [
-				0
 			]
 		},
 		"attackSpeed": 1,
@@ -9132,10 +8463,7 @@
 				"current": 0,
 				"max": "4",
 				"stacks": {}
-			},
-			"ticks": [
-				15
-			]
+			}
 		},
 		"physicalProtection": 17,
 		"physicalProtectionPerLevel": 3,
@@ -9188,10 +8516,7 @@
 			"icon": "images/smite/abilities/zephyr.jpg",
 			"level": 5,
 			"name": "Zephyr",
-			"powerDamage": 75,
-			"ticks": [
-				3
-			]
+			"powerDamage": 75
 		},
 		"abilityThree": {
 			"cooldown": [
@@ -9220,11 +8545,7 @@
 			"level": 5,
 			"name": "Whirlwind",
 			"powerDamage": 15,
-			"ticks": [
-				0.5,
-				2.5,
-				4
-			]
+			"ticks": 1
 		},
 		"abilityTwo": {
 			"cooldown": [
@@ -9238,12 +8559,7 @@
 			"description": "Kukulkan channels the wind, allowing him to move faster. This speed boost is strong at first but scales down gradually over the 4s duration. Additionally, Kukulkan cleanses himself of slows and becomes immune to Slows for 0.6s when activated.",
 			"icon": "images/smite/abilities/slipstream.jpg",
 			"level": 5,
-			"name": "Slipstream",
-			"ticks": [
-				4.0,
-				0.6,
-				4
-			]
+			"name": "Slipstream"
 		},
 		"attackSpeed": 0.87,
 		"attackSpeedPerLevel": 0.8,
@@ -9343,17 +8659,7 @@
 			"description": "Kumbhakarna lets out a mighty yawn that Mesmerizes all enemies in range. If awakened early, enemies have their Attack Speed and Movement Speed Slowed. Kumbhakarna may use this ability while asleep.",
 			"icon": "images/smite/abilities/mighty-yawn.jpg",
 			"level": 5,
-			"name": "Mighty Yawn",
-			"ticks": [
-				[
-					1,
-					1.5,
-					2,
-					2.5,
-					3
-				],
-				2
-			]
+			"name": "Mighty Yawn"
 		},
 		"abilityTwo": {
 			"cooldown": 10,
@@ -9376,9 +8682,7 @@
 			"level": 5,
 			"name": "Groggy Strike",
 			"powerDamage": 50,
-			"ticks": [
-				2
-			]
+			"ticks": 2
 		},
 		"attackSpeed": 1,
 		"attackSpeedPerLevel": 1.2,
@@ -9415,139 +8719,6 @@
 	},
 	{
 		"abilityFour": {
-			"cooldown": 75,
-			"cost": 100,
-			"damage": [
-				40,
-				65,
-				90,
-				115,
-				140
-			],
-			"description": "Kuzenbo pulls himself inwards under his shell and spins, summoning fierce currents that knock enemies back, increase his movement speed, render him immune to Crowd Control, and allow him to move freely in all directions for 2.1s. Damage after the first spin is reduced by 50%.",
-			"icon": "images/smite/abilities/watery-grave.jpg",
-			"level": 5,
-			"name": "Watery Grave",
-			"powerDamage": 20,
-			"ticks": [
-				2.1
-			],
-			"toggleStats": {
-				"movementSpeed": 45,
-				"toggle": false
-			}
-		},
-		"abilityOne": {
-			"cooldown": 16,
-			"cost": [
-				70,
-				75,
-				80,
-				85,
-				90
-			],
-			"damage": [
-				80,
-				120,
-				160,
-				200,
-				240
-			],
-			"description": "Kuzenbo summons and throws the powerful NeNe Kappa, who can ricochet off of walls. After firing, if the NeNe Kappa bounces off of a wall it will travel 70 units from that point up to a maximum of 2 bounces. After reaching maximum range, or if an Enemy God is hit by the NeNe Kappa, it will burst forth from its shell, slowing and attacking them for 6s. Kuzenbo transfers 20% of his Health and Protections to the NeNe Kappa.",
-			"icon": "images/smite/abilities/nene-kappa.jpg",
-			"level": 5,
-			"name": "NeNe Kappa",
-			"powerDamage": 55,
-			"secondaryDamage": [
-				35,
-				45,
-				55,
-				65,
-				75
-			],
-			"ticks": [
-				6.0,
-				3
-			]
-		},
-		"abilityThree": {
-			"cooldown": 12,
-			"cost": [
-				60,
-				65,
-				70,
-				75,
-				80
-			],
-			"damage": [
-				60,
-				95,
-				130,
-				165,
-				200
-			],
-			"description": "Kuzenbo charges forward, immune to slows, damaging Enemy minions and silencing using his immense strength to push the first Enemy God he hits along with him. Each subsequent Enemy he hits deals damage to both that Enemy and the god Kuzenbo is pushing. Colliding with a wall will also deal damage to the pushed god. Pushed targets can be hit a maximum of 3 times.",
-			"icon": "images/smite/abilities/sumo-slam.jpg",
-			"level": 5,
-			"name": "Sumo Slam",
-			"powerDamage": 35
-		},
-		"abilityTwo": {
-			"cooldown": [
-				14,
-				13.5,
-				13,
-				12.5,
-				12
-			],
-			"cost": 50,
-			"description": "The spikes on Kuzenbo\u2019s back extend out, damaging enemies who attack Kuzenbo. While active, each time Kuzenbo takes damage, the cooldown on NeNe Kappa and Sumo Slam is reduced. Kuzenbo may activate this ability even while under the effects of Crowd Control.",
-			"icon": "images/smite/abilities/shell-spikes.jpg",
-			"level": 5,
-			"name": "Shell Spikes",
-			"ticks": [
-				3
-			]
-		},
-		"attackSpeed": 1,
-		"attackSpeedPerLevel": 1.2,
-		"attackType": "Melee",
-		"damage": 38.0,
-		"damagePerLevel": 7.5,
-		"health": 500,
-		"healthPerLevel": 100,
-		"hpFive": 8,
-		"hpFivePerLevel": 0.85,
-		"icon": "images/smite/gods/kuzenbo.jpg",
-		"id": 2260,
-		"magicalProtection": 30,
-		"magicalProtectionPerLevel": 0.9,
-		"mana": 200,
-		"manaPerLevel": 34,
-		"mpFive": 4.6,
-		"mpFivePerLevel": 0.42,
-		"name": "Kuzenbo",
-		"pantheon": "Japanese",
-		"passive": {
-			"description": "Each time Kuzenbo takes over 2% of his maximum health worth of damage, pre-mitigation, he is granted stacks of Damage Mitigation as his head fills with water (Max 10 Stacks).  Stacks last 30s and refresh when he gains another. If he is knocked up, grabbed, pulled, banished or otherwise disrupted, the bowl loses half of its stacks.",
-			"icon": "images/smite/abilities/water-bowl.jpg",
-			"level": 5,
-			"name": "Water Bowl",
-			"ticks": [
-				30.0,
-				30
-			]
-		},
-		"physicalProtection": 18,
-		"physicalProtectionPerLevel": 3.2,
-		"powerType": "Magical",
-		"pros": "High Crowd Control, High Defense",
-		"speed": 365,
-		"title": "King Kappa",
-		"type": "Guardian"
-	},
-	{
-		"abilityFour": {
 			"cooldown": 90,
 			"cost": [
 				60,
@@ -9575,9 +8746,7 @@
 				235,
 				280
 			],
-			"ticks": [
-				1.0
-			]
+			"ticks": 1.0
 		},
 		"abilityOne": {
 			"cooldown": 15,
@@ -9600,13 +8769,7 @@
 			"level": 5,
 			"name": "Vanish",
 			"powerDamage": 20,
-			"ticks": [
-				2.0,
-				0.5,
-				0.33,
-				2,
-				4
-			]
+			"ticks": 0
 		},
 		"abilityThree": {
 			"cooldown": 1,
@@ -9636,10 +8799,7 @@
 				115,
 				135
 			],
-			"ticks": [
-				3.0,
-				3.0
-			]
+			"ticks": 1
 		},
 		"abilityTwo": {
 			"cooldown": 1,
@@ -9662,10 +8822,7 @@
 			"level": 5,
 			"name": "Agonizing Visions",
 			"powerDamage": 15,
-			"ticks": [
-				4.0,
-				3.0
-			]
+			"ticks": 0
 		},
 		"attackSpeed": 1,
 		"attackSpeedPerLevel": 1.9,
@@ -9716,10 +8873,7 @@
 			"icon": "images/smite/abilities/petrify.jpg",
 			"level": 5,
 			"name": "Petrify",
-			"powerDamage": 100,
-			"ticks": [
-				3
-			]
+			"powerDamage": 100
 		},
 		"abilityOne": {
 			"cooldown": 10,
@@ -9764,9 +8918,7 @@
 			"level": 5,
 			"name": "Lacerate",
 			"powerDamage": 70,
-			"ticks": [
-				1
-			]
+			"ticks": 1
 		},
 		"abilityTwo": {
 			"cooldown": 0,
@@ -9789,9 +8941,7 @@
 			"level": 5,
 			"name": "Acid Spray",
 			"powerDamage": 80,
-			"ticks": [
-				4
-			]
+			"ticks": 4
 		},
 		"attackSpeed": 0.95,
 		"attackSpeedPerLevel": 1.3,
@@ -9848,9 +8998,7 @@
 			"level": 5,
 			"name": "Sonic Boom",
 			"powerDamage": 100,
-			"ticks": [
-				0
-			]
+			"ticks": 0
 		},
 		"abilityOne": {
 			"cooldown": 8,
@@ -9896,9 +9044,7 @@
 				25,
 				30
 			],
-			"ticks": [
-				1
-			]
+			"ticks": 1
 		},
 		"abilityTwo": {
 			"cooldown": [
@@ -9919,9 +9065,6 @@
 			"icon": "images/smite/abilities/maximum-velocity.jpg",
 			"level": 5,
 			"name": "Maximum Velocity",
-			"ticks": [
-				5
-			],
 			"toggleStats": {
 				"attackSpeed": [
 					30,
@@ -10000,9 +9143,6 @@
 				15,
 				20,
 				25
-			],
-			"ticks": [
-				0
 			]
 		},
 		"abilityOne": {
@@ -10027,10 +9167,7 @@
 				35,
 				45
 			],
-			"ticks": [
-				0.4,
-				0
-			]
+			"ticks": 0
 		},
 		"abilityThree": {
 			"cooldown": [
@@ -10100,9 +9237,7 @@
 			"level": 5,
 			"name": "Overload",
 			"powerDamage": 15,
-			"ticks": [
-				5
-			]
+			"ticks": 5
 		},
 		"physicalProtection": 10,
 		"physicalProtectionPerLevel": 3,
@@ -10141,9 +9276,7 @@
 				210,
 				250
 			],
-			"ticks": [
-				4
-			]
+			"ticks": 4
 		},
 		"abilityOne": {
 			"cooldown": 13,
@@ -10173,11 +9306,7 @@
 				85,
 				100
 			],
-			"ticks": [
-				4.0,
-				1,
-				4
-			]
+			"ticks": 0
 		},
 		"abilityThree": {
 			"cooldown": 14,
@@ -10201,10 +9330,7 @@
 				150,
 				180
 			],
-			"ticks": [
-				4.0,
-				4
-			],
+			"ticks": 4.0,
 			"toggleStats": {
 				"movementSpeed": [
 					16,
@@ -10274,12 +9400,7 @@
 			"description": "Morgan Le Fay's abilities Mark enemy gods also activating the shared Symbol on her sword providing Magical Power. Once her sword has gained all 5 Symbols, Morgan Le Fay becomes empowered, gaining double the Magical Power buff and reducing the cooldown of Consuming Power by 10s before the Symbols are all drained.",
 			"icon": "images/smite/abilities/empowered-blade.jpg",
 			"level": 5,
-			"name": "Empowered Blade",
-			"ticks": [
-				10.0,
-				10,
-				30
-			]
+			"name": "Empowered Blade"
 		},
 		"physicalProtection": 14,
 		"physicalProtectionPerLevel": 3,
@@ -10312,9 +9433,7 @@
 				300,
 				350
 			],
-			"ticks": [
-				1.0
-			]
+			"ticks": 1.0
 		},
 		"abilityOne": {
 			"cooldown": [
@@ -10343,9 +9462,7 @@
 			"level": 5,
 			"name": "Cross Strike",
 			"powerDamage": 30,
-			"ticks": [
-				6
-			],
+			"ticks": 6,
 			"toggleStats": {
 				"attackSpeed": 25,
 				"toggle": false
@@ -10379,9 +9496,7 @@
 				70,
 				80
 			],
-			"ticks": [
-				6
-			]
+			"ticks": 6
 		},
 		"abilityTwo": {
 			"cooldown": 14,
@@ -10411,9 +9526,7 @@
 				50,
 				60
 			],
-			"ticks": [
-				3
-			]
+			"ticks": 3
 		},
 		"attackSpeed": 1,
 		"attackSpeedPerLevel": 1.0,
@@ -10470,10 +9583,7 @@
 			"level": 5,
 			"name": "Wind Fire Wheels",
 			"powerDamage": 45,
-			"ticks": [
-				4.0,
-				5.0
-			]
+			"ticks": 1
 		},
 		"abilityOne": {
 			"cooldown": 14,
@@ -10503,11 +9613,7 @@
 				150,
 				175
 			],
-			"ticks": [
-				3.0,
-				1.0,
-				2.0
-			],
+			"ticks": 2,
 			"toggleStats": {
 				"movementSpeed": 5,
 				"toggle": false
@@ -10542,15 +9648,6 @@
 			"icon": "images/smite/abilities/flaming-spear.jpg",
 			"level": 5,
 			"name": "Flaming Spear",
-			"ticks": [
-				[
-					4,
-					4.5,
-					5,
-					5.5,
-					6
-				]
-			],
 			"toggleStats": {
 				"attackSpeed": [
 					15,
@@ -10593,9 +9690,6 @@
 			"icon": "images/smite/abilities/righteous-spirit.jpg",
 			"level": 5,
 			"name": "Righteous Spirit",
-			"ticks": [
-				10.0
-			],
 			"toggleStats": {
 				"movementSpeed": 0,
 				"toggle": false
@@ -10680,16 +9774,7 @@
 			"icon": "images/smite/abilities/backflip.jpg",
 			"level": 5,
 			"name": "Backflip",
-			"powerDamage": 80,
-			"ticks": [
-				[
-					2.5,
-					3,
-					3.5,
-					4,
-					4.5
-				]
-			]
+			"powerDamage": 80
 		},
 		"abilityTwo": {
 			"cooldown": 15,
@@ -10705,10 +9790,7 @@
 			"icon": "images/smite/abilities/unravel.jpg",
 			"level": 5,
 			"name": "Unravel",
-			"powerDamage": 80,
-			"ticks": [
-				4
-			]
+			"powerDamage": 80
 		},
 		"attackSpeed": 1,
 		"attackSpeedPerLevel": 1.6,
@@ -10763,11 +9845,7 @@
 			"description": "Nemesis chooses a single enemy god, reducing their Health and movement speed and stealing a portion of their Protections for a time period. Her movement speed is also increased during this time.",
 			"icon": "images/smite/abilities/divine-judgement.jpg",
 			"level": 5,
-			"name": "Divine Judgement",
-			"ticks": [
-				5,
-				5
-			]
+			"name": "Divine Judgement"
 		},
 		"abilityOne": {
 			"cooldown": 14,
@@ -10790,9 +9868,7 @@
 			"level": 5,
 			"name": "Swift Vengeance",
 			"powerDamage": 35,
-			"ticks": [
-				2.0
-			]
+			"ticks": 2.0
 		},
 		"abilityThree": {
 			"cooldown": 16,
@@ -10807,9 +9883,6 @@
 			"icon": "images/smite/abilities/retribution.jpg",
 			"level": 5,
 			"name": "Retribution",
-			"ticks": [
-				0
-			],
 			"toggleStats": {
 				"hpFive": 100,
 				"toggle": false
@@ -10836,9 +9909,7 @@
 			"level": 5,
 			"name": "Slice and Dice",
 			"powerDamage": 30,
-			"ticks": [
-				2.0
-			]
+			"ticks": 2.0
 		},
 		"attackSpeed": 1,
 		"attackSpeedPerLevel": 2.1999999999999997,
@@ -10868,10 +9939,7 @@
 				"current": 0,
 				"max": "3",
 				"stacks": {}
-			},
-			"ticks": [
-				5
-			]
+			}
 		},
 		"physicalProtection": 11,
 		"physicalProtectionPerLevel": 3,
@@ -10902,10 +9970,7 @@
 			"icon": "images/smite/abilities/sentinel-of-zeus.jpg",
 			"level": 5,
 			"name": "Sentinel of Zeus",
-			"powerDamage": 70,
-			"ticks": [
-				4
-			]
+			"powerDamage": 70
 		},
 		"abilityOne": {
 			"cooldown": 14,
@@ -10927,16 +9992,7 @@
 			"icon": "images/smite/abilities/rend.jpg",
 			"level": 5,
 			"name": "Rend",
-			"powerDamage": 40,
-			"ticks": [
-				[
-					1,
-					1.25,
-					1.5,
-					1.75,
-					2
-				]
-			]
+			"powerDamage": 40
 		},
 		"abilityThree": {
 			"cooldown": 16,
@@ -10988,9 +10044,7 @@
 				25,
 				30
 			],
-			"ticks": [
-				4
-			]
+			"ticks": 4
 		},
 		"attackSpeed": 1,
 		"attackSpeedPerLevel": 1.2,
@@ -11076,9 +10130,7 @@
 			"level": 5,
 			"name": "Shadow Lock",
 			"powerDamage": 50,
-			"ticks": [
-				2
-			]
+			"ticks": 2
 		},
 		"abilityThree": {
 			"cooldown": 15,
@@ -11117,9 +10169,7 @@
 			"level": 5,
 			"name": "Siphon Darkness",
 			"powerDamage": 100,
-			"ticks": [
-				2
-			]
+			"ticks": 2
 		},
 		"attackSpeed": 1,
 		"attackSpeedPerLevel": 0.8,
@@ -11199,10 +10249,7 @@
 				40,
 				50
 			],
-			"ticks": [
-				1.0,
-				6
-			],
+			"ticks": 6,
 			"toggleStats": {
 				"movementSpeed": 10,
 				"toggle": false
@@ -11244,10 +10291,7 @@
 			"icon": "images/smite/abilities/clay-soldiers.jpg",
 			"level": 5,
 			"name": "Clay Soldiers",
-			"ticks": [
-				10.0,
-				2.0
-			]
+			"ticks": 0
 		},
 		"attackSpeed": 1,
 		"attackSpeedPerLevel": 1.7000000000000002,
@@ -11272,10 +10316,7 @@
 			"description": "After 5 successful Basic Attacks, Nu Wa's next Basic Attack will Root enemies.",
 			"icon": "images/smite/abilities/strength-of-wood.jpg",
 			"level": 5,
-			"name": "Strength of Wood",
-			"ticks": [
-				0
-			]
+			"name": "Strength of Wood"
 		},
 		"physicalProtection": 9,
 		"physicalProtectionPerLevel": 2.7,
@@ -11307,10 +10348,7 @@
 			"level": 5,
 			"name": "Ring of Spears",
 			"powerDamage": 75,
-			"ticks": [
-				2.5,
-				5
-			]
+			"ticks": 2
 		},
 		"abilityOne": {
 			"cooldown": [
@@ -11362,11 +10400,7 @@
 				210,
 				260
 			],
-			"ticks": [
-				0.7,
-				2.0,
-				3.0
-			],
+			"ticks": 1,
 			"toggleStats": {
 				"attackSpeed": 30,
 				"toggle": false
@@ -11392,9 +10426,7 @@
 			"icon": "images/smite/abilities/raven-shout.jpg",
 			"level": 5,
 			"name": "Raven Shout",
-			"ticks": [
-				4
-			]
+			"ticks": 4
 		},
 		"attackSpeed": 1,
 		"attackSpeedPerLevel": 1.0999999999999999,
@@ -11419,10 +10451,7 @@
 			"description": "Odin is empowered as he escorts fallen warriors to Valhalla. Whenever any god dies on the battleground, Odin gains a bonus to Movement Speed and Power. This effect can stack up to 5 times.",
 			"icon": "images/smite/abilities/path-to-valhalla.jpg",
 			"level": 5,
-			"name": "Path to Valhalla",
-			"ticks": [
-				8
-			]
+			"name": "Path to Valhalla"
 		},
 		"physicalProtection": 16,
 		"physicalProtectionPerLevel": 3,
@@ -11445,10 +10474,7 @@
 			"description": "Olorun brings forth Olodumare and Olofi who travel outwards, creating a large area of divine energy that distorts the flow of time within.\nAll Enemies caught in the area are negatively affected by the time dilation, attacking, casting and even animating more slowly.\nOlorun himself benefits from the Sanctified Field in a similar way.\nThe strength of the divine field also impacts the effect of buffs, debuffs, projectiles and deployables.",
 			"icon": "images/smite/abilities/sanctified-field.jpg",
 			"level": 5,
-			"name": "Sanctified Field",
-			"ticks": [
-				5
-			]
+			"name": "Sanctified Field"
 		},
 		"abilityOne": {
 			"cooldown": 12,
@@ -11471,9 +10497,7 @@
 			"level": 5,
 			"name": "Focused Light",
 			"powerDamage": 55,
-			"ticks": [
-				2.0
-			]
+			"ticks": 2.0
 		},
 		"abilityThree": {
 			"cooldown": 14,
@@ -11496,10 +10520,7 @@
 			"level": 5,
 			"name": "Consecration",
 			"powerDamage": 20,
-			"ticks": [
-				2.0,
-				5.0
-			]
+			"ticks": 2
 		},
 		"abilityTwo": {
 			"cooldown": 14,
@@ -11522,16 +10543,7 @@
 			"level": 5,
 			"name": "Overflowing Divinity",
 			"powerDamage": 25,
-			"ticks": [
-				4.0,
-				[
-					4,
-					4.5,
-					5,
-					5.5,
-					6
-				]
-			],
+			"ticks": 1,
 			"toggleStats": {
 				"attackSpeed": 40,
 				"toggle": false
@@ -11586,10 +10598,7 @@
 			"level": 5,
 			"name": "Lord of the Afterlife",
 			"powerDamage": 80,
-			"ticks": [
-				0.4,
-				6
-			]
+			"ticks": 15
 		},
 		"abilityOne": {
 			"cooldown": 6,
@@ -11605,10 +10614,7 @@
 			"icon": "images/smite/abilities/sickle-strike.jpg",
 			"level": 5,
 			"name": "Sickle Strike",
-			"powerDamage": 45,
-			"ticks": [
-				3
-			]
+			"powerDamage": 45
 		},
 		"abilityThree": {
 			"cooldown": 0,
@@ -11622,10 +10628,7 @@
 			"description": "Osiris flings out mummy wraps, tethering himself to all nearby enemy gods. Targets hit deal reduced damage over the next 4s. The tether can be broken by targets moving far enough away from Osiris. Targets still in range when the duration expires are Stunned.",
 			"icon": "images/smite/abilities/judgement-tether.jpg",
 			"level": 5,
-			"name": "Judgement Tether",
-			"ticks": [
-				4.0
-			]
+			"name": "Judgement Tether"
 		},
 		"abilityTwo": {
 			"cooldown": 11,
@@ -11704,9 +10707,6 @@
 				180,
 				220,
 				260
-			],
-			"ticks": [
-				3
 			]
 		},
 		"abilityOne": {
@@ -11808,10 +10808,7 @@
 			"description": "When Pele drops below 50% health her flame is set alight, and she gains increased Physical Power, Lifesteal and Ability Lifesteal. This passive has a 30s cooldown.",
 			"icon": "images/smite/abilities/everlasting-flame.jpg",
 			"level": 5,
-			"name": "Everlasting Flame",
-			"ticks": [
-				30.0
-			]
+			"name": "Everlasting Flame"
 		},
 		"physicalProtection": 12,
 		"physicalProtectionPerLevel": 2.9,
@@ -11850,9 +10847,7 @@
 				140,
 				165
 			],
-			"ticks": [
-				5
-			]
+			"ticks": 5
 		},
 		"abilityOne": {
 			"cooldown": [
@@ -11881,9 +10876,7 @@
 			"level": 5,
 			"name": "Bone Rush",
 			"powerDamage": 90,
-			"ticks": [
-				2.5
-			]
+			"ticks": 2.5
 		},
 		"abilityThree": {
 			"cooldown": [
@@ -11917,9 +10910,7 @@
 			"icon": "images/smite/abilities/harvest.jpg",
 			"level": 5,
 			"name": "Harvest",
-			"ticks": [
-				4.0
-			]
+			"ticks": 4.0
 		},
 		"attackSpeed": 0.95,
 		"attackSpeedPerLevel": 0.8999999999999999,
@@ -12019,10 +11010,7 @@
 			"level": 5,
 			"name": "Whirlpool",
 			"powerDamage": 15,
-			"ticks": [
-				0.5,
-				3.0
-			]
+			"ticks": 6
 		},
 		"abilityTwo": {
 			"cooldown": [
@@ -12050,10 +11038,7 @@
 			"icon": "images/smite/abilities/trident.jpg",
 			"level": 5,
 			"name": "Trident",
-			"ticks": [
-				6.0,
-				6
-			],
+			"ticks": 1,
 			"toggleStats": {
 				"movementSpeed": [
 					10,
@@ -12165,9 +11150,7 @@
 			"level": 5,
 			"name": "Solar Blessing",
 			"powerDamage": 20,
-			"ticks": [
-				6.0
-			]
+			"ticks": 6.0
 		},
 		"abilityTwo": {
 			"cooldown": 12,
@@ -12190,12 +11173,7 @@
 			"level": 5,
 			"name": "Divine Light",
 			"powerDamage": 55,
-			"ticks": [
-				0.5,
-				2.0,
-				0.6,
-				3
-			]
+			"ticks": 4
 		},
 		"attackSpeed": 0.88,
 		"attackSpeedPerLevel": 0.8999999999999999,
@@ -12227,10 +11205,7 @@
 				"stacks": {
 					"movementSpeed": 5
 				}
-			},
-			"ticks": [
-				15
-			]
+			}
 		},
 		"physicalProtection": 10,
 		"physicalProtectionPerLevel": 3,
@@ -12300,9 +11275,7 @@
 			"level": 5,
 			"name": "Thunder Crash",
 			"powerDamage": 50,
-			"ticks": [
-				0
-			]
+			"ticks": 0
 		},
 		"abilityTwo": {
 			"cooldown": [
@@ -12338,11 +11311,7 @@
 				35,
 				42
 			],
-			"ticks": [
-				0.5,
-				2.5,
-				4
-			]
+			"ticks": 1
 		},
 		"attackSpeed": 0.87,
 		"attackSpeedPerLevel": 0.8,
@@ -12393,9 +11362,7 @@
 			"level": 5,
 			"name": "Astral Barrage",
 			"powerDamage": 55,
-			"ticks": [
-				0.4
-			]
+			"ticks": 0.4
 		},
 		"abilityOne": {
 			"cost": 0,
@@ -12433,13 +11400,11 @@
 			"name": "Rolling Assault",
 			"powerDamage": 30,
 			"ticks": [
-				[
-					1,
-					1.25,
-					1.5,
-					1.75,
-					2
-				]
+				1,
+				1.25,
+				1.5,
+				1.75,
+				2
 			]
 		},
 		"abilityTwo": {
@@ -12485,11 +11450,7 @@
 			"description": "Rama's Astral Quiver generates an Astral Arrow every 12s. Each Basic Attack hit reduces the time to generate an Astral Arrow by 2s. The first time a fired Astral Arrow hits an enemy it has a chance to drop to the ground. Picking up an Astral Arrow restores 10 Mana.",
 			"icon": "images/smite/abilities/astral-quiver.jpg",
 			"level": 5,
-			"name": "Astral Quiver",
-			"ticks": [
-				12.0,
-				2.0
-			]
+			"name": "Astral Quiver"
 		},
 		"physicalProtection": 12,
 		"physicalProtectionPerLevel": 2.8,
@@ -12543,10 +11504,7 @@
 			"level": 5,
 			"name": "Dart",
 			"powerDamage": 70,
-			"ticks": [
-				3.0,
-				1.0
-			]
+			"ticks": 0
 		},
 		"abilityThree": {
 			"cooldown": 15,
@@ -12653,9 +11611,7 @@
 			"level": 5,
 			"name": "Mystic Rush",
 			"powerDamage": 100,
-			"ticks": [
-				5
-			]
+			"ticks": 5
 		},
 		"abilityOne": {
 			"cooldown": 9,
@@ -12677,10 +11633,7 @@
 			"icon": "images/smite/abilities/prana-onslaught.jpg",
 			"level": 5,
 			"name": "Prana Onslaught",
-			"powerDamage": 80,
-			"ticks": [
-				0
-			]
+			"powerDamage": 80
 		},
 		"abilityThree": {
 			"cooldown": 16,
@@ -12703,9 +11656,7 @@
 			"level": 5,
 			"name": "10-Hand Shadow Fist",
 			"powerDamage": 70,
-			"ticks": [
-				0
-			],
+			"ticks": 0,
 			"toggleStats": {
 				"hpFive": [
 					10,
@@ -12744,9 +11695,7 @@
 			"level": 5,
 			"name": "Overhead kick",
 			"powerDamage": 70,
-			"ticks": [
-				1
-			],
+			"ticks": 1,
 			"toggleStats": {
 				"movementSpeed": 50,
 				"toggle": false
@@ -12801,10 +11750,7 @@
 			"level": 5,
 			"name": "I'm a Monster",
 			"powerDamage": 120,
-			"ticks": [
-				6.0,
-				6.0
-			],
+			"ticks": 1,
 			"toggleStats": {
 				"movementSpeed": [
 					35,
@@ -12838,13 +11784,11 @@
 			"name": "Sic 'Em",
 			"powerDamage": 75,
 			"ticks": [
-				[
-					1.15,
-					1.3,
-					1.45,
-					1.6,
-					1.75
-				]
+				1.15,
+				1.3,
+				1.45,
+				1.6,
+				1.75
 			]
 		},
 		"abilityThree": {
@@ -12859,11 +11803,7 @@
 			"description": "Passive: Scylla gains MP5.\n\nActive: Scylla summons a sentinel to the target area, granting vision of enemies for 5s. Scylla may activate the ability again within 5s to move to the sentinel location.\n\nAt max rank, the vision is granted through line of sight blockers, and placement range increases.",
 			"icon": "images/smite/abilities/sentinel.jpg",
 			"level": 5,
-			"name": "Sentinel",
-			"ticks": [
-				5.0,
-				5.0
-			]
+			"name": "Sentinel"
 		},
 		"abilityTwo": {
 			"cooldown": 10,
@@ -12886,10 +11826,7 @@
 			"level": 5,
 			"name": "Crush",
 			"powerDamage": 85,
-			"ticks": [
-				5.0,
-				1.0
-			]
+			"ticks": 0
 		},
 		"attackSpeed": 1,
 		"attackSpeedPerLevel": 0.8,
@@ -12940,9 +11877,7 @@
 			"level": 5,
 			"name": "Last Breath",
 			"powerDamage": 120,
-			"ticks": [
-				5.0
-			]
+			"ticks": 5.0
 		},
 		"abilityOne": {
 			"cooldown": 13,
@@ -12959,9 +11894,7 @@
 			"level": 5,
 			"name": "Deathbane",
 			"powerDamage": 50,
-			"ticks": [
-				20.0
-			]
+			"ticks": 20.0
 		},
 		"abilityThree": {
 			"cooldown": 18,
@@ -13000,16 +11933,7 @@
 			"level": 5,
 			"name": "Cobra's Kiss",
 			"powerDamage": 75,
-			"ticks": [
-				20.0,
-				[
-					"1.0",
-					1.1,
-					1.2,
-					1.3,
-					1.4
-				]
-			]
+			"ticks": 0
 		},
 		"attackSpeed": 1,
 		"attackSpeedPerLevel": 2.1999999999999997,
@@ -13066,9 +11990,7 @@
 			"level": 5,
 			"name": "Kingslayer",
 			"powerDamage": 30,
-			"ticks": [
-				12
-			],
+			"ticks": 12,
 			"toggleStats": {
 				"movementSpeed": 25,
 				"toggle": false
@@ -13095,10 +12017,7 @@
 			"level": 5,
 			"name": "Skewer",
 			"powerDamage": 90,
-			"ticks": [
-				3.0,
-				3.0
-			]
+			"ticks": 1
 		},
 		"abilityThree": {
 			"cooldown": 16,
@@ -13121,10 +12040,7 @@
 			"level": 5,
 			"name": "Sandstorm",
 			"powerDamage": 7,
-			"ticks": [
-				0.4,
-				6.0
-			]
+			"ticks": 15
 		},
 		"abilityTwo": {
 			"cooldown": [
@@ -13151,13 +12067,11 @@
 				70
 			],
 			"ticks": [
-				[
-					8,
-					9,
-					10,
-					11,
-					12
-				]
+				8,
+				9,
+				10,
+				11,
+				12
 			]
 		},
 		"attackSpeed": 1,
@@ -13184,9 +12098,6 @@
 			"icon": "images/smite/abilities/relentless.jpg",
 			"level": 5,
 			"name": "Relentless",
-			"ticks": [
-				6.0
-			],
 			"toggleStats": {
 				"attackSpeed": 0,
 				"toggle": false
@@ -13217,9 +12128,7 @@
 			"name": "Shiva Tandava",
 			"powerDamage": 40,
 			"secondaryDamage": 50,
-			"ticks": [
-				1.5
-			],
+			"ticks": 1.5,
 			"toggleStats": {
 				"hpFive": [
 					80,
@@ -13334,10 +12243,7 @@
 			"description": "Shiva cycles between the states of Bliss and Destruction by dealing damage to enemy gods with attacks and abilities. Each state provides benefits to himself and allies or hindrances to enemies. On switching between states Shiva's non-ultimate ability cooldowns are reduced by 2s.",
 			"icon": "images/smite/abilities/samsara.jpg",
 			"level": 5,
-			"name": "Samsara",
-			"ticks": [
-				2.0
-			]
+			"name": "Samsara"
 		},
 		"physicalProtection": 16,
 		"physicalProtectionPerLevel": 3,
@@ -13369,10 +12275,7 @@
 			"level": 5,
 			"name": "Winter's Grasp",
 			"powerDamage": 5,
-			"ticks": [
-				4.0,
-				0.5
-			]
+			"ticks": 0
 		},
 		"abilityOne": {
 			"cooldown": 14,
@@ -13395,9 +12298,7 @@
 			"level": 5,
 			"name": "Piercing Cold",
 			"powerDamage": 80,
-			"ticks": [
-				3.0
-			]
+			"ticks": 3.0
 		},
 		"abilityThree": {
 			"cooldown": 0,
@@ -13427,11 +12328,7 @@
 				20,
 				25
 			],
-			"ticks": [
-				5.0,
-				0.5,
-				3.0
-			],
+			"ticks": 6,
 			"toggleStats": {
 				"movementSpeed": [
 					20,
@@ -13479,9 +12376,7 @@
 			"level": 5,
 			"name": "Kaldr, The Winter Wolf",
 			"secondaryDamage": 0,
-			"ticks": [
-				5.0
-			]
+			"ticks": 5.0
 		},
 		"physicalProtection": 11,
 		"physicalProtectionPerLevel": 2.8,
@@ -13513,9 +12408,7 @@
 			"level": 5,
 			"name": "Lurking in the Waters",
 			"powerDamage": 80,
-			"ticks": [
-				5
-			]
+			"ticks": 5
 		},
 		"abilityOne": {
 			"cooldown": 14,
@@ -13560,9 +12453,7 @@
 			"level": 5,
 			"name": "Sickening Strike",
 			"powerDamage": 30,
-			"ticks": [
-				4
-			]
+			"ticks": 4
 		},
 		"abilityTwo": {
 			"cooldown": 14,
@@ -13614,10 +12505,7 @@
 				"current": 0,
 				"max": "3",
 				"stacks": {}
-			},
-			"ticks": [
-				6
-			]
+			}
 		},
 		"physicalProtection": 19,
 		"physicalProtectionPerLevel": 3,
@@ -13665,9 +12553,7 @@
 			"level": 5,
 			"name": "Radiance",
 			"powerDamage": 25,
-			"ticks": [
-				3.0
-			]
+			"ticks": 3.0
 		},
 		"abilityThree": {
 			"cooldown": 16,
@@ -13684,9 +12570,7 @@
 			"level": 5,
 			"name": "Disapparate",
 			"powerDamage": 25,
-			"ticks": [
-				3.0
-			],
+			"ticks": 3.0,
 			"toggleStats": {
 				"movementSpeed": [
 					20,
@@ -13775,9 +12659,7 @@
 			"level": 5,
 			"name": "Somersault Cloud",
 			"powerDamage": 100,
-			"ticks": [
-				5.0
-			],
+			"ticks": 5.0,
 			"toggleStats": {
 				"hpFive": 5,
 				"toggle": false
@@ -13939,9 +12821,7 @@
 			"level": 5,
 			"name": "Storm Kata",
 			"powerDamage": 50,
-			"ticks": [
-				3.0
-			]
+			"ticks": 3.0
 		},
 		"abilityThree": {
 			"cooldown": 16,
@@ -13964,11 +12844,7 @@
 			"level": 5,
 			"name": "Jet Stream",
 			"powerDamage": 25,
-			"ticks": [
-				0.75,
-				3.0,
-				10.0
-			]
+			"ticks": 3
 		},
 		"abilityTwo": {
 			"cooldown": 16,
@@ -14071,10 +12947,7 @@
 			"level": 5,
 			"name": "Verdant Growth",
 			"powerDamage": 50,
-			"ticks": [
-				5.0,
-				0
-			]
+			"ticks": 0
 		},
 		"abilityThree": {
 			"cooldown": [
@@ -14167,9 +13040,7 @@
 			"level": 5,
 			"name": "Earthen Fury",
 			"powerDamage": 60,
-			"ticks": [
-				10.0
-			]
+			"ticks": 10.0
 		},
 		"abilityOne": {
 			"cooldown": 15,
@@ -14186,9 +13057,7 @@
 			"level": 5,
 			"name": "Force of Nature",
 			"powerDamage": 30,
-			"ticks": [
-				3.0
-			]
+			"ticks": 3.0
 		},
 		"abilityThree": {
 			"cooldown": 16,
@@ -14218,9 +13087,7 @@
 				16,
 				18
 			],
-			"ticks": [
-				10
-			]
+			"ticks": 10
 		},
 		"abilityTwo": {
 			"cooldown": 15,
@@ -14250,9 +13117,7 @@
 				210,
 				260
 			],
-			"ticks": [
-				5
-			]
+			"ticks": 5
 		},
 		"attackSpeed": 0.9,
 		"attackSpeedPerLevel": 1.3,
@@ -14280,9 +13145,7 @@
 			"level": 5,
 			"name": "Standing Stones",
 			"powerDamage": 10,
-			"ticks": [
-				3.0
-			]
+			"ticks": 3.0
 		},
 		"physicalProtection": 20,
 		"physicalProtectionPerLevel": 3.2,
@@ -14314,9 +13177,7 @@
 			"level": 5,
 			"name": "Hovering Death",
 			"powerDamage": 80,
-			"ticks": [
-				5.0
-			]
+			"ticks": 5.0
 		},
 		"abilityOne": {
 			"cooldown": 13,
@@ -14339,9 +13200,7 @@
 			"level": 5,
 			"name": "Death Scythe",
 			"powerDamage": 60,
-			"ticks": [
-				3.0
-			],
+			"ticks": 3.0,
 			"toggleStats": {
 				"hpFive": 75,
 				"toggle": false
@@ -14368,9 +13227,7 @@
 			"level": 5,
 			"name": "Soul Reap",
 			"powerDamage": 70,
-			"ticks": [
-				1
-			]
+			"ticks": 1
 		},
 		"abilityTwo": {
 			"cooldown": 13,
@@ -14384,10 +13241,7 @@
 			"description": "Thanatos senses death, gaining immunity to Slow effects and additional move speed and Physical Penetration for 6s. His speed bonus increases up to double when moving toward an enemy god within the instant kill Health threshold of his Ultimate. Consumes 5% of Thanatos' current HP when used.",
 			"icon": "images/smite/abilities/scent-of-death.jpg",
 			"level": 5,
-			"name": "Scent of Death",
-			"ticks": [
-				6.0
-			]
+			"name": "Scent of Death"
 		},
 		"attackSpeed": 1,
 		"attackSpeedPerLevel": 1.7000000000000002,
@@ -14435,10 +13289,7 @@
 			"description": "The Morrigan selects a God from the current match to become a copy of and cleanses herself of all effects. She copies all of their current stats and may use all of their abilities for the duration. She retains her own Relics and cannot use Consumables.\n\nThe Rank of her abilities will transfer to the skills of the god she copies. This ability's cooldown will be increased to match the target God's ultimate ability cooldown. You may hover over a target and cancel to pre-select them, so you do not need to use the cursor on activation. ",
 			"icon": "images/smite/abilities/changeling.jpg",
 			"level": 5,
-			"name": "Changeling",
-			"ticks": [
-				10
-			]
+			"name": "Changeling"
 		},
 		"abilityOne": {
 			"cooldown": 12,
@@ -14475,15 +13326,6 @@
 			"icon": "images/smite/abilities/confusion.jpg",
 			"level": 5,
 			"name": "Confusion",
-			"ticks": [
-				[
-					3,
-					3.5,
-					4,
-					4.5,
-					5
-				]
-			],
 			"toggleStats": {
 				"movementSpeed": [
 					30,
@@ -14549,9 +13391,7 @@
 			"icon": "images/smite/abilities/doomsayer.jpg",
 			"level": 5,
 			"name": "Doomsayer",
-			"ticks": [
-				3
-			]
+			"ticks": 3
 		},
 		"physicalProtection": 12,
 		"physicalProtectionPerLevel": 3,
@@ -14660,10 +13500,7 @@
 			"description": "Thor slams his hammer on the ground, causing a fissure to appear in front of him, Stunning enemies and blocking movement.",
 			"icon": "images/smite/abilities/tectonic-rift.jpg",
 			"level": 5,
-			"name": "Tectonic Rift",
-			"ticks": [
-				0
-			]
+			"name": "Tectonic Rift"
 		},
 		"attackSpeed": 1,
 		"attackSpeedPerLevel": 1.4000000000000001,
@@ -14741,9 +13578,7 @@
 			"level": 5,
 			"name": "Hieroglyphic Assault",
 			"powerDamage": 25,
-			"ticks": [
-				0.5
-			]
+			"ticks": 0.5
 		},
 		"abilityThree": {
 			"cooldown": 5,
@@ -14801,11 +13636,7 @@
 			"level": 5,
 			"name": "Evade and Punish",
 			"powerDamage": 60,
-			"ticks": [
-				5.0,
-				0,
-				0
-			]
+			"ticks": 0
 		},
 		"attackSpeed": 1,
 		"attackSpeedPerLevel": 1.2,
@@ -15035,9 +13866,7 @@
 			"name": "Silver Moon Caltrops",
 			"powerDamage": 30,
 			"secondaryDamage": 0,
-			"ticks": [
-				1.5
-			]
+			"ticks": 1.5
 		},
 		"abilityTwo": {
 			"cooldown": 14,
@@ -15066,9 +13895,6 @@
 				160,
 				215,
 				270
-			],
-			"ticks": [
-				1
 			]
 		},
 		"attackSpeed": 1,
@@ -15133,10 +13959,7 @@
 			"icon": "images/smite/abilities/lawbringer.jpg",
 			"level": 5,
 			"name": "Lawbringer",
-			"powerDamage": 120,
-			"ticks": [
-				3
-			]
+			"powerDamage": 120
 		},
 		"abilityOne": {
 			"cooldown": 15,
@@ -15288,12 +14111,7 @@
 			"description": "Ranged: Ullr gains bonus Physical Power for 5s.\n\nMelee: Ullr gains bonus move speed for 5s.",
 			"icon": "images/smite/abilities/expose-weakness.jpg",
 			"level": 5,
-			"name": "Expose Weakness (Invigorate)",
-			"ticks": [
-				5.0,
-				5.0,
-				5
-			]
+			"name": "Expose Weakness (Invigorate)"
 		},
 		"attackSpeed": 0.95,
 		"attackSpeedPerLevel": 1.4000000000000001,
@@ -15336,10 +14154,6 @@
 			"icon": "images/smite/abilities/colossal-fury.jpg",
 			"level": 5,
 			"name": "Colossal Fury",
-			"ticks": [
-				6.0,
-				3.0
-			],
 			"toggleStats": {
 				"movementSpeed": 3,
 				"toggle": false
@@ -15381,10 +14195,7 @@
 			"icon": "images/smite/abilities/umbrellarang.jpg",
 			"level": 5,
 			"name": "Umbrellarang",
-			"powerDamage": 50,
-			"ticks": [
-				3
-			]
+			"powerDamage": 50
 		},
 		"abilityTwo": {
 			"cooldown": [
@@ -15503,9 +14314,7 @@
 			"level": 5,
 			"name": "Backfire",
 			"powerDamage": 80,
-			"ticks": [
-				4
-			]
+			"ticks": 4
 		},
 		"abilityThree": {
 			"cooldown": 10,
@@ -15574,10 +14383,7 @@
 			"description": "Whenever Vulcan successfully hits an enemy god with an ability he gains bonuses to Movement Speed and MP5 for 5s.",
 			"icon": "images/smite/abilities/master-craftsman.jpg",
 			"level": 5,
-			"name": "Master Craftsman",
-			"ticks": [
-				5.0
-			]
+			"name": "Master Craftsman"
 		},
 		"physicalProtection": 13,
 		"physicalProtectionPerLevel": 3,
@@ -15595,9 +14401,6 @@
 			"icon": "images/smite/abilities/darkest-of-nights.jpg",
 			"level": 5,
 			"name": "Darkest of Nights",
-			"ticks": [
-				3.0
-			],
 			"toggleStats": {
 				"movementSpeed": [
 					20,
@@ -15687,10 +14490,7 @@
 				25,
 				30
 			],
-			"ticks": [
-				0.5,
-				3
-			]
+			"ticks": 6
 		},
 		"attackSpeed": 0.95,
 		"attackSpeedPerLevel": 1.4000000000000001,
@@ -15781,9 +14581,7 @@
 				3,
 				3.5
 			],
-			"ticks": [
-				4
-			]
+			"ticks": 4
 		},
 		"abilityThree": {
 			"cooldown": 15,
@@ -15806,9 +14604,7 @@
 			"level": 5,
 			"name": "Sky-Cutting Axe",
 			"powerDamage": 30,
-			"ticks": [
-				3.0
-			]
+			"ticks": 3.0
 		},
 		"abilityTwo": {
 			"cooldown": 16,
@@ -15839,13 +14635,11 @@
 				170
 			],
 			"ticks": [
-				[
-					1,
-					1.1,
-					1.2,
-					1.3,
-					1.4
-				]
+				1,
+				1.1,
+				1.2,
+				1.3,
+				1.4
 			]
 		},
 		"attackSpeed": 0.9,
@@ -15876,10 +14670,7 @@
 				"current": 0,
 				"max": "12",
 				"stacks": {}
-			},
-			"ticks": [
-				18.0
-			]
+			}
 		},
 		"physicalProtection": 21,
 		"physicalProtectionPerLevel": 3.4,
@@ -15903,11 +14694,7 @@
 			"icon": "images/smite/abilities/rivers-rebuke.jpg",
 			"level": 5,
 			"name": "River's Rebuke",
-			"powerDamage": 70,
-			"ticks": [
-				3,
-				0
-			]
+			"powerDamage": 70
 		},
 		"abilityOne": {
 			"cost": 0,
@@ -15929,9 +14716,6 @@
 				60,
 				80,
 				100
-			],
-			"ticks": [
-				1
 			]
 		},
 		"abilityThree": {
@@ -15940,10 +14724,6 @@
 			"icon": "images/smite/abilities/riptide.jpg",
 			"level": 5,
 			"name": "Riptide",
-			"ticks": [
-				3.0,
-				6
-			],
 			"toggleStats": {
 				"movementSpeed": [
 					10,
@@ -15969,9 +14749,7 @@
 			"level": 5,
 			"name": "Mending Waters",
 			"powerDamage": 40,
-			"ticks": [
-				3.0
-			]
+			"ticks": 3.0
 		},
 		"attackSpeed": 1,
 		"attackSpeedPerLevel": 1.2,
@@ -16034,9 +14812,7 @@
 			"level": 5,
 			"name": "Shards of Ice",
 			"powerDamage": 150,
-			"ticks": [
-				3.0
-			]
+			"ticks": 3.0
 		},
 		"abilityOne": {
 			"cooldown": [
@@ -16056,16 +14832,7 @@
 			"description": "Ymir summons a wall of ice out of the ground that blocks player movement.",
 			"icon": "images/smite/abilities/ice-wall.jpg",
 			"level": 5,
-			"name": "Ice Wall",
-			"ticks": [
-				[
-					2,
-					3,
-					4,
-					5,
-					6
-				]
-			]
+			"name": "Ice Wall"
 		},
 		"abilityThree": {
 			"cooldown": [
@@ -16115,10 +14882,7 @@
 			"icon": "images/smite/abilities/glacial-strike.jpg",
 			"level": 5,
 			"name": "Glacial Strike",
-			"powerDamage": 70,
-			"ticks": [
-				4
-			]
+			"powerDamage": 70
 		},
 		"attackSpeed": 0.85,
 		"attackSpeedPerLevel": 1.0,
@@ -16143,10 +14907,7 @@
 			"description": "All of Ymir's abilities that affect enemies apply a Debuff to the enemy called Frostbite. All of Ymir's Basic Attacks against a target afflicted by Frostbite do 100% more damage. Enemies afflicted by Frostbite deal 10% less damage. Lasts for 6s.",
 			"icon": "images/smite/abilities/frostbite.jpg",
 			"level": 5,
-			"name": "Frostbite",
-			"ticks": [
-				6.0
-			]
+			"name": "Frostbite"
 		},
 		"physicalProtection": 23,
 		"physicalProtectionPerLevel": 3.3,
@@ -16179,9 +14940,7 @@
 				220,
 				260
 			],
-			"ticks": [
-				3.0
-			]
+			"ticks": 3.0
 		},
 		"abilityOne": {
 			"cooldown": [
@@ -16211,10 +14970,7 @@
 			"name": "Flames of the Phoenix",
 			"powerDamage": 8,
 			"secondaryDamage": 0,
-			"ticks": [
-				3.0,
-				0
-			]
+			"ticks": 0
 		},
 		"abilityThree": {
 			"cooldown": 20,
@@ -16264,11 +15020,7 @@
 				185,
 				230
 			],
-			"ticks": [
-				1.0,
-				3.0,
-				0
-			]
+			"ticks": 0
 		},
 		"attackSpeed": 1,
 		"attackSpeedPerLevel": 1.2,
@@ -16293,18 +15045,14 @@
 			"description": "Yu Huang attunes himself to the Dao, giving his Basic Attacks and Abilities additional effects. He gains a stack of Dao every 15s. He also gains a stack by hitting an enemy God after not taking or dealing damage for 3s. Once he has 6 or more stacks, Yu Huang becomes Attuned, allowing his Basic Attacks chain to one additional enemy.",
 			"icon": "images/smite/abilities/master-of-the-dao.jpg",
 			"level": 5,
-			"name": "Master of the Dao",
-			"ticks": [
-				15.0,
-				3.0
-			]
+			"name": "Master of the Dao"
 		},
 		"physicalProtection": 12,
 		"physicalProtectionPerLevel": 3,
 		"powerType": "Magical",
 		"pros": "High Area Damage",
 		"speed": 355,
-		"title": "Ruler of Heaven",
+		"title": "The Jade Emperor",
 		"type": "Mage"
 	},
 	{
@@ -16323,9 +15071,7 @@
 			"level": 5,
 			"name": "Lightning Storm",
 			"powerDamage": 55,
-			"ticks": [
-				5
-			]
+			"ticks": 5
 		},
 		"abilityOne": {
 			"cooldown": 10,
@@ -16393,9 +15139,7 @@
 				85,
 				95
 			],
-			"ticks": [
-				5.0
-			],
+			"ticks": 5.0,
 			"toggleStats": {
 				"attackSpeed": [
 					20,
@@ -16437,10 +15181,7 @@
 			"description": "In hand lightning bolt attacks against enemies will apply a charge.  Basic Attacks against targets with charges deal increased damage. Charges last 5s.",
 			"icon": "images/smite/abilities/overcharge.jpg",
 			"level": 5,
-			"name": "Overcharge",
-			"ticks": [
-				5.0
-			]
+			"name": "Overcharge"
 		},
 		"physicalProtection": 8,
 		"physicalProtectionPerLevel": 2.7,
@@ -16466,9 +15207,7 @@
 			"level": 5,
 			"name": "Recall Demons",
 			"powerDamage": 25,
-			"ticks": [
-				5.0
-			]
+			"ticks": 5.0
 		},
 		"abilityOne": {
 			"cooldown": 12,
@@ -16491,9 +15230,7 @@
 			"level": 5,
 			"name": "Expose Evil",
 			"powerDamage": 20,
-			"ticks": [
-				5
-			]
+			"ticks": 5
 		},
 		"abilityThree": {
 			"cooldown": 15,

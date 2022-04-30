@@ -148,8 +148,8 @@ def getAbilityJson(sourceJson):
             elif rankItem['description'].lower() == 'Attack Speed:'.lower():
                 toggleStats['attackSpeed'] = getStats(rankItem['value'][:-1])
             elif rankItem['description'].lower() == 'Damage Buff:'.lower():
-                toggleStats['basicAttackPercentIncrease'] = getStats(
-                    rankItem['value'][:-1])
+                toggleStats['basicAttackPercentIncrease'] = getStats(rankItem['value'][:-1])
+                toggleStats['basicAttackPercentIncrease'] = [element * .1 for element in toggleStats['basicAttackPercentIncrease']]
             elif rankItem['description'].lower() == 'Landing Damage:'.lower() or rankItem['description'].lower() == 'Ranged Damage:'.lower():
                 stat = rankItem['value'].split(" (")
                 ability['secondaryDamage'] = {}
