@@ -227,6 +227,17 @@ def getAbilityJson(sourceJson):
             if isinstance(ability['ticks'], list):
                 print (ability['ticks'][0])
                 ability['ticks'] = ability['ticks'][0]
+    if itemDescription['menuitems']:
+        for menuitem in itemDescription['menuitems']:
+            toggleStats = {}
+            if menuitem['value'].lower() == "buff":
+                if "basic attack damage" in itemDescription['description'].lower():
+                    percents = re.findall(r'[+-]?[0-9]*[.]?[0-9]+[%]', itemDescription['description'])
+                    if len(percents) > 0:
+                        toggleStats['basicAttackPercentIncrease'] = float(list(map(lambda x: x.replace("%", ""), percents))[0]) / 100
+                        #print(toggleStats['basicAttackPercentIncrease'])
+                        toggleStats['toggle'] = False
+                        ability['toggleStats'] = toggleStats
 
 
     return ability
