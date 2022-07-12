@@ -76,7 +76,7 @@ for sourceItem in sourceItems:
             if criticalStrikeDamage:
                 amount = re.findall(r'\d+', criticalStrikeDamage.group())
                 item['criticalStrikeDamage'] = int(amount[0])
-            overcapAttackSpeedToPhysicalPower = re.search("For each \d*\.?\d+ Attack Speed you go over cap you gain \d+ Physical Power".lower(), item['passive'].lower())
+            overcapAttackSpeedToPhysicalPower = re.search("For each \d*\.?\d+ Attack Speed you go over 2.5 Attack Speed, you gain \d+ Physical Power".lower(), item['passive'].lower())
             if overcapAttackSpeedToPhysicalPower:
                 over = re.findall(r'\d*\.?\d+', overcapAttackSpeedToPhysicalPower.group())
                 gain = re.findall(r'\d+', overcapAttackSpeedToPhysicalPower.group())
@@ -85,6 +85,10 @@ for sourceItem in sourceItems:
             if maxHealthDamage:
                 amount = re.findall(r'\d+', maxHealthDamage.group())
                 item['maxHealthDamage'] = int(amount[0])
+            maxHealthMagicalDamage = re.search("Your abilities deal an additional \d+% of the target's maximum Health as Magical Damage".lower(), item['passive'].lower())
+            if maxHealthMagicalDamage:
+                amount = re.findall(r'\d+', maxHealthMagicalDamage.group())
+                item['maxHealthMagicalDamage'] = int(amount[0])
             criticalStrikeDamageDecrease = re.search("Critical Strikes bonus damage taken is decreased by \d+%".lower(), item['passive'].lower())
             if criticalStrikeDamageDecrease:
                 amount = re.findall(r'\d+', criticalStrikeDamageDecrease.group())
