@@ -25,7 +25,7 @@
 		"icon": "images/smite/items/sovereignty.jpg",
 		"id": 7528,
 		"name": "Sovereignty",
-		"passive": "AURA - Allied gods within 70 units have their Physical Protections increased by 15 and their HP5 increased by 35.",
+		"passive": "AURA - Allied gods within 70 units have their Physical Protections increased by 15 and their HP5 increased by 25.",
 		"physicalProtection": 40,
 		"tier": 3,
 		"type": "Both"
@@ -142,7 +142,7 @@
 		"icon": "images/smite/items/the-heavy-executioner.jpg",
 		"id": 22960,
 		"name": "The Heavy Executioner",
-		"passive": "<n>GLYPH - Basic Attacks against an enemy reduce your target's Physical Protection by 17.5%  for 3 seconds (max. 2 Stacks). Your Attack Speed cannot exceed 1.75. ",
+		"passive": "<n>GLYPH - Basic Attacks against an enemy reduce your target's Physical Protection by 17.5%  for 3 seconds (max. 2 Stacks). Your Attack Speed cannot exceed 1.9. ",
 		"physicalPower": 40,
 		"stacks": {
 			"current": 2,
@@ -353,14 +353,14 @@
 		"id": 22940,
 		"mana": 150,
 		"name": "Jotunn's Cunning",
-		"passive": "<n>GLYPH - Every time you damage an enemy god with an ability you gain a stack of Wit. At 2 stacks, your next non-ultimate ability that damages an enemy god gets 25% of its cooldown instantly refunded. This effect may only occur once every 5s.",
+		"passive": "<n>GLYPH - Every time you damage an enemy god with an ability you gain a stack of Wit. At 2 stacks, your next non-ultimate ability that damages an enemy god gets 25% of its cooldown instantly refunded. After triggering this effect, all stacks are removed and you cannot gain stacks for 5s.",
 		"physicalPenetration": 10,
 		"physicalPower": 45,
 		"stacks": {
-			"current": 2,
+			"current": 0,
 			"max": 2,
 			"stacks": {},
-			"type": "permanent"
+			"type": "temporary"
 		},
 		"tier": 4,
 		"type": "Physical"
@@ -411,7 +411,7 @@
 		"mpFive": 10,
 		"name": "Transcendence",
 		"passive": "PASSIVE - You permanently gain 15 Mana per Stack, and receive 5 Stacks for a god kill, and 1 Stack for a minion kill (max. 50 stacks). 3% of your Mana is converted to Physical Power. At 50 stacks this item Evolves, gaining 10% Cooldown Reduction.",
-		"physicalPower": 40,
+		"physicalPower": 35,
 		"stacks": {
 			"current": 50,
 			"evolved": {
@@ -445,13 +445,13 @@
 		"type": "Physical"
 	},
 	{
-		"cost": 2900,
+		"cost": 2750,
 		"icon": "images/smite/items/heartseeker.jpg",
 		"id": 12680,
 		"mana": 200,
 		"mpFive": 20,
 		"name": "Heartseeker",
-		"passive": "PASSIVE - Your abilities deal an additional 3% of the targets maximum Health as Physical Damage. If you have over 200 Physical Power, your ability bonus damage scales up. This effect reaches a maximum of 6% Maximum Health damage at 400 Physical Power. Subsequent hits on the same target do 75% bonus damage for the next 3s.",
+		"passive": "PASSIVE - Your abilities deal an additional 3% of the targets maximum Health as Physical Damage. If you have over 200 Physical Power, your ability bonus damage scales up. This effect reaches a maximum of 6% Maximum Health damage at 350 Physical Power. Subsequent hits on the same target do 75% bonus damage for the next 3s.",
 		"physicalPenetrationPercent": 10,
 		"physicalPower": 65,
 		"tier": 3,
@@ -610,18 +610,18 @@
 		"icon": "images/smite/items/soul-eater.jpg",
 		"id": 7539,
 		"name": "Soul Eater",
-		"passive": "PASSIVE - Your abilities heal you for 5% of damage dealt. Each time anything dies within 80 units you gain a stack. Gods, Large Jungle monsters and Bosses provide 5 stacks. At 75 Stacks Soul Eater Evolves, gaining 15 Physical Power, 5% Physical Lifesteal, and causing abilities to heal you for 25% of damage dealt.",
+		"passive": "PASSIVE - Your abilities heal you for 5% of damage dealt. Each time anything dies within 80 units you gain a stack. Gods, Large Jungle monsters and Bosses provide 5 stacks. At 100 Stacks Soul Eater Evolves, gaining 15 Physical Power, 5% Physical Lifesteal, and causing abilities to heal you for 20% of damage dealt.",
 		"physicalLifesteal": 10,
 		"physicalPenetrationPercent": 10,
 		"physicalPower": 25,
 		"stacks": {
-			"current": 75,
+			"current": 100,
 			"evolved": {
 				"icon": "images/smite/items/evolved-soul-eater.jpg",
 				"physicalLifesteal": 5,
 				"physicalPower": 15
 			},
-			"max": 75,
+			"max": 100,
 			"stacks": {},
 			"type": "permanent"
 		},
@@ -633,11 +633,14 @@
 		"icon": "images/smite/items/devourers-gauntlet.jpg",
 		"id": 7914,
 		"name": "Devourer's Gauntlet",
-		"passive": "PASSIVE - Killing an enemy god or minion gives you stacks of +.8 Physical Power and +.2% Physical Lifesteal. You receive 5 stacks for a god kill and 1 stack for a minion kill. Stacks up to 50 times.",
+		"passive": "PASSIVE - Killing an enemy god or minion gives you stacks of +.8 Physical Power and +.2% Physical Lifesteal. You receive 5 stacks for a god kill and 1 stack for a minion kill. At 50 stacks this item Evolves, gaining 10 Physical Penetration.",
 		"physicalLifesteal": 15,
 		"physicalPower": 30,
 		"stacks": {
 			"current": 50,
+			"evolved": {
+				"icon": "images/smite/items/evolved-devourers-gauntlet.jpg"
+			},
 			"max": 50,
 			"stacks": {
 				"physicalLifesteal": 0.2,
@@ -836,7 +839,7 @@
 		"mana": 200,
 		"name": "Blackthorn Hammer",
 		"passive": "PASSIVE - While over 25% Mana, you gain +10% Cooldown Reduction. While under 25% Mana, you gain +50 MP5.",
-		"physicalPower": 25,
+		"physicalPower": 30,
 		"tier": 3,
 		"type": "Physical"
 	},
@@ -902,7 +905,7 @@
 		"icon": "images/smite/items/gladiators-shield.jpg",
 		"id": 14085,
 		"name": "Gladiator's Shield",
-		"passive": "PASSIVE - When damaging an enemy god with an ability you deal an additional 15 + 35% of your Protections from items and abilities. Can only trigger once per enemy per ability.",
+		"passive": "PASSIVE - When damaging an enemy god with an ability you deal an additional 15 + 30% of your Protections from items and abilities. Can only trigger once per enemy per ability.",
 		"physicalPower": 20,
 		"physicalProtection": 40,
 		"tier": 3,
@@ -952,7 +955,7 @@
 		"mana": 200,
 		"mpFive": 20,
 		"name": "Hide of the Nemean Lion",
-		"passive": "PASSIVE - Every 10 seconds you gain a block stack if you have at least 80 total Protections from items and abilities, preventing 65% of the next Basic Attack's damage. For each additional 80 total Protections from items and abilities the max. stacks increases, up to a cap of 3.",
+		"passive": "PASSIVE - Every 8 seconds you gain a block stack if you have at least 80 total Protections from items and abilities, preventing 65% of the next Basic Attack's damage. For each additional 80 total Protections from items and abilities the max. stacks increases, up to a cap of 3.",
 		"physicalProtection": 70,
 		"stacks": {
 			"current": 0,
@@ -1035,7 +1038,7 @@
 		"mana": 300,
 		"mpFive": 10,
 		"name": "Breastplate of Vigilance",
-		"passive": "GLYPH - When your ultimate ability has finished casting you provide an aura in a 40 unit range around you reducing basic attack damage from enemies by 15% for 5s. This effect may only occur once every 45s.",
+		"passive": "GLYPH - When your ultimate ability has finished casting you provide an aura in a 60 unit range around you reducing basic attack damage from enemies by 15% for 5s. This effect may only occur once every 45s.",
 		"physicalProtection": 65,
 		"tier": 4,
 		"type": "Both"
@@ -1153,7 +1156,7 @@
 		"id": 22945,
 		"magicalProtection": 15,
 		"name": "Magi's Shelter",
-		"passive": "PASSIVE - Protects you from a single hard Crowd Control effect once every 70 seconds. When this occurs, you gain 1s of Crowd Control immunity. <n>GLYPH - Whenever your passive is consumed, the nearest allied god within 25 units gains protection from a single hard Crowd Control effect for 5s. If this passive is consumed before time runs out, they gain 1s of Crowd Control immunity.",
+		"passive": "PASSIVE - Protects you from a single hard Crowd Control effect once every 70 seconds. When this occurs, you gain 1s of Crowd Control immunity. <n>GLYPH - Whenever your passive is consumed, the nearest allied god within 40 units gains protection from a single hard Crowd Control effect for 8s. If this passive is consumed before time runs out, they gain 1s of Crowd Control immunity.",
 		"physicalProtection": 15,
 		"tier": 4,
 		"type": "Both"
@@ -1226,7 +1229,7 @@
 		"id": 11116,
 		"magicalProtection": 55,
 		"name": "Heartward Amulet",
-		"passive": "AURA - Allied gods within 70 units have their Magical Protections increased by 15 and their MP5 increased by 30.",
+		"passive": "AURA - Allied gods within 70 units have their Magical Protections increased by 20 and their MP5 increased by 30.",
 		"tier": 3,
 		"type": "Both"
 	},
@@ -1237,7 +1240,7 @@
 		"id": 15619,
 		"magicalProtection": 60,
 		"name": "Talisman of Energy",
-		"passive": "PASSIVE - Getting a kill or assist on enemies causes you and allies within 70 units to gain stacks of energy. Energy stacks provide 2% Movement Speed, 2% Attack Speed, and 10MP5 per stack. Lasts 10s and stacks up to 6 times.",
+		"passive": "PASSIVE - Getting a kill or assist on enemies causes you and allies within 70 units to gain stacks of energy. Energy stacks provide 2% Movement Speed, 2% Attack Speed, and 10MP5 per stack. Lasts 10s and stacks up to 6 times. Killing or Assisting an enemy God provides maximum stacks.",
 		"stacks": {
 			"current": 0,
 			"max": 6,
@@ -1257,7 +1260,7 @@
 		"id": 21504,
 		"magicalProtection": 55,
 		"name": "Amulet of Silence",
-		"passive": "AURA - Allied gods within 70 units have their Magical Protections increased by 15 and their MP5 increased by 30. <n>GLYPH - Gain a stack each time an enemy within 40 units casts an ability. At 5 stacks, your next basic attack against an enemy god will silence them for 1.5s. This effect can only occur every 30s.",
+		"passive": "AURA - Allied gods within 70 units have their Magical Protections increased by 20 and their MP5 increased by 30. <n>GLYPH - Gain a stack each time an enemy within 40 units casts an ability. At 5 stacks, your next basic attack against an enemy god will silence them for 1.5s. This effect can only occur every 30s.",
 		"stacks": {
 			"current": 5,
 			"max": 5,
@@ -1274,7 +1277,7 @@
 		"id": 21505,
 		"magicalProtection": 55,
 		"name": "Amulet of the Stronghold",
-		"passive": "AURA - Allied gods within 70 units have their Magical Protections increased by 15 and their MP5 increased by 30. <n>GLYPH - 15% of your Physical Protections are converted to Magical Protections.",
+		"passive": "AURA - Allied gods within 70 units have their Magical Protections increased by 20 and their MP5 increased by 30. <n>GLYPH - 15% of your Physical Protections are converted to Magical Protections.",
 		"tier": 4,
 		"type": "Both"
 	},
@@ -1388,7 +1391,7 @@
 		"cost": 2300,
 		"icon": "images/smite/items/divine-ruin.jpg",
 		"id": 7832,
-		"magicalPenetration": 12,
+		"magicalPenetration": 15,
 		"magicalPower": 100,
 		"name": "Divine Ruin",
 		"passive": "PASSIVE - Enemies hit by your abilities have 40% reduced healing for 5 seconds.",
@@ -1400,7 +1403,7 @@
 		"cost": 2600,
 		"icon": "images/smite/items/spear-of-desolation.jpg",
 		"id": 12670,
-		"magicalPenetration": 12,
+		"magicalPenetration": 15,
 		"magicalPower": 110,
 		"name": "Spear of Desolation",
 		"passive": "PASSIVE - If you receive a kill or assist on an Enemy God all of your non-ultimate cooldowns are reduced by 2 seconds and your ultimate cooldown is reduced by 6 seconds.",
@@ -1423,7 +1426,7 @@
 		"icon": "images/smite/items/spear-of-the-magus.jpg",
 		"id": 18180,
 		"magicalLifesteal": 12,
-		"magicalPenetration": 12,
+		"magicalPenetration": 15,
 		"magicalPower": 110,
 		"name": "Spear of the Magus",
 		"passive": "PASSIVE - Whenever you damage an enemy god with an ability you mark them to take 7.5% increased damage from all sources. This effect lasts for 7s and can only occur once every 15s.",
@@ -1502,13 +1505,15 @@
 		"health": 150,
 		"icon": "images/smite/items/warlocks-staff.jpg",
 		"id": 7917,
-		"magicalPenetrationPercent": 10,
 		"magicalPower": 95,
 		"mana": 200,
 		"name": "Warlock's Staff",
-		"passive": "PASSIVE - You permanently gain +1 Health and +0.8 Magical Power per Stack, and receive 5 Stacks for a god kill and 1 Stack per minion kill. (Max. 75 Stacks)",
+		"passive": "PASSIVE - You permanently gain +1 Health and +0.8 Magical Power per Stack, and receive 5 Stacks for a god kill and 1 Stack per minion kill. At 75 stacks this item Evolves, gaining 10% Magical Penetration.",
 		"stacks": {
 			"current": 75,
+			"evolved": {
+				"icon": "images/smite/items/evolved-warlocks-staff.jpg"
+			},
 			"max": 75,
 			"stacks": {
 				"health": 1,
@@ -1572,7 +1577,7 @@
 		"manaToMagicalPower": 7,
 		"mpFive": 20,
 		"name": "Book of Thoth",
-		"passive": "PASSIVE - You permanently gain 10 Mana per Stack, and receive 5 Stacks for a god kill and 1 Stack for a minion kill (max. 75 Stacks). 7% of your Mana from items is converted to Magical Power. At 75 stacks this item Evolves, gaining 3% extra Mana to Power conversion.",
+		"passive": "PASSIVE - You permanently gain 10 Mana per Stack, and receive 5 Stacks for a god kill and 1 Stack for a minion kill (max. 75 Stacks). 7% of your Mana from items is converted to Magical Power. At 75 stacks this item Evolves, gaining 10 Magical Penetration and 3% extra Mana to Power conversion.",
 		"stacks": {
 			"current": 75,
 			"evolved": {
@@ -1721,7 +1726,7 @@
 		"icon": "images/smite/items/charons-coin.jpg",
 		"id": 18183,
 		"magicalPenetrationPercent": 20,
-		"magicalPower": 80,
+		"magicalPower": 90,
 		"mpFive": 20,
 		"name": "Charon's Coin",
 		"passive": "PASSIVE - On god kill or assist a coin is flipped. If heads, you gain a stack of 7 HP5. If tails, you gain a stack of 2% Movement Speed. Each effect can stack up to 4 times and at 8 stacks this item evolves. You also gain 1 gold every time the coin is flipped.",
@@ -1975,14 +1980,14 @@
 	},
 	{
 		"attackSpeed": 30,
-		"cost": 2300,
+		"cost": 2450,
 		"icon": "images/smite/items/silverbranch-bow.jpg",
 		"id": 14084,
 		"name": "Silverbranch Bow",
 		"overcapAttackSpeedToPhysicalPower": 0.01,
 		"passive": "PASSIVE - For each 0.02 Attack Speed you go over 2.5 Attack Speed, you gain 2 Physical Power.",
 		"physicalPenetrationPercent": 20,
-		"physicalPower": 30,
+		"physicalPower": 25,
 		"tier": 3,
 		"type": "Physical"
 	},
@@ -2612,7 +2617,7 @@
 		"id": 19491,
 		"mpFive": 30,
 		"name": "Bluestone Brooch",
-		"passive": "PASSIVE - Enemies hit by your damaging abilities take an additional 50 (+7.5% of their Current Health) as Physical Damage over 2s. (Max 2 Stacks)",
+		"passive": "PASSIVE - Enemies hit by your damaging abilities take an additional 50 (+6% of their Current Health) as Physical Damage over 2s. (Max 2 Stacks)",
 		"physicalPower": 45,
 		"stacks": {
 			"current": 2,
@@ -2752,7 +2757,7 @@
 		"magicalPower": 15,
 		"magicalProtection": 10,
 		"name": "Warrior's Axe",
-		"passive": "PASSIVE - Damaging an enemy god steals 20 health (+1.5 per level) away from your target and restores 20 mana. This effect can only occur once every 10s. Can be upgraded at level 20.",
+		"passive": "PASSIVE - Damaging an enemy god steals 30 health (+1.5 per level) away from your target and restores 20 mana. This effect can only occur once every 10s. Can be upgraded at level 20.",
 		"physicalPower": 15,
 		"physicalProtection": 10,
 		"starter": true,
@@ -2977,7 +2982,7 @@
 		"magicalProtection": 10,
 		"mpFive": 7,
 		"name": "Sentinel's Gift",
-		"passive": "PASSIVE - Getting the assist for an enemy minion or jungle monster dying will provide 8 Bonus gold and restore 12 Health and 8 Mana. If you are not within 30 units of an allied god for 20 seconds this passive is disabled until you are near an allied god again. Can be upgraded at level 15.",
+		"passive": "PASSIVE - Getting the assist for an enemy minion or jungle monster dying will provide 8 Bonus gold and restore 15 Health and 8 Mana. If you are not within 30 units of an allied god for 20 seconds this passive is disabled until you are near an allied god again. Can be upgraded at level 15.",
 		"physicalProtection": 10,
 		"starter": true,
 		"tier": 1,
@@ -3014,7 +3019,7 @@
 	{
 		"cost": 600,
 		"health": 75,
-		"hpFive": 7,
+		"hpFive": 10,
 		"icon": "images/smite/items/benevolence.jpg",
 		"id": 19634,
 		"mpFive": 10,
@@ -3321,7 +3326,7 @@
 		"magicalProtection": 10,
 		"mpFive": 10,
 		"name": "War Flag",
-		"passive": "PASSIVE - Getting an assist when an enemy dies provides a stack that gives 1% Movement Speed and 2% Attack Speed for 8s to nearby allies up to 10 stacks. When you've gained 3 or more stacks from assists, once per ability, each time you damage an enemy god you restore 15 Health and Mana to nearby allies within 55 units and gain 10 gold. Can be upgraded at level 15.",
+		"passive": "PASSIVE - Getting an assist when an enemy dies provides a stack that gives 1% Movement Speed and 2% Attack Speed for 8s to nearby allies up to 10 stacks. When you've gained 3 or more stacks from assists, once per ability, each time you damage an enemy god you restore 18 Health and Mana to nearby allies within 55 units and gain 10 gold. Can be upgraded at level 15.",
 		"physicalProtection": 10,
 		"stacks": {
 			"current": 0,
@@ -3421,15 +3426,16 @@
 		"mpFive": 15,
 		"name": "Gleaming Ear Cuffs",
 		"physicalPower": 20,
+		"restrictedRoles": "assassin,guardian,warrior",
 		"tier": 2,
 		"type": "Both"
 	},
 	{
 		"cost": 1200,
-		"health": 200,
-		"hpFive": 15,
+		"health": 250,
 		"icon": "images/smite/items/rose-spike-earrings.jpg",
 		"id": 23149,
+		"magicalProtection": 25,
 		"mpFive": 15,
 		"name": "Rose Spike Earrings",
 		"tier": 2,
@@ -3447,9 +3453,9 @@
 		"type": "Physical"
 	},
 	{
-		"cost": 2600,
-		"health": 300,
-		"hpFive": 20,
+		"cooldownReduction": 10,
+		"cost": 2700,
+		"health": 350,
 		"icon": "images/smite/items/fae-blessed-hoops.jpg",
 		"id": 23009,
 		"mpFive": 40,
@@ -3461,26 +3467,26 @@
 	{
 		"cooldownReduction": 10,
 		"cost": 3300,
-		"icon": "images/smite/items/sphinxs-bauble.jpg",
+		"icon": "images/smite/items/sphinxs-baubles.jpg",
 		"id": 23102,
 		"magicalPower": 70,
 		"mpFive": 20,
-		"name": "Sphinx's Bauble",
-		"passive": "PASSIVE - Your Cooldown Reduction cap is increased from 40% to 50%. Your Physical and Magical Protections are reduced by 15%, and your healing output is decreased by 20%.",
+		"name": "Sphinx's Baubles",
+		"passive": "PASSIVE - Your Cooldown Reduction cap is increased from 40% to 50%. Your Physical and Magical Protections are reduced by 10%, and your healing output is decreased by 20%.",
 		"physicalPower": 45,
 		"tier": 3,
 		"type": "Both"
 	},
 	{
-		"cost": 2600,
-		"crowdControl": 20,
-		"health": 350,
-		"hpFive": 30,
-		"icon": "images/smite/items/manticores-spike.jpg",
+		"cost": 2800,
+		"health": 300,
+		"icon": "images/smite/items/manticores-spikes.jpg",
 		"id": 23143,
+		"magicalProtection": 35,
 		"mpFive": 20,
-		"name": "Manticore's Spike",
-		"passive": "When you hit an enemy god with Hard Crowd Control, they drop a Spike on the ground that lasts for 7s. When you or an allied god pick up a spike, they gain a buff that causes their next ability to deal bonus damage equal to 3% of their own Max HP. This effect lasts 5s and is doubled if you are the one who picks up the spike.",
+		"name": "Manticore's Spikes",
+		"passive": "When you hit an enemy god with Hard Crowd Control, they drop Spikes on the ground that lasts for 7s. When you or an allied god pick up a Spike, they gain a buff that causes their next ability to deal bonus Magic damage equal to 3% of their own Max HP. This effect lasts 15s and is doubled if you are the one who picks up the Spike.",
+		"physicalProtection": 35,
 		"tier": 3,
 		"type": "Both"
 	},
@@ -3489,10 +3495,10 @@
 		"cost": 2700,
 		"icon": "images/smite/items/griffonwing-earrings.jpg",
 		"id": 23146,
-		"magicalPower": 60,
+		"magicalPower": 70,
 		"mpFive": 15,
 		"name": "Griffonwing Earrings",
-		"passive": "Your Basic Attack projectile speed is increased by 40%. Your Basic Attack damage is reduced by 10%.",
+		"passive": "Your Basic Attack projectile speed is increased by 40%.",
 		"physicalPower": 40,
 		"restrictedRoles": "assassin,guardian,warrior",
 		"tier": 3,
