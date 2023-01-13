@@ -11647,15 +11647,27 @@
 				80
 			],
 			"damage": [
-				50,
-				75,
-				87.5
+				90,
+				140,
+				190,
+				240,
+				290
 			],
+			"powerDamage": 70,
+			"secondaryDamage": {
+				"damage": [
+					40,
+					57,
+					110,
+					145,
+					180
+				],
+				"powerDamage": 30
+			},
 			"description": "Persephone summons an explosion at a target location that places 3 Harvest Skulls. She can activate these Harvest plants with her Basic Attacks. When the Skulls are activated she restores health to herself. After 4s the Skulls turn into Harvest Flowers. When activated these Flowers charge forward in the direction hit, biting any target that gets close. Enemies recently bitten take reduced damage from other bites, stacking 3 times. She can have up to (5/5/6/6/7) Harvest Plants out at any time.",
 			"icon": "images/smite/abilities/harvest.jpg",
 			"level": 5,
-			"name": "Harvest",
-			"ticks": 4.0
+			"name": "Harvest"
 		},
 		"attackSpeed": 0.95,
 		"attackSpeedPerLevel": 0.8999999999999999,
